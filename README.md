@@ -14,7 +14,7 @@ oneAPI Containers Get Started Guide ( [Linux](https://software.intel.com/get-sta
 
 # License Agreement
 
-By downloading and using this container and the included software, you agree to the terms and conditions of the software license agreements located at https://github.com/intel/oneapi-containers/licensing .
+By downloading and using this container and the included software, you agree to the terms and conditions of the [software license agreements](https://github.com/intel/oneapi-containers/tree/master/licensing).
 
 # Intel<sup>®</sup> oneAPI Base Toolkit
 
@@ -77,6 +77,7 @@ image=intel/oneapi-aikit
 docker pull "$image"
 docker run --device=/dev/dri -e http_proxy="$http_proxy" -e https_proxy="$https_proxy" -it "$image"
 ```
+
 * oneAPI Containers Get Started Guide ( [Linux](https://software.intel.com/en-us/get-started-with-intel-oneapi-linux-using-containers) | [Windows](https://software.intel.com/en-us/get-started-with-intel-oneapi-windows-using-containers) )
 * [AI Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/aikit-devel-ubuntu18.04/Dockerfile)
 
@@ -87,3 +88,4 @@ When using these tools, extra capabilites have to be provided to the container: 
 ```sh
 docker run --cap-add=SYS_ADMIN --cap-add=SYS_PTRACE --device=/dev/dri -e http_proxy="$http_proxy" -e https_proxy="$https_proxy" -it "$image"
 ```
+
