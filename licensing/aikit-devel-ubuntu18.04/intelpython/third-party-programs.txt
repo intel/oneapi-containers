@@ -1,0 +1,168 @@
+This text file is the "third-party-programs.txt" file specified in the associated 
+license agreement. The third party programs files and the corresponding third 
+party licenses are listed below. As specified in the associated license 
+agreement, the listed third party programs files are subject to the 
+corresponding third party licenses that solely and exclusively govern your use 
+of the third party programs.
+
+This third-party-programs.txt file applies to Intel(R) Distribution for Python*.
+
+All paths are relative to the Intel(R) Distribution for Python* installation 
+directory. By default, it is /opt/intel/inteloneapi/intelpython/python3.7
+
+List of Third Party Programs and the locations of their corresponding licenses:
+
+  - zlib covered by license at <install_dir>/pkgs/zlib-1.2.11-h14c3975_7/info/LICENSE.txt
+    file list: <install_dir>/pkgs/zlib-1.2.11-h14c3975_7/*
+  - xz covered by license at <install_dir>/pkgs/xz-5.2.4-h14c3975_7/info/LICENSE.txt
+    file list: <install_dir>/pkgs/xz-5.2.4-h14c3975_7/*
+  - libxml2 covered by license at <install_dir>/pkgs/libxml2-2.9.9-h14c3975_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/libxml2-2.9.9-h14c3975_0/*
+  - lz4-c covered by license at <install_dir>/pkgs/lz4-c-1.8.1.2-h14c3975_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/lz4-c-1.8.1.2-h14c3975_0/*
+  - lzo covered by license at <install_dir>/pkgs/lzo-2.10-h14c3975_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/lzo-2.10-h14c3975_0/*
+  - zstd covered by license at <install_dir>/pkgs/zstd-1.4.0-hf484d3e_1/info/LICENSE.txt
+    file list: <install_dir>/pkgs/zstd-1.4.0-hf484d3e_1/*
+  - tcl covered by license at <install_dir>/pkgs/tcl-8.6.4-24/info/LICENSE.txt
+    file list: <install_dir>/pkgs/tcl-8.6.4-24/*
+  - tk covered by license at <install_dir>/pkgs/tk-8.6.4-29/info/LICENSE.txt
+    file list: <install_dir>/pkgs/tk-8.6.4-29/*
+  - sqlite covered by license at <install_dir>/pkgs/sqlite-3.29.0-0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/sqlite-3.29.0-0/*
+  - libffi covered by license at <install_dir>/pkgs/libffi-3.2.1-11/info/LICENSE.txt
+    file list: <install_dir>/pkgs/libffi-3.2.1-11/*
+  - bzip2 covered by license at <install_dir>/pkgs/bzip2-1.0.6-19/info/LICENSE.txt
+    file list: <install_dir>/pkgs/bzip2-1.0.6-19/*
+  - openssl covered by license at <install_dir>/pkgs/openssl-1.1.1d-0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/openssl-1.1.1d-0/*
+  - python covered by license at <install_dir>/pkgs/python-3.7.4-hf484d3e_3/info/LICENSE.txt
+    file list: <install_dir>/pkgs/python-3.7.4-hf484d3e_3/*
+  - six covered by license at <install_dir>/pkgs/six-1.12.0-py37_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/six-1.12.0-py37_0/*
+  - certifi covered by license at <install_dir>/pkgs/certifi-2018.1.18-py37_2/info/LICENSE.txt
+    file list: <install_dir>/pkgs/certifi-2018.1.18-py37_2/*
+  - setuptools covered by license at <install_dir>/pkgs/setuptools-41.0.1-py37_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/setuptools-41.0.1-py37_0/*
+  - wheel covered by license at <install_dir>/pkgs/wheel-0.31.0-py37_3/info/LICENSE.txt
+    file list: <install_dir>/pkgs/wheel-0.31.0-py37_3/*
+  - pip covered by license at <install_dir>/pkgs/pip-19.1.1-py37_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/pip-19.1.1-py37_0/*
+  - libarchive covered by license at <install_dir>/pkgs/libarchive-3.4.0-h14c3975_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/libarchive-3.4.0-h14c3975_0/*
+  - tqdm covered by license at <install_dir>/pkgs/tqdm-4.32.1-py37_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/tqdm-4.32.1-py37_0/*
+  - python-libarchive-c covered by license at <install_dir>/pkgs/python-libarchive-c-2.8-py37_13/info/LICENSE.txt
+    file list: <install_dir>/pkgs/python-libarchive-c-2.8-py37_13/*
+  - conda-package-handling covered by license at <install_dir>/pkgs/conda-package-handling-1.4.0-py37_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/conda-package-handling-1.4.0-py37_0/*
+  - yaml covered by license at <install_dir>/pkgs/yaml-0.1.7-2/info/LICENSE.txt
+    file list: <install_dir>/pkgs/yaml-0.1.7-2/*
+  - cython covered by license at <install_dir>/pkgs/cython-0.29.13-py37ha68da19_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/cython-0.29.13-py37ha68da19_0/*
+  - ruamel_yaml covered by license at <install_dir>/pkgs/ruamel_yaml-0.15.64-py37_1/info/LICENSE.txt
+    file list: <install_dir>/pkgs/ruamel_yaml-0.15.64-py37_1/*
+  - asn1crypto covered by license at <install_dir>/pkgs/asn1crypto-0.24.0-py37_3/info/LICENSE.txt
+    file list: <install_dir>/pkgs/asn1crypto-0.24.0-py37_3/*
+  - pycparser covered by license at <install_dir>/pkgs/pycparser-2.18-py37_2/info/LICENSE.txt
+    file list: <install_dir>/pkgs/pycparser-2.18-py37_2/*
+  - cffi covered by license at <install_dir>/pkgs/cffi-1.12.3-py37_2/info/LICENSE.txt
+    file list: <install_dir>/pkgs/cffi-1.12.3-py37_2/*
+  - idna covered by license at <install_dir>/pkgs/idna-2.6-py37_3/info/LICENSE.txt
+    file list: <install_dir>/pkgs/idna-2.6-py37_3/*
+  - cryptography covered by license at <install_dir>/pkgs/cryptography-2.7-py37_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/cryptography-2.7-py37_0/*
+  - pyopenssl covered by license at <install_dir>/pkgs/pyopenssl-17.5.0-py37_2/info/LICENSE.txt
+    file list: <install_dir>/pkgs/pyopenssl-17.5.0-py37_2/*
+  - chardet covered by license at <install_dir>/pkgs/chardet-3.0.4-py37_3/info/LICENSE.txt
+    file list: <install_dir>/pkgs/chardet-3.0.4-py37_3/*
+  - pysocks covered by license at <install_dir>/pkgs/pysocks-1.6.7-py37_1/info/LICENSE.txt
+    file list: <install_dir>/pkgs/pysocks-1.6.7-py37_1/*
+  - urllib3 covered by license at <install_dir>/pkgs/urllib3-1.24.1-py37_2/info/LICENSE.txt
+    file list: <install_dir>/pkgs/urllib3-1.24.1-py37_2/*
+  - requests covered by license at <install_dir>/pkgs/requests-2.20.1-py37_1/info/LICENSE.txt
+    file list: <install_dir>/pkgs/requests-2.20.1-py37_1/*
+  - pycosat covered by license at <install_dir>/pkgs/pycosat-0.6.3-py37_3/info/LICENSE.txt
+    file list: <install_dir>/pkgs/pycosat-0.6.3-py37_3/*
+  - conda covered by license at <install_dir>/pkgs/conda-4.7.12-py37_11/info/LICENSE.txt
+    file list: <install_dir>/pkgs/conda-4.7.12-py37_11/*
+  - funcsigs covered by license at <install_dir>/pkgs/funcsigs-1.0.2-py37_7/info/LICENSE.txt
+    file list: <install_dir>/pkgs/funcsigs-1.0.2-py37_7/*
+  - llvmlite covered by license at <install_dir>/pkgs/llvmlite-0.29.0-py37hf484d3e_9/info/LICENSE.txt
+    file list: <install_dir>/pkgs/llvmlite-0.29.0-py37hf484d3e_9/*
+  - mkl-service covered by license at <install_dir>/pkgs/mkl-service-2.3.0-py37_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/mkl-service-2.3.0-py37_0/*
+  - mkl_fft covered by license at <install_dir>/pkgs/mkl_fft-1.0.15-py37ha68da19_3/info/LICENSE.txt
+    file list: <install_dir>/pkgs/mkl_fft-1.0.15-py37ha68da19_3/*
+  - mkl_random covered by license at <install_dir>/pkgs/mkl_random-1.1.0-py37ha68da19_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/mkl_random-1.1.0-py37ha68da19_0/*
+  - numpy covered by license at <install_dir>/pkgs/numpy-1.17.3-py37ha68da19_4/info/LICENSE.txt
+    file list: <install_dir>/pkgs/numpy-1.17.3-py37ha68da19_4/*
+  - numpy-base covered by license at <install_dir>/pkgs/numpy-1.17.3-py37ha68da19_4/info/LICENSE.txt
+    file list: <install_dir>/pkgs/numpy-base-1.17.3-py37_4/*
+  - numba covered by license at <install_dir>/pkgs/numba-0.45.1-np117py37_1/info/LICENSE.txt
+    file list: <install_dir>/pkgs/numba-0.45.1-np117py37_1/*
+  - python-dateutil covered by license at <install_dir>/pkgs/python-dateutil-2.8.0-py37_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/python-dateutil-2.8.0-py37_0/*
+  - pyparsing covered by license at <install_dir>/pkgs/pyparsing-2.2.0-py37_2/info/LICENSE.txt
+    file list: <install_dir>/pkgs/pyparsing-2.2.0-py37_2/*
+  - cycler covered by license at <install_dir>/pkgs/cycler-0.10.0-py37_7/info/LICENSE.txt
+    file list: <install_dir>/pkgs/cycler-0.10.0-py37_7/*
+  - pytz covered by license at <install_dir>/pkgs/pytz-2019.1-py37_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/pytz-2019.1-py37_0/*
+  - kiwisolver covered by license at <install_dir>/pkgs/kiwisolver-1.0.1-py37_2/info/LICENSE.txt
+    file list: <install_dir>/pkgs/kiwisolver-1.0.1-py37_2/*
+  - libpng covered by license at <install_dir>/pkgs/libpng-1.6.36-2/info/LICENSE.txt
+    file list: <install_dir>/pkgs/libpng-1.6.36-2/*
+  - freetype covered by license at <install_dir>/pkgs/freetype-2.10.1-0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/freetype-2.10.1-0/*
+  - matplotlib covered by license at <install_dir>/pkgs/matplotlib-3.1.1-py37_3/info/LICENSE.txt
+    file list: <install_dir>/pkgs/matplotlib-3.1.1-py37_3/*
+  - mpi4py covered by license at <install_dir>/pkgs/mpi4py-3.0.0-py37_6/info/LICENSE.txt
+    file list: <install_dir>/pkgs/mpi4py-3.0.0-py37_6/*
+  - numexpr covered by license at <install_dir>/pkgs/numexpr-2.7.0-py37_1/info/LICENSE.txt
+    file list: <install_dir>/pkgs/numexpr-2.7.0-py37_1/*
+  - pandas covered by license at <install_dir>/pkgs/pandas-0.25.1-py37_3/info/LICENSE.txt
+    file list: <install_dir>/pkgs/pandas-0.25.1-py37_3/*
+  - pyyaml covered by license at <install_dir>/pkgs/pyyaml-5.1.1-py37_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/pyyaml-5.1.1-py37_0/*
+  - daal4py covered by license at <install_dir>/pkgs/daal4py-2021.1b3-py37h0922cd1_1/info/LICENSE.txt
+    file list: <install_dir>/pkgs/daal4py-2021.1b3-py37h0922cd1_1/*
+  - joblib covered by license at <install_dir>/pkgs/joblib-0.13.2-py37_1/info/LICENSE.txt
+    file list: <install_dir>/pkgs/joblib-0.13.2-py37_1/*
+  - scipy covered by license at <install_dir>/pkgs/scipy-1.3.1-py37ha68da19_2/info/LICENSE.txt
+    file list: <install_dir>/pkgs/scipy-1.3.1-py37ha68da19_2/*
+  - scikit-learn covered by license at <install_dir>/pkgs/scikit-learn-0.21.3-py37ha68da19_14/info/LICENSE.txt
+    file list: <install_dir>/pkgs/scikit-learn-0.21.3-py37ha68da19_14/*
+  - xgboost covered by license at <install_dir>/pkgs/xgboost-0.90-py37_0/lib/python3.7/site-packages/xgboost/dmlc-core/LICENSE
+    file list: <install_dir>/pkgs/xgboost-0.90-py37_0/*
+  - smp covered by license at <install_dir>/pkgs/smp-0.1.4-py37_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/smp-0.1.4-py37_0/*
+  - pyeditline covered by license at <install_dir>/pkgs/pyeditline-2.0.0-py37_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/pyeditline-2.0.0-py37_0/*
+  - sys_check covered by license at <install_dir>/pkgs/sys_check-2021.1b1-2/info/LICENSE.txt
+    file list: <install_dir>/pkgs/sys_check-2021.1b1-2/*
+  - tbb covered by license at <install_dir>/pkgs/tbb-2021.1b3-intel_38/info/LICENSE.txt
+    file list: <install_dir>/pkgs/tbb-2021.1b3-intel_38/*
+  - tbb4py covered by license at <install_dir>/pkgs/tbb4py-2021.1b3-py37_intel_0/info/LICENSE.txt
+    file list: <install_dir>/pkgs/tbb4py-2021.1b3-py37_intel_0/*
+  - mkl covered by license at <install_dir>/pkgs/mkl-2021.1b3-intel_25/info/LICENSE.txt
+    file list: <install_dir>/pkgs/mkl-2021.1b3-intel_25/*
+  - ipp covered by license at <install_dir>/pkgs/ipp-2021.1b3-intel_28/info/LICENSE.txt
+    file list: <install_dir>/pkgs/ipp-2021.1b3-intel_28/*
+  - impi_rt covered by license at <install_dir>/pkgs/impi_rt-2021.1b3-intel_44/info/LICENSE.txt
+    file list: <install_dir>/pkgs/impi_rt-2021.1b3-intel_44/*
+  - icc_rt covered by license at <install_dir>/pkgs/icc_rt-2021.1b3-intel_54/info/LICENSE.txt
+    file list: <install_dir>/pkgs/icc_rt-2021.1b3-intel_54/*
+  - intel-openmp covered by license at <install_dir>/pkgs/intel-openmp-2021.1b3-intel_54/info/LICENSE.txt
+    file list: <install_dir>/pkgs/intel-openmp-2021.1b3-intel_54/*
+  - daal covered by license at <install_dir>/pkgs/daal-2021.1b3-intel_31/info/LICENSE.txt
+    file list: <install_dir>/pkgs/daal-2021.1b3-intel_31/*
+  - libgcc-ng covered by license at <install_dir>/pkgs/libgcc-ng-9.1.0-hdf63c60_0/share/licenses/gcc-libs/RUNTIME.LIBRARY.EXCEPTION
+    file list: <install_dir>/pkgs/libgcc-ng-9.1.0-hdf63c60_0/*
+  - libstdcxx-ng covered by license at <install_dir>/pkgs/libstdcxx-ng-9.1.0-hdf63c60_0/share/licenses/libstdc++/RUNTIME.LIBRARY.EXCEPTION
+    file list: <install_dir>/pkgs/libstdcxx-ng-9.1.0-hdf63c60_0/*
+
+
+* Other names and brands may be claimed as the property of others.
+

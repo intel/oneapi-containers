@@ -1,0 +1,85 @@
+This text file is a "third-party-programs.txt" file referenced in the
+associated software license agreement. It applies to the "dev-utilities" tool
+that contains this file and is included as a supporting component for many
+Intel tools.
+
+The third-party components used by this tool, and their corresponding
+third-party licenses, are listed below. As specified in the associated license
+agreement, your use of these third-party components are subject to their
+corresponding third-party licenses, which solely and exclusively govern their
+use.
+
+All paths specified below are relative to the installation directory. The
+lists are organized by host OS, since not all third-party components apply to
+all operating systems.
+
+*Other names and brands may be claimed as the property of others.
+
+
+Windows OS Third-Party Components
+=================================
+
+Visual Studio Plugin Components : License : Object : Object Path
+----------------------------------------------------------------
+Newtonsoft.Json : MIT : Newtonsoft.Json.dll         : dev-utilities/latest/bin/OneApi.vsix:Newtonsoft.Json.dll
+SharpZipLib     : MIT : ICSharpCode.SharpZipLib.dll : dev-utilities/latest/bin/OneApi.vsix:ICSharpCode.SharpZipLib.dll
+
+one-cli Command-Line Tool Components : License : Object : Object Path
+---------------------------------------------------------------------
+Go Language     : BSD 3-clause "New" or "Revised" License
+cobra           : Apache    : oneapi-cli.exe : dev-utilities/latest/bin/oneapi-cli.exe
+go-colorful     : MIT       : oneapi-cli.exe : dev-utilities/latest/bin/oneapi-cli.exe
+go-runewidth    : MIT       : oneapi-cli.exe : dev-utilities/latest/bin/oneapi-cli.exe
+pflag           : BSD       : oneapi-cli.exe : dev-utilities/latest/bin/oneapi-cli.exe
+x-net           : BSD       : oneapi-cli.exe : dev-utilities/latest/bin/oneapi-cli.exe
+x-text          : BSD       : oneapi-cli.exe : dev-utilities/latest/bin/oneapi-cli.exe
+
+
+Linux OS Third-Party Components
+===============================
+
+oneapi-cli Command-Line Tool Components : License : Object : Object Path
+------------------------------------------------------------------------
+go-language     : BSD 3-clause "New" or "Revised" License
+gdamore tcell   : Apache License 2
+rivo tview      : MIT License
+cobra           : Apache    : oneapi-cli.exe : dev-utilities/latest/bin/oneapi-cli
+go-colorful     : MIT       : oneapi-cli.exe : dev-utilities/latest/bin/oneapi-cli
+go-runewidth    : MIT       : oneapi-cli.exe : dev-utilities/latest/bin/oneapi-cli
+pflag           : BSD       : oneapi-cli.exe : dev-utilities/latest/bin/oneapi-cli
+x-net           : BSD       : oneapi-cli.exe : dev-utilities/latest/bin/oneapi-cli
+x-text          : BSD       : oneapi-cli.exe : dev-utilities/latest/bin/oneapi-cli
+
+Eclipse Plugin Components : License : Object : Object Path
+----------------------------------------------------------
+cmake4eclipse       : Eclipse Public License 1.0
+javax.xml.bind      : Common Development and Distribution License 1.1
+javax.activation    : Common Development and Distribution License 1.1
+builder-api         : unknown       : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+commons-compress    : Apache        : org.apache.commons.compress_1.18.0.v20181121-2221.jar     : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+commons-lang        : Apache        : org.apache.commons.lang3_3.8.1.jar                        : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+commons-lang3       : Apache        : org.apache.commons.lang3_3.8.1.jar                        : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+concurrent          : Public domain : org.apache.commons.lang3_3.8.1.jar                        : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+config-builder      : MIT           : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+config-properties   : Apache        : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+config-xml          : Apache        : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+config-yaml         : Apache        : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+core-base           : unknown       : com.fasterxml.jackson.core.jackson-core_2.9.9.jar         : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+core-config         : GPLv3         : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+core-filter         : Apache        : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+core-filter         : Apache        : com.fasterxml.jackson.core.jackson-core_2.9.9.jar         : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+core-io             : Apache        : com.fasterxml.jackson.core.jackson-core_2.9.9.jar         : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+core-tools          : Apache        : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+core-util           : Apache        : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+core-util           : Apache        : com.fasterxml.jackson.core.jackson-core_2.9.9.jar         : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+datetime            : Apache        : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+jackson             : Apache        : com.fasterxml.jackson.core.jackson-core_2.9.9.jar         : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+jackson-annotations : Apache        : com.fasterxml.jackson.core.jackson-annotations_2.9.9.jar  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+jackson-databind    : Apache        : com.fasterxml.jackson.core.jackson-databind_2.9.9.1.jar   : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+jeromq              : MPL           : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+log4j               : Apache        : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+log4j-api           : unknown       : org.apache.logging.log4j.api_2.11.1.jar                   : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+logging-log4j       : Apache        : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+picocli             : Apache        : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+plugin-properties   : Apache        : javax.activation_1.1.0.v201211130549.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip
+rewrite             : Apache        : org.apache.logging.log4j.core_2.11.1.jar                  : dev-utilities/latest/ide-support/eclipse/com.intel.samples.update-1.0.0-SNAPSHOT.zip

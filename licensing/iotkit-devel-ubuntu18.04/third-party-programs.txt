@@ -1,0 +1,134 @@
+This text file is the "third-party-programs.txt" file specified in the associated
+license agreement. The third party programs files and the corresponding third 
+party licenses are listed below. As specified in the associated license 
+agreement, the listed third party programs files are subject to the corresponding
+third party licenses that solely and exclusively govern your use of the third 
+party programs.
+
+This third-party-programs.txt file applies to 
+Intel(R) oneAPI Base Toolkit (Base Kit),
+Intel(R) oneAPI HPC Toolkit (HPC Kit),
+Intel(R) oneAPI IoT Toolkit (IoT Kit),
+Intel(R) System Bring-up Toolkit (Bringup Kit),
+Intel(R) oneAPI DL Framework Developer Toolkit (DLFD Kit),
+Intel(R) AI Analytics Toolkit (AI Kit),
+Intel(R) Distribution of OpenVINO(TM) Toolkit,
+Intel(R) oneAPI Rendering Toolkit (Render Kit).
+
+All paths are relative to the oneAPI Toolkit installation directory. By default,
+it is /opt/intel/inteloneapi
+
+List of Third Party Programs:
+ Base Kit:
+  - Intel(R) oneAPI DPC++ Compiler    <install_dir>/compiler/latest/licensing/c/third-party-programs.txt
+  - Intel(R) oneAPI DPC++ Library (oneDPL)
+                                      <install_dir>/dpcpp/latest/licensing/third-party-programs.txt
+  - Intel(R) oneAPI Math Kernel Library (oneMKL)
+                                      <install_dir>/mkl/latest/licensing/third-party-programs.txt
+  - Intel(R) oneAPI Threading Building Blocks (oneTBB)
+                                      <install_dir>/tbb/latest/licensing/third-party-programs.txt
+  - Intel(R) oneAPI Data Analytics Library (oneDAL)
+                                      <install_dir>/daal/latest/licensing/third-party-programs.txt
+  - Intel(R) oneAPI Collective Communications Library (oneCCL)
+                                      <install_dir>/ccl/latest/licensing/third-party-programs.txt
+  - Intel(R) oneAPI Deep Neural Network Library (oneDNN)
+                                      <install_dir>/onednn/latest/licensing/third-party-programs.txt
+  - Intel(R) oneAPI Video Processing Library (oneVPL)
+                                      <install_dir>/vpl/latest/licensing/third-party-programs.txt
+  - Intel(R) DPC++ Compatibility Tool
+                                      <install_dir>/dpcpp-ct/latest/licensing/third-party-programs.txt
+  - GDB*                              <install_dir>/debugger/latest/licensing/third-party-programs.txt
+  - Intel(R) Integrated Performance Primitives (Intel(R) IPP)
+                                      <install_dir>/ipp/latest/licensing/third-party-programs.txt
+  - Intel(R) Distribution for Python* <install_dir>/intelpython/latest/licensing/third-party-programs.txt
+  - Intel(R) Vtune(TM) Profiler       <install_dir>/vtune/latest/licensing/third-party-programs.txt
+  - Intel(R) Advisor                  <install_dir>/advisor/latest/licensing/third-party-programs.txt
+  - Dev Utilities                     <install_dir>/dev-utilities/latest/licensing/third-party-programs.txt
+  - PSET                              <install_dir>/pset/licensing/third-party-programs.txt
+
+ HPC Kit:
+  - Intel(R) C++ Compiler     <install_dir>/compiler/latest/licensing/c/third-party-programs.txt
+  - Intel(R) Fortran Compiler <install_dir>/compiler/latest/licensing/fortran/third-party-programs.txt
+  - Intel(R) MPI Library      <install_dir>/mpi/latest/licensing/third-party-programs.txt
+  - Intel(R) Trace Analyzer and Collector 
+                              <install_dir>/itac/latest/licensing/third-party-programs.txt
+  - Intel(R) Inspector        <install_dir>/inspector/latest/licensing/third-party-programs.txt
+  - Intel(R) Cluster Checker  <install_dir>/clck/latest/licensing/third-party-programs.txt
+
+ IoT Kit:
+  - Intel(R) C++ Compiler    <install_dir>/compiler/latest/licensing/c/third-party-programs.txt
+  - Intel(R) Inspector       <install_dir>/inspector/latest/licensing/third-party-programs.txt
+  - IoT Plugins for Eclipse  <install_dir>/eclipse-iot-plugins/latest/licensing/third-party-programs.txt
+  - Eclipse IDE              <install_dir>/intel-eclipse-ide/latest/licensing/third-party-programs.txt
+
+ DLFD Kit:
+  - Intel(R) oneAPI Collective Communications Library (oneCCL)
+                 <install_dir>/ccl/latest/licensing/third-party-programs.txt
+  - Intel(R) oneAPI Deep Neural Network Library (oneDNN)
+                 <install_dir>/dnnl/latest/licensing/third-party-programs.txt
+
+ Render Kit:
+  - Intel(R) Embree             <install_dir>/embree/latest/licensing/third-party-programs.txt
+  - Intel(R) OSPRay             <install_dir>/ospray/latest/licensing/third-party-programs.txt
+  - Intel(R) Open Image Denoise <install_dir>/oidn/latest/licensing/third-party-programs.txt
+  - Intel(R) Open Volume Kernel Library (Intel(R) Open VKL)
+                                <install_dir>/openvkl/latest/licensing/third-party-programs.txt
+  - Intel(R) OpenSWR            <install_dir>/openswr/latest/licensing/third-party-programs.txt
+
+ Bringup Kit:
+  - Intel(R) Vtune(TM) Profiler <install_dir>/vtune/latest/licensing/third-party-programs.txt
+  - Intel(R) SoC Watch         <install_dir>/socwatch/latest/licensing/third-party-programs.txt
+  - Intel(R) System Debugger  <install_dir>/system_debugger/latest/licensing/third-party-programs.txt
+
+ AI Kit:
+  - Intel(R) Distribution for Python*
+                                  <install_dir>/intelpython/latest/licensing/third-party-programs.txt
+  - Intel(R) Optimization for Tensorflow*
+                                  <install_dir>/tensorflow/latest/licensing/third-party-programs.txt
+  - PyTorch*                      <install_dir>/pytorch/latest/licensing/third-party-programs.txt
+
+ Intel(R) Distribution of OpenVINO(TM) Toolkit
+                                  <install_dir>/openvino/latest/licensing/third-party-programs.txt
+
+List of Third Party Programs and the locations of their corresponding licenses:
+ - oneAPI Math Kernel Library covered by Intel Simplified Software License at 
+   <install_dir>/mkl/latest/licensing/license.txt
+ - Intel(R) Integrated Performance Primitives (Intel(R) IPP) covered by Intel 
+   Simplified Software License at <install_dir>/ipp/latest/licensing/license.txt
+ - oneAPI Threading Building Blocks covered by Intel Simplified Software License
+   at <install_dir>/tbb/latest/licensing/license.txt
+ - oneAPI Analytics Library covered by Intel Simplified Software License at
+   <install_dir>/al/latest/licensing/license.txt
+ - Intel(R) Distribution for Python* covered by Intel Simplified Software 
+   License at <install_dir>/python3/latest/licensing/license.txt
+ - Intel(R) MPI Library covered by Intel Simplified Software License at 
+   <install_dir>/mpi/latest/licensing/license.txt
+ - Intel(R) Cluster Checker covered by Intel Simplified Software License at
+   <install_dir>/clck/latest/licensing/license.txt
+ - oneAPI Collective Communications Library covered by Apache 2.0 License at 
+   <install_dir>/ccl/latest/licensing/license.txt
+ - Intel(R) Embree covered by Apache 2.0 License at
+   <install_dir>/embree/latest/licensing/license.txt
+ - Intel(R) OSPRay covered by Apache 2.0 License at
+   <install_dir>/ospray/latest/licensing/license.txt
+ - Intel(R) Open Image Denoise covered by Apache 2.0 License at
+   <install_dir>/oidn/latest/licensing/license.txt
+ - Intel(R) Open Volume Kernel Library covered by Apache 2.0 License at
+   <install_dir>/openvkl/latest/licensing/license.txt
+ - Intel(R) OpenSWR covered by Apache 2.0 License at
+   <install_dir>/openswr/latest/licensing/license.txt
+
+
+* The GNU* Project Debugger, GDB: Provided under GNU General Public License GPL V3.
+* Ncurses: Provided under modified MIT License.
+* Expat: Provided under MIT License.
+* Zlib: Provided under zlib License.
+* Python*: Provided under Python Software Foundation (PSF) License.
+* Libzma: Provided under public domain license.
+* The GDB Eclipse Integration: Provided under Eclipse Public License v.1.0.
+
+Target System Installation:
+* The GNU* Project Debugger, GDB-server: Provided under GNU General Public License GPL V3.
+* libelfdwarf: Provided under GNU Lesser General Public License Version 2.1.
+
+* Other names and brands may be claimed as the property of others.

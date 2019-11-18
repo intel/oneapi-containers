@@ -1,0 +1,7 @@
+This third-party-programs.txt file applies to
+Intel(R) oneAPI Threading Building Blocks (oneTBB) 2021.1 Beta.
+
+There are no any Third Party Programs included in this version of
+the Intel(R) oneAPI Threading Building Blocks (oneTBB).
+
+* Other names and brands may be claimed as the property of others.

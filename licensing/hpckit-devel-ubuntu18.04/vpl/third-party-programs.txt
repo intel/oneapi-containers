@@ -1,0 +1,50 @@
+-----------------------------
+Third Party Attributions
+-----------------------------
+
+This text file is the "third-party-programs.txt" file specified in the
+accompanying End User License Agreement for the Intel(R) Software Development
+Products ("Agreement"). All capitalized terms used but not defined in this
+text file have the same meaning as specified in the Agreement.
+
+The Third Party Programs files and the corresponding third party licenses are
+listed below.  As specified in the Agreement, the listed Third Party Programs
+files are subject to the corresponding third party licenses that solely and
+exclusively govern Your use of the Third Party Programs.
+This third-party-programs.txt file applies to oneAPI Video Processing Library.
+
+All paths are relative to the oneAPI Video Processing Library installation
+directory. By default, it is <oneapi_root>\vpl
+
+FFMpeg:
+  Project homepage: https://github.com/FFmpeg/FFmpeg
+  License URL: https://github.com/FFmpeg/FFmpeg/blob/master/COPYING.LGPLv2.1
+  Included in binaries: CPU plugin
+
+Intel(R) Media SDK:
+  Project homepage: https://github.com/Intel-Media-SDK/MediaSDK
+  License URL: https://github.com/Intel-Media-SDK/MediaSDK/blob/master/LICENSE
+  Included in binaries: Gen GPU plugin
+
+Intel implementation of video acceleration API (VAAPI):
+  Project homepage: https://github.com/intel/libva
+  License URL:https://github.com/intel/libva/blob/master/COPYING
+  Included in binaries: Graphics stack required for Gen GPU plugin
+
+Intel(R) Media Driver for VAAPI:
+  Project homepage:https://github.com/intel/media-driver
+  License URL:https://github.com/intel/media-driver/blob/master/LICENSE.md
+  Included in binaries:Graphics stack required for Gen GPU plugin
+
+libva-utils:
+  Project homepage:https://github.com/intel/libva-utils
+  License URL:https://github.com/intel/libva-utils/blob/master/COPYING
+  Included in binaries:diagnostic for Graphics stack required for Gen GPU 
+  plugin
+
+Intel(R) Graphics Memory Management Library:
+  Project homepage:https://github.com/intel/gmmlib
+  License URL:https://github.com/intel/gmmlib/blob/master/LICENSE.md
+  Included in binaries:Graphics stack required for Gen GPU plugin
+
+* Other names and brands may be claimed as the property of others.

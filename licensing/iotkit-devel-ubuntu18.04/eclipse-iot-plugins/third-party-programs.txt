@@ -1,0 +1,30 @@
+This text file is a "third-party-programs.txt" file referenced in the
+associated software license agreement. It applies to the "eclipse-iot-plugins"
+tool that contains this file and is included as a supporting component for
+related Intel tools.
+
+The third-party components used by this tool, and their corresponding
+third-party licenses, are listed below. As specified in the associated license
+agreement, your use of these third-party components are subject to their
+corresponding third-party licenses, which solely and exclusively govern their
+use.
+
+All paths specified below are relative to the installation directory. The
+lists are organized by host OS, since not all third-party components apply to
+all operating systems.
+
+*Other names and brands may be claimed as the property of others.
+
+
+Linux OS Third-Party Components
+===============================
+
+Eclipse Plugin Components : License : Object : Object Path
+----------------------------------------------------------
+hawtjni-runtime     : unknown   : jansi-1.11.jar                        : eclipse-iot-plugins/latest/YoctoProject/workbench-4/jansi-1.11.jar
+jansi               : unknown   : jansi-1.11.jar                        : eclipse-iot-plugins/latest/YoctoProject/workbench-4/jansi-1.11.jar
+jansi-native        : Apache    : jansi-1.11.jar                        : eclipse-iot-plugins/latest/YoctoProject/workbench-4/jansi-1.11.jar
+javax.json          : unknown   : org.glassfish.javax.json_1.1.4.jar    : eclipse-iot-plugins/latest/ide-support/org.eclipse.upm.sensorbrowser.update-1.0.0-SNAPSHOT.zip
+jline               : BSD       : wrtool.jar                            : eclipse-iot-plugins/latest/YoctoProject/workbench-4/wrtool.jar
+jline               : BSD       : jansi-1.11.jar                        : eclipse-iot-plugins/latest/YoctoProject/workbench-4/jansi-1.11.jar
+tcl                 : BSD       : libtcl8.6.so                          : eclipse-iot-plugins/latest/YoctoProject/setup/x86-linux2/lib/libtcl8.6.so
