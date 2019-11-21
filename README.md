@@ -8,7 +8,7 @@ Containers allow you to set up and configure environments for profiling and dist
 * You can save an environment and use the image to move that environment to another machine without additional setup.
 * You can prepare containers with different sets of languages and runtimes, analysis tools, or other tools, as needed.
 
-oneAPI Containers Get Started Guide ( [Linux](https://software.intel.com/get-started-with-intel-oneapi-linux-using-containers) | [Windows](https://software.intel.com/get-started-with-intel-oneapi-windows-using-containers) )
+[oneAPI Containers Get Started Guide](https://software.intel.com/get-started-with-intel-oneapi-linux-using-containers)
 
 [oneAPI Docker Hub](https://hub.docker.com/r/intel/oneapi)
 
@@ -26,7 +26,7 @@ docker pull "$image"
 docker run --device=/dev/dri -e http_proxy="$http_proxy" -e https_proxy="$https_proxy" -it "$image"
 ```
 
-* oneAPI Containers Get Started Guide ( [Linux](https://software.intel.com/en-us/get-started-with-intel-oneapi-linux-using-containers) | [Windows](https://software.intel.com/en-us/get-started-with-intel-oneapi-windows-using-containers) )
+* [oneAPI Containers Get Started Guide](https://software.intel.com/get-started-with-intel-oneapi-linux-using-containers)
 * [Base Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/basekit-devel-ubuntu18.04/Dockerfile)
 
 # Intel<sup>®</sup> oneAPI HPC Toolkit
@@ -39,7 +39,7 @@ docker pull "$image"
 docker run --device=/dev/dri -e http_proxy="$http_proxy" -e https_proxy="$https_proxy" -it "$image"
 ```
 
-* oneAPI Containers Get Started Guide ( [Linux](https://software.intel.com/en-us/get-started-with-intel-oneapi-linux-using-containers) | [Windows](https://software.intel.com/en-us/get-started-with-intel-oneapi-windows-using-containers) )
+* [oneAPI Containers Get Started Guide](https://software.intel.com/get-started-with-intel-oneapi-linux-using-containers)
 * [HPC Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/hpckit-devel-ubuntu18.04/Dockerfile)
 
 # Intel<sup>®</sup> oneAPI IoT Toolkit
@@ -52,7 +52,7 @@ docker pull "$image"
 docker run --device=/dev/dri -e http_proxy="$http_proxy" -e https_proxy="$https_proxy" -it "$image"
 ```
 
-* oneAPI Containers Get Started Guide ( [Linux](https://software.intel.com/en-us/get-started-with-intel-oneapi-linux-using-containers) | [Windows](https://software.intel.com/en-us/get-started-with-intel-oneapi-windows-using-containers) )
+* [oneAPI Containers Get Started Guide](https://software.intel.com/get-started-with-intel-oneapi-linux-using-containers)
 * [IoT Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/iotkit-devel-ubuntu18.04/Dockerfile)
 
 # Intel<sup>®</sup> oneAPI DL Framework Developer Toolkit
@@ -65,7 +65,7 @@ docker pull "$image"
 docker run --device=/dev/dri -e http_proxy="$http_proxy" -e https_proxy="$https_proxy" -it "$image"
 ```
 
-* oneAPI Containers Get Started Guide ( [Linux](https://software.intel.com/en-us/get-started-with-intel-oneapi-linux-using-containers) | [Windows](https://software.intel.com/en-us/get-started-with-intel-oneapi-windows-using-containers) )
+* [oneAPI Containers Get Started Guide](https://software.intel.com/get-started-with-intel-oneapi-linux-using-containers)
 * [DLFD Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/dlfdkit-devel-ubuntu18.04/Dockerfile)
 
 # Intel<sup>®</sup> AI Analytics Toolkit
@@ -78,7 +78,7 @@ docker pull "$image"
 docker run --device=/dev/dri -e http_proxy="$http_proxy" -e https_proxy="$https_proxy" -it "$image"
 ```
 
-* oneAPI Containers Get Started Guide ( [Linux](https://software.intel.com/en-us/get-started-with-intel-oneapi-linux-using-containers) | [Windows](https://software.intel.com/en-us/get-started-with-intel-oneapi-windows-using-containers) )
+* [oneAPI Containers Get Started Guide](https://software.intel.com/get-started-with-intel-oneapi-linux-using-containers)
 * [AI Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/aikit-devel-ubuntu18.04/Dockerfile)
 
 # Using Intel Advisor/Inspector/vTune with containers
@@ -88,4 +88,3 @@ When using these tools, extra capabilites have to be provided to the container: 
 ```sh
 docker run --cap-add=SYS_ADMIN --cap-add=SYS_PTRACE --device=/dev/dri -e http_proxy="$http_proxy" -e https_proxy="$https_proxy" -it "$image"
 ```
-
