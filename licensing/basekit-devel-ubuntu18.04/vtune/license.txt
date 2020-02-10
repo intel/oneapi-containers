@@ -237,7 +237,7 @@ download, install, copy or otherwise use the Materials.
      provided to a third party as a service, such as in the salesforce.com 
      service business model).
 
- 4.2 Pre-Release Materials. If You receive Pre-Release Materials, You may 
+ 4.2Â Pre-Release Materials. If You receive Pre-Release Materials, You may 
      reproduce a reasonable number of copies, and use the Pre-Release Materials 
      for evaluation, and testing purposes. You may not (i) modify or incorporate
      the Pre-Release Materials into any product You are developing; (ii) 
@@ -262,7 +262,7 @@ download, install, copy or otherwise use the Materials.
      concerning Your use of the Materials in Safety Critical Applications. 
      Should You use the Materials for Safety-Critical Applications or in any 
      type of a system or application in which the failure of the Materials could
-     create a situation where personal injury or death may occur (e.g.,  medical
+     create a situation where personal injury or death may occur (e.g.,Â  medical
      systems, life sustaining or lifesaving systems) ("Lifesaving 
      Applications"), You agree to indemnify, defend, and hold Intel and its 
      representatives harmless against all claims, costs, damages, and expenses, 
@@ -292,7 +292,7 @@ download, install, copy or otherwise use the Materials.
      fees, that arise or result from Your Cloud Provider's use, misuse or 
      disclosure of the Materials.
 
- 4.5 Media Format Codecs and Digital Rights Management.  You acknowledge and 
+ 4.5 Media Format Codecs and Digital Rights Management.Â  You acknowledge and 
      agree that Your use of the Materials or distribution of the 
      Redistributables with Your Product as permitted by this Agreement may 
      require You to procure license(s) from one or more third parties that may 

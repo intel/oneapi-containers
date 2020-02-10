@@ -1,4 +1,4 @@
-# Copyright (c) 2019 Intel Corporation.
+# Copyright (c) 2019-2020 Intel Corporation.
 # SPDX-License-Identifier: BSD-3-Clause
 
 # requires os-tools image
@@ -21,39 +21,42 @@ RUN echo "deb $apt_repo all main" > /etc/apt/sources.list.d/oneAPI.list
 
 RUN apt-get update -y
 
-# install oneAPI Base Toolkit
+# install Intel(R) oneAPI Base Toolkit
 RUN apt-get install -y -o=Dpkg::Use-Pty=0 \
-intel-oneapi-tbb-devel \
+intel-basekit-getting-started \
+intel-oneapi-onevpl-devel \
 intel-oneapi-common-vars \
 intel-oneapi-common-licensing \
+intel-oneapi-mpi-devel \
 intel-oneapi-ccl \
-intel-oneapi-ipp-devel \
 intel-oneapi-python \
-intel-oneapi-advisor \
-intel-oneapi-dpcpp-debugger \
-intel-oneapi-daal-devel \
-intel-oneapi-dev-utilities \
-intel-oneapi-dpcpp-compiler \
-intel-oneapi-libdpstd-devel \
 intel-oneapi-dnnl-devel \
 intel-oneapi-mkl-devel \
+intel-oneapi-dev-utilities \
+intel-oneapi-daal-devel \
 intel-oneapi-vtune \
-intel-oneapi-onevpl-devel \
+intel-oneapi-ipp-devel \
+intel-oneapi-tbb-devel \
+intel-oneapi-libdpstd-devel \
+intel-oneapi-dpcpp-compiler \
+intel-oneapi-dpcpp-debugger \
+intel-oneapi-advisor \
 --
 
-# install gpu drivers https://github.com/intel/compute-runtime/releases/
+# install Intel(R) Graphics Compute Runtime for OpenCL(TM)
+# https://github.com/intel/compute-runtime/releases/
 RUN apt-get install -y -o=Dpkg::Use-Pty=0 wget && \
 mkdir neo && \
 cd neo && \
 wget --no-verbose \
-    https://github.com/intel/compute-runtime/releases/download/19.43.14583/intel-gmmlib_19.3.2_amd64.deb \
-    https://github.com/intel/compute-runtime/releases/download/19.43.14583/intel-igc-core_1.0.2714.1_amd64.deb \
-    https://github.com/intel/compute-runtime/releases/download/19.43.14583/intel-igc-opencl_1.0.2714.1_amd64.deb \
-    https://github.com/intel/compute-runtime/releases/download/19.43.14583/intel-opencl_19.43.14583_amd64.deb \
-    https://github.com/intel/compute-runtime/releases/download/19.43.14583/intel-ocloc_19.43.14583_amd64.deb \
-    https://github.com/intel/compute-runtime/releases/download/19.43.14583/ww43.sum \
+    https://github.com/intel/compute-runtime/releases/download/20.04.15428/intel-gmmlib_19.4.1_amd64.deb \
+    https://github.com/intel/compute-runtime/releases/download/20.04.15428/intel-igc-core_1.0.3151_amd64.deb \
+    https://github.com/intel/compute-runtime/releases/download/20.04.15428/intel-igc-opencl_1.0.3151_amd64.deb \
+    https://github.com/intel/compute-runtime/releases/download/20.04.15428/intel-opencl_20.04.15428_amd64.deb \
+    https://github.com/intel/compute-runtime/releases/download/20.04.15428/intel-ocloc_20.04.15428_amd64.deb \
+    https://github.com/intel/compute-runtime/releases/download/20.04.15428/ww04.sum \
 && \
-sha256sum -c ww43.sum && \
+sha256sum -c ww04.sum && \
 dpkg -i *.deb && \
 cd .. && \
 rm -r neo && \
