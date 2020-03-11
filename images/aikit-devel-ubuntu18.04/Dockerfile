@@ -9,7 +9,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y
 
 # install Intel(R) AI Analytics Toolkit
-RUN apt-get install -y -o=Dpkg::Use-Pty=0 \
+RUN apt-get --no-install-recommends install -y -o=Dpkg::Use-Pty=0 \
 intel-aikit-getting-started \
 intel-oneapi-common-vars \
 intel-oneapi-common-licensing \

@@ -8,7 +8,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y
 
-RUN apt-get install -y -o=Dpkg::Use-Pty=0 \
+RUN apt-get --no-install-recommends install -y -o=Dpkg::Use-Pty=0 \
 # make
 build-essential \
 # library helper
