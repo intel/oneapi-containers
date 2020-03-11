@@ -9,7 +9,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y
 
 # install Intel(R) oneAPI DL Framework Developer Toolkit
-RUN apt-get install -y -o=Dpkg::Use-Pty=0 \
+RUN apt-get --no-install-recommends install -y -o=Dpkg::Use-Pty=0 \
 intel-dlfdkit-getting-started \
 intel-oneapi-common-vars \
 intel-oneapi-common-licensing \

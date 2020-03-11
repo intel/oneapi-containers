@@ -22,7 +22,7 @@ RUN echo "deb $apt_repo all main" > /etc/apt/sources.list.d/oneAPI.list
 RUN apt-get update -y
 
 # install Intel(R) oneAPI Base Toolkit
-RUN apt-get install -y -o=Dpkg::Use-Pty=0 \
+RUN apt-get --no-install-recommends install -y -o=Dpkg::Use-Pty=0 \
 intel-basekit-getting-started \
 intel-oneapi-onevpl-devel \
 intel-oneapi-common-vars \
@@ -45,7 +45,7 @@ intel-oneapi-advisor \
 
 # install Intel(R) Graphics Compute Runtime for OpenCL(TM)
 # https://github.com/intel/compute-runtime/releases/
-RUN apt-get install -y -o=Dpkg::Use-Pty=0 wget && \
+RUN apt-get --no-install-recommends install -y -o=Dpkg::Use-Pty=0 wget && \
 mkdir neo && \
 cd neo && \
 wget --no-verbose \
