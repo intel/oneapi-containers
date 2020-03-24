@@ -9,15 +9,14 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y
 
 # install Intel(R) oneAPI IoT Toolkit
-RUN apt-get --no-install-recommends install -y -o=Dpkg::Use-Pty=0 \
+RUN apt-get install -y --no-install-recommends -o=Dpkg::Use-Pty=0 \
 intel-iotkit-getting-started \
-intel-oneapi-common-vars \
-intel-oneapi-common-licensing \
 intel-oneapi-dev-utilities \
 intel-oneapi-iot-eclipse-plugins \
-intel-oneapi-tbb-devel \
-intel-oneapi-icc \
 intel-oneapi-inspector \
+intel-oneapi-common-vars \
+intel-oneapi-common-licensing \
+intel-oneapi-icc \
 --
 
 # entrypoint

@@ -22,45 +22,33 @@ RUN echo "deb $apt_repo all main" > /etc/apt/sources.list.d/oneAPI.list
 RUN apt-get update -y
 
 # install Intel(R) oneAPI Base Toolkit
-RUN apt-get --no-install-recommends install -y -o=Dpkg::Use-Pty=0 \
+RUN apt-get install -y --no-install-recommends -o=Dpkg::Use-Pty=0 \
 intel-basekit-getting-started \
-intel-oneapi-onevpl-devel \
+intel-oneapi-ipp-devel \
+intel-oneapi-dev-utilities \
+intel-oneapi-tbb-devel \
+intel-oneapi-python \
+intel-oneapi-advisor \
 intel-oneapi-common-vars \
 intel-oneapi-common-licensing \
-intel-oneapi-mpi-devel \
 intel-oneapi-ccl \
-intel-oneapi-python \
-intel-oneapi-dnnl-devel \
-intel-oneapi-mkl-devel \
-intel-oneapi-dev-utilities \
 intel-oneapi-daal-devel \
 intel-oneapi-vtune \
-intel-oneapi-ipp-devel \
-intel-oneapi-tbb-devel \
+intel-oneapi-dnnl-devel \
+intel-oneapi-mkl-devel \
+intel-oneapi-onevpl-devel \
 intel-oneapi-libdpstd-devel \
 intel-oneapi-dpcpp-compiler \
 intel-oneapi-dpcpp-debugger \
-intel-oneapi-advisor \
 --
 
 # install Intel(R) Graphics Compute Runtime for OpenCL(TM)
-# https://github.com/intel/compute-runtime/releases/
-RUN apt-get --no-install-recommends install -y -o=Dpkg::Use-Pty=0 wget && \
-mkdir neo && \
-cd neo && \
-wget --no-verbose \
-    https://github.com/intel/compute-runtime/releases/download/20.04.15428/intel-gmmlib_19.4.1_amd64.deb \
-    https://github.com/intel/compute-runtime/releases/download/20.04.15428/intel-igc-core_1.0.3151_amd64.deb \
-    https://github.com/intel/compute-runtime/releases/download/20.04.15428/intel-igc-opencl_1.0.3151_amd64.deb \
-    https://github.com/intel/compute-runtime/releases/download/20.04.15428/intel-opencl_20.04.15428_amd64.deb \
-    https://github.com/intel/compute-runtime/releases/download/20.04.15428/intel-ocloc_20.04.15428_amd64.deb \
-    https://github.com/intel/compute-runtime/releases/download/20.04.15428/ww04.sum \
-&& \
-sha256sum -c ww04.sum && \
-dpkg -i *.deb && \
-cd .. && \
-rm -r neo && \
-apt-get purge -y wget
+RUN echo 'deb [trusted=yes arch=amd64] https://repositories.intel.com/graphics/ubuntu bionic main' \
+> /etc/apt/sources.list.d/intel-graphics.list
+
+RUN apt-get update -y && \
+apt-get install -y --no-install-recommends -o=Dpkg::Use-Pty=0 \
+intel-opencl
 
 # entrypoint
 COPY entrypoint.sh /

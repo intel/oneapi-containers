@@ -1,12 +1,15 @@
+Intel(R) Trace Analyzer and Collector 2021.1-beta05 Third Party Programs File.
+
 This file is the "third-party-programs.txt" file specified in the associated 
 Intel end user license agreement for the Intel software you are licensing. The 
 third party programs and their corresponding required notices and/or license 
 terms are listed below.
 
-This third-party-programs.txt file applies to the Intel(R) Trace Analyzer and 
-Collector 2021.1-beta04 .
+-------------------------------------------------------------------------------
 
-1. BOOST*: Boost Software License - Version 1.0 - August 17th, 2003
+1. BOOST
+
+  Boost Software License - Version 1.0 - August 17th, 2003
 
   Permission is hereby granted, free of charge, to any person or organization
   obtaining a copy of the software and accompanying documentation covered by
@@ -30,53 +33,58 @@ Collector 2021.1-beta04 .
   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
   DEALINGS IN THE SOFTWARE.
 
-2. Qt*: GNU LESSER GENERAL PUBLIC LICENSE - Version 3 - 29 June 2007
+-------------------------------------------------------------------------------
+
+2. Qt
 
    Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
    Everyone is permitted to copy and distribute verbatim copies
    of this license document, but changing it is not allowed.
 
-    This version of the GNU Lesser General Public License incorporates
+
+  GNU LESSER GENERAL PUBLIC LICENSE - Version 3 - 29 June 2007
+
+  This version of the GNU Lesser General Public License incorporates
   the terms and conditions of version 3 of the GNU General Public
   License, supplemented by the additional permissions listed below.
 
     0. Additional Definitions.
 
-    As used herein, "this License" refers to version 3 of the GNU Lesser
+  As used herein, "this License" refers to version 3 of the GNU Lesser
   General Public License, and the "GNU GPL" refers to version 3 of the GNU
   General Public License.
 
-    "The Library" refers to a covered work governed by this License,
+  "The Library" refers to a covered work governed by this License,
   other than an Application or a Combined Work as defined below.
 
-    An "Application" is any work that makes use of an interface provided
+  An "Application" is any work that makes use of an interface provided
   by the Library, but which is not otherwise based on the Library.
   Defining a subclass of a class defined by the Library is deemed a mode
   of using an interface provided by the Library.
 
-    A "Combined Work" is a work produced by combining or linking an
+  A "Combined Work" is a work produced by combining or linking an
   Application with the Library.  The particular version of the Library
   with which the Combined Work was made is also called the "Linked
   Version".
 
-    The "Minimal Corresponding Source" for a Combined Work means the
+  The "Minimal Corresponding Source" for a Combined Work means the
   Corresponding Source for the Combined Work, excluding any source code
   for portions of the Combined Work that, considered in isolation, are
   based on the Application, and not on the Linked Version.
 
-    The "Corresponding Application Code" for a Combined Work means the
+  The "Corresponding Application Code" for a Combined Work means the
   object code and/or source code for the Application, including any data
   and utility programs needed for reproducing the Combined Work from the
   Application, but excluding the System Libraries of the Combined Work.
 
     1. Exception to Section 3 of the GNU GPL.
 
-    You may convey a covered work under sections 3 and 4 of this License
+  You may convey a covered work under sections 3 and 4 of this License
   without being bound by section 3 of the GNU GPL.
 
     2. Conveying Modified Versions.
 
-    If you modify a copy of the Library, and, in your modifications, a
+  If you modify a copy of the Library, and, in your modifications, a
   facility refers to a function or data to be supplied by an Application
   that uses the facility (other than as an argument passed when the
   facility is invoked), then you may convey a copy of the modified
@@ -92,7 +100,7 @@ Collector 2021.1-beta04 .
 
     3. Object Code Incorporating Material from Library Header Files.
 
-    The object code form of an Application may incorporate material from
+  The object code form of an Application may incorporate material from
   a header file that is part of the Library.  You may convey such object
   code under terms of your choice, provided that, if the incorporated
   material is not limited to numerical parameters, data structure
@@ -108,7 +116,7 @@ Collector 2021.1-beta04 .
 
     4. Combined Works.
 
-    You may convey a Combined Work under terms of your choice that,
+  You may convey a Combined Work under terms of your choice that,
   taken together, effectively do not restrict modification of the
   portions of the Library contained in the Combined Work and reverse
   engineering for debugging such modifications, if you also do each of
@@ -157,7 +165,7 @@ Collector 2021.1-beta04 .
 
     5. Combined Libraries.
 
-    You may place library facilities that are a work based on the
+  You may place library facilities that are a work based on the
   Library side by side in a single library together with other library
   facilities that are not Applications and are not covered by this
   License, and convey such a combined library under terms of your
@@ -173,12 +181,12 @@ Collector 2021.1-beta04 .
 
     6. Revised Versions of the GNU Lesser General Public License.
 
-    The Free Software Foundation may publish revised and/or new versions
+  The Free Software Foundation may publish revised and/or new versions
   of the GNU Lesser General Public License from time to time. Such new
   versions will be similar in spirit to the present version, but may
   differ in detail to address new problems or concerns.
 
-    Each version is given a distinguishing version number. If the
+  Each version is given a distinguishing version number. If the
   Library as you received it specifies that a certain numbered version
   of the GNU Lesser General Public License "or any later version"
   applies to it, you have the option of following the terms and
@@ -188,16 +196,35 @@ Collector 2021.1-beta04 .
   General Public License, you may choose any version of the GNU Lesser
   General Public License ever published by the Free Software Foundation.
 
-    If the Library as you received it specifies that a proxy can decide
+  If the Library as you received it specifies that a proxy can decide
   whether future versions of the GNU Lesser General Public License shall
   apply, that proxy's public statement of acceptance of any version is
   permanent authorization for you to choose that version for the
   Library.
 
-3. ITT API: BSD license
+-------------------------------------------------------------------------------
 
-  Copyright (c) 2005-2014 Intel Corporation. All rights reserved.
-  All rights reserved.
+3. ITT API
+
+   Copyright (c) 2005-2014 Intel Corporation. All rights reserved.
+
+
+
+   OTF2
+
+   Copyright (c) 2009-2012, RWTH Aachen University, Germany
+   Copyright (c) 2009-2012, Gesellschaft fuer numerische Simulation mbH
+                            Braunschweig, Germany
+   Copyright (c) 2009-2014, Technische Universitaet Dresden, Germany
+   Copyright (c) 2009-2012, University of Oregon, Eugene, USA
+   Copyright (c) 2009-2014, Forschungszentrum Juelich GmbH, Germany
+   Copyright (c) 2009-2014, German Research School for Simulation Sciences GmbH
+                            Juelich/Aachen, Germany
+   Copyright (c) 2009-2013, Technische Universitaet Muenchen, Germany
+   All rights reserved.
+
+
+  The -3-Clause BSD license
 
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions
@@ -209,7 +236,7 @@ Collector 2021.1-beta04 .
       notice, this list of conditions and the following disclaimer in
       the documentation and/or other materials provided with the
       distribution.
-    * Neither the name of Intel Corporation nor the names of its
+    * Neither the name of the copyright holder nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
 
@@ -225,63 +252,17 @@ Collector 2021.1-beta04 .
   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-4. OTF2*: BSD license
+-------------------------------------------------------------------------------
 
-  OTF2 LICENSE AGREEMENT
+4. libdwarf
 
-  Copyright (c) 2009-2012, RWTH Aachen University, Germany
-  Copyright (c) 2009-2012, Gesellschaft fuer numerische Simulation mbH
-                         Braunschweig, Germany
-  Copyright (c) 2009-2014, Technische Universitaet Dresden, Germany
-  Copyright (c) 2009-2012, University of Oregon, Eugene, USA
-  Copyright (c) 2009-2014, Forschungszentrum Juelich GmbH, Germany
-  Copyright (c) 2009-2014, German Research School for Simulation Sciences GmbH,
-                         Juelich/Aachen, Germany
-  Copyright (c) 2009-2013, Technische Universitaet Muenchen, Germany
-  All rights reserved.
-
-  Redistribution and use in source and binary forms, with or without
-  modification, are permitted provided that the following conditions are
-  met:
-
-      * Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-
-      * Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-
-      * Neither the names of
-          RWTH Aachen University,
-          Gesellschaft fuer numerische Simulation mbH Braunschweig,
-          Technische Universitaet Dresden,
-          University of Oregon, Eugene,
-          Forschungszentrum Juelich GmbH,
-          German Research School for Simulation Sciences GmbH, or the
-          Technische Universitaet Muenchen,
-      nor the names of their contributors may be used to endorse or promote
-      products derived from this software without specific prior written
-      permission.
-
-  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+   Copyright (C) 1991, 1999 Free Software Foundation, Inc.
+   59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+   Everyone is permitted to copy and distribute verbatim copies
+   of this license document, but changing it is not allowed.
 
 
-5. libdwarf: GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999
-
-  Copyright (C) 1991, 1999 Free Software Foundation, Inc.
-  59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
-  Everyone is permitted to copy and distribute verbatim copies
-  of this license document, but changing it is not allowed.
+  GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999
 
   [This is the first released version of the Lesser GPL. It also counts
   as the successor of the GNU Library Public License, version 2, hence
@@ -696,12 +677,17 @@ Collector 2021.1-beta04 .
   EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH 
   DAMAGES.
 
-6. libelf: GNU LESSER GENERAL PUBLIC LICENSE Version 2, June 1991
+-------------------------------------------------------------------------------
+
+5. libelf
 
   Copyright (C) 1991 Free Software Foundation, Inc.
   59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
   Everyone is permitted to copy and distribute verbatim copies
   of this license document, but changing it is not allowed.
+
+
+  GNU LESSER GENERAL PUBLIC LICENSE Version 2, June 1991
 
   [This is the first released version of the Library GPL. It is numbered 2 
   because it goes with version 2 of the ordinary GPL.]
@@ -1095,7 +1081,12 @@ Collector 2021.1-beta04 .
   FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF SUCH HOLDER 
   OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
-7. libunwind: Apache License - Version 2.0 - January 2004
+-------------------------------------------------------------------------------
+
+6. libunwind
+
+
+  Apache License - Version 2.0 - January 2004
 
     http://www.apache.org/licenses/
 
@@ -1270,10 +1261,14 @@ Collector 2021.1-beta04 .
       incurred by, or claims asserted against, such Contributor by reason
       of your accepting any such warranty or additional liability.
 
-8. MPICH2: Mpich license
+-------------------------------------------------------------------------------
 
-  Copyright Notice
-   + 2002 University of Chicago
+7. MPICH2
+
+  Copyright Notice 2002 University of Chicago
+
+
+  Mpich license
 
   Permission is hereby granted to use, reproduce, prepare derivative works, and
   to redistribute to others.  This software was authored by:
@@ -1305,202 +1300,106 @@ Collector 2021.1-beta04 .
   product, or process disclosed, or represents that its use would not infringe
   privately owned rights.
 
-9. OpenBSD*: BSD license
+-------------------------------------------------------------------------------
 
-  Copyright (c) 1982, 1986, 1990, 1991, 1993
-    The Regents of the University of California.  All rights reserved.
+8. OpenBSD
 
-   Redistribution and use in source and binary forms, with or without
-   modification, are permitted provided that the following conditions
-   are met:
-   1. Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-   2. Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-   3. All advertising materials mentioning features or use of this software
-      must display the following acknowledgement:
-      This product includes software developed by the University of
-      California, Berkeley and its contributors.
-   4. Neither the name of the University nor the names of its contributors
-      may be used to endorse or promote products derived from this software
-      without specific prior written permission.
+   Copyright (c) 1982, 1986, 1990, 1991, 1993
+   The Regents of the University of California.  All rights reserved.
 
-   THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
-   ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-   ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
-   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-   DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
-   OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-   HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-   LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
-   OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
-   SUCH DAMAGE.
 
-10. OpenSHMEM*: BSD license
+   OpenSHMEM
 
-  Copyright (c) 2016-2017
-    Stony Brook University
-  Copyright (c) 2015 - 2017
-    Los Alamos National Security, LLC.
-  Copyright (c) 2011 - 2016
-    University of Houston System and UT-Battelle, LLC.
-  Copyright (c) 2009 - 2016
-    Silicon Graphics International Corp.  SHMEM is copyrighted
-    by Silicon Graphics International Corp. (SGI) The OpenSHMEM API
-    (shmem) is released by Open Source Software Solutions, Inc., under an
-    agreement with Silicon Graphics International Corp. (SGI).
-  Copyright (c) 2016-2017
-    Hewlett Packard Enterprise
+   Copyright (c) 2016-2017 Stony Brook University
+   Copyright (c) 2015 - 2017 Los Alamos National Security, LLC.
+   Copyright (c) 2011 - 2016 University of Houston System and UT-Battelle, LLC.
+   Copyright (c) 2009 - 2016 
+   Silicon Graphics International Corp.  SHMEM is copyrighted
+   by Silicon Graphics International Corp. (SGI) The OpenSHMEM API
+   (shmem) is released by Open Source Software Solutions, Inc., under an
+   agreement with Silicon Graphics International Corp. (SGI).
+   Copyright (c) 2016-2017 Hewlett Packard Enterprise
 
-  All rights reserved.
+
+  The -4-Clause BSD license
 
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions
   are met:
+  1. Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+  2. Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+  3. All advertising materials mentioning features or use of this software
+     must display the following acknowledgement:
+     This product includes software developed by the organization.
+  4. Neither the name of the copyright holder nor the names of its contributors
+     may be used to endorse or promote products derived from this software
+     without specific prior written permission.
 
-  o Redistributions of source code must retain the above copyright notice,
-    this list of conditions and the following disclaimers.
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE 
+  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL 
+  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS 
+  OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) 
+  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT 
+  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY 
+  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF 
+  SUCH DAMAGE.
 
-  o Redistributions in binary form must reproduce the above copyright
-    notice, this list of conditions and the following disclaimer in the
-    documentation and/or other materials provided with the distribution.
+-------------------------------------------------------------------------------
 
-  o Neither the name of the University of Houston System,
-    UT-Battelle, LLC. nor the names of its contributors may be used to
-    endorse or promote products derived from this software without specific
-    prior written permission.
+9. papi
 
-  o Neither the name of Los Alamos National Security, LLC, Los Alamos
-    National Laboratory, LANL, the U.S. Government, nor the names of its
-    contributors may be used to endorse or promote products derived from
-    this software without specific prior written permission.
+   Copyright (c) 2013-2019 Fredrik Forsmo
 
-  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-  HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
-  TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-  PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-11. papi: MIT license
+   xcb
 
-  Copyright (c) 2013-2019 Fredrik Forsmo
+   Copyright (c) <year> <copyright holders>
 
-  Permission is hereby granted, free of charge, to any person obtaining a copy of
-  this software and associated documentation files (the "Software"), to deal in
-  the Software without restriction, including without limitation the rights to
-  use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-  the Software, and to permit persons to whom the Software is furnished to do so,
-  subject to the following conditions:
 
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
+   libxkbcommon
 
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-  FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-  IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+   Copyright (c) 2009-2012, 2016 Daniel Stone
+   Copyright (c) 2012 Ran Benita <ran234@gmail.com>
+   Copyright (c) 2010, 2012 Intel Corporation
+   Copyright (c) 2008, 2009 Dan Nicholson
+   Copyright (c) 2010 Francisco Jerez <currojerez@riseup.net>
 
-12. xcb: MIT license
 
-  Copyright (c) <year> <copyright holders>
+   my_getopt
 
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
+   Copyright 1997-2001, Benjamin Sittler
 
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
 
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-  SOFTWARE.
+   zlib: MIT license
 
-13. libxkbcommon: MIT license
+   Copyright (c) <''year''> <''copyright holders''>
 
-  Copyright (c) 2009-2012, 2016 Daniel Stone
-  Copyright (c) 2012 Ran Benita <ran234@gmail.com>
-  Copyright (c) 2010, 2012 Intel Corporation
-  Copyright (c) 2008, 2009 Dan Nicholson
-  Copyright (c) 2010 Francisco Jerez <currojerez@riseup.net>
 
-  Permission is hereby granted, free of charge, to any person obtaining a
-  copy of this software and associated documentation files (the "Software"),
-  to deal in the Software without restriction, including without limitation
-  the rights to use, copy, modify, merge, publish, distribute, sublicense,
-  and/or sell copies of the Software, and to permit persons to whom the
-  Software is furnished to do so, subject to the following conditions:
+   MIT License
 
-  The above copyright notice and this permission notice (including the next
-  paragraph) shall be included in all copies or substantial portions of the
-  Software.
+   Permission is hereby granted, free of charge, to any person obtaining a copy of
+   this software and associated documentation files (the "Software"), to deal in
+   the Software without restriction, including without limitation the rights to
+   use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+   the Software, and to permit persons to whom the Software is furnished to do so,
+   subject to the following conditions:
+ 
+   The above copyright notice and this permission notice shall be included in all
+   copies or substantial portions of the Software.
+ 
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+   FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+   COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+   IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+   CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ 
+-------------------------------------------------------------------------------
 
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
-  THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-  DEALINGS IN THE SOFTWARE.
-
-14. my_getopt: MIT license
-
-  Copyright 1997-2001, Benjamin Sittler
-
-  Permission is hereby granted, free of charge, to any person
-  obtaining a copy of this software and associated documentation
-  files (the "Software"), to deal in the Software without
-  restriction, including without limitation the rights to use, copy,
-  modify, merge, publish, distribute, sublicense, and/or sell copies
-  of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be
-  included in all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-  NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-  HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-  DEALINGS IN THE SOFTWARE.
-
-15. zlib: MIT license
-
-  Copyright (c) <''year''> <''copyright holders''>
-
-  This software is provided 'as-is', without any express or implied
-  warranty. In no event will the authors be held liable for any damages
-  arising from the use of this software.
-
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
-
-* Other names and brands may be claimed as the property of others.
+Other names and brands may be claimed as the property of others.
