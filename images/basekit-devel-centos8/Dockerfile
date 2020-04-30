@@ -34,6 +34,8 @@ RUN dnf install -y intel-oneapi-python
 RUN dnf install -y intel-oneapi-tbb-devel
 RUN dnf install -y intel-oneapi-vtune
 
+COPY fpgavars.sh /opt/intel/inteloneapi/compiler/latest/linux/lib/oclfpga
+
 # install Intel(R) Graphics Compute Runtime for OpenCL(TM)
 RUN echo $'\
 [intel-graphics]\n\

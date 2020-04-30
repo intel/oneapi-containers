@@ -11,12 +11,12 @@ RUN apt-get update -y
 # install Intel(R) AI Analytics Toolkit
 RUN apt-get install -y --no-install-recommends -o=Dpkg::Use-Pty=0 \
 intel-aikit-getting-started \
-intel-oneapi-tensorflow \
+intel-oneapi-pytorch \
 intel-oneapi-dev-utilities \
 intel-oneapi-python \
 intel-oneapi-common-vars \
 intel-oneapi-common-licensing \
-intel-oneapi-pytorch \
+intel-oneapi-tensorflow \
 --
 
 # entrypoint

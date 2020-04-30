@@ -11,12 +11,12 @@ RUN apt-get update -y
 # install Intel(R) oneAPI IoT Toolkit
 RUN apt-get install -y --no-install-recommends -o=Dpkg::Use-Pty=0 \
 intel-iotkit-getting-started \
-intel-oneapi-dev-utilities \
 intel-oneapi-iot-eclipse-plugins \
+intel-oneapi-dev-utilities \
 intel-oneapi-inspector \
+intel-oneapi-icc \
 intel-oneapi-common-vars \
 intel-oneapi-common-licensing \
-intel-oneapi-icc \
 --
 
 # entrypoint

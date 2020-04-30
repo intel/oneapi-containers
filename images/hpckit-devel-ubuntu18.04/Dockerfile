@@ -12,14 +12,14 @@ RUN apt-get update -y
 RUN apt-get install -y --no-install-recommends -o=Dpkg::Use-Pty=0 \
 intel-hpckit-getting-started \
 intel-oneapi-dev-utilities \
-intel-oneapi-clck \
 intel-oneapi-inspector \
-intel-oneapi-mpi-devel \
+intel-oneapi-icc \
+intel-oneapi-ifort \
+intel-oneapi-clck \
 intel-oneapi-common-vars \
 intel-oneapi-common-licensing \
 intel-oneapi-itac \
-intel-oneapi-icc \
-intel-oneapi-ifort \
+intel-oneapi-mpi-devel \
 --
 
 # entrypoint

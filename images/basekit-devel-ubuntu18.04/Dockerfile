@@ -26,29 +26,33 @@ RUN apt-get install -y --no-install-recommends -o=Dpkg::Use-Pty=0 \
 intel-basekit-getting-started \
 intel-oneapi-ipp-devel \
 intel-oneapi-dev-utilities \
-intel-oneapi-tbb-devel \
-intel-oneapi-python \
+intel-oneapi-onevpl-devel \
 intel-oneapi-advisor \
+intel-oneapi-python \
+intel-oneapi-libdpstd-devel \
+intel-oneapi-dpcpp-compiler \
+intel-oneapi-vtune \
+intel-oneapi-tbb-devel \
 intel-oneapi-common-vars \
 intel-oneapi-common-licensing \
 intel-oneapi-ccl \
-intel-oneapi-daal-devel \
-intel-oneapi-vtune \
 intel-oneapi-dnnl-devel \
+intel-oneapi-daal-devel \
 intel-oneapi-mkl-devel \
-intel-oneapi-onevpl-devel \
-intel-oneapi-libdpstd-devel \
-intel-oneapi-dpcpp-compiler \
 intel-oneapi-dpcpp-debugger \
 --
 
-# install Intel(R) Graphics Compute Runtime for OpenCL(TM)
-RUN echo 'deb [trusted=yes arch=amd64] https://repositories.intel.com/graphics/ubuntu bionic main' \
+COPY fpgavars.sh /opt/intel/inteloneapi/compiler/latest/linux/lib/oclfpga
+
+# install Intel GPU drivers
+RUN echo 'deb [trusted=yes arch=amd64] https://repositories.intel.com/graphics/ubuntu bionic-devel main' \
 > /etc/apt/sources.list.d/intel-graphics.list
 
 RUN apt-get update -y && \
 apt-get install -y --no-install-recommends -o=Dpkg::Use-Pty=0 \
-intel-opencl
+intel-opencl \
+intel-level-zero-gpu \
+level-zero
 
 # entrypoint
 COPY entrypoint.sh /
