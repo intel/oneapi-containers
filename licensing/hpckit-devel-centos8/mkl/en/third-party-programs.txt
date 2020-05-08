@@ -9,13 +9,13 @@ Copyright (c) 2006-2013 The University of Colorado Denver. All rights reserved.
 
 Open MPI:
 Copyright (c) 2004-2005 The Trustees of Indiana University and Indiana University Research and Technology Corporation. All rights reserved.
-Copyright (c) 2004-2010 The University of Tennessee and The University of Tennessee Research Foundation. All rights
+Copyright (c) 2004-2010 The University of Tennessee and The University of Tennessee Research Foundation.Â All rights
 reserved.
 Copyright (c) 2004-2007 High Performance Computing Center Stuttgart, University of Stuttgart. All rights reserved.
 Copyright (c) 2004-2005 The Regents of the University of California. All rights reserved.
-Copyright (c) 2007-2011 Cisco Systems, Inc. All rights reserved.
-Copyright (c) 2008-2009 Sun Microsystems, Inc. All rights reserved.
-Copyright (c) 2009 Oak Ridge National Labs. All rights reserved.
+Copyright (c) 2007-2011 Cisco Systems, Inc.Â All rights reserved.
+Copyright (c) 2008-2009 Sun Microsystems, Inc.Â All rights reserved.
+Copyright (c) 2009 Oak Ridge National Labs.Â All rights reserved.
 
 
 Modified BSD License
@@ -47,19 +47,19 @@ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PRO
 
 Modified BSD License
 
-Redistribution  and  use in  source and binary forms, with or without modification, are  permitted provided  that the following  conditions are met:
+RedistributionÂ  andÂ  use inÂ  source and binary forms, with or without modification, areÂ  permitted providedÂ  that the followingÂ  conditions are met:
 
-1. Redistributions  of  source  code  must retain the above copyright notice, this list of conditions and the following disclaimer.
+1. RedistributionsÂ  ofÂ  sourceÂ  codeÂ  must retain the above copyright notice, this list of conditions and the following disclaimer.
 
-2. Redistributions in binary form must reproduce  the above copyright notice, this list of conditions,  and the following disclaimer in the documentation and/or other materials provided with the distribution.
+2. Redistributions in binary form must reproduceÂ  the above copyright notice, this list of conditions,Â  and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
-3. The name of the  University,  the name of the  Laboratory,  or the names  of  its  contributors  may  not  be used to endorse or promote products  derived   from   this  software  without  specific  written permission.
+3. The name of theÂ  University,Â  the name of theÂ  Laboratory,Â  or the namesÂ  ofÂ  itsÂ  contributorsÂ  mayÂ  notÂ  be used to endorse or promote productsÂ  derivedÂ Â  fromÂ Â  thisÂ  softwareÂ  withoutÂ  specificÂ  written permission.
 
 -- Disclaimer:
 
-THIS  SOFTWARE  IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,  INCLUDING,  BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE UNIVERSITY
-OR  CONTRIBUTORS  BE  LIABLE FOR ANY  DIRECT,  INDIRECT,  INCIDENTAL,
-SPECIAL,  EXEMPLARY,  OR  CONSEQUENTIAL DAMAGES  (INCLUDING,  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS INTERRUPTION)  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,  STRICT LIABILITY,  OR TORT(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+THISÂ  SOFTWAREÂ  IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,Â  INCLUDING,Â  BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE UNIVERSITY
+ORÂ  CONTRIBUTORSÂ  BEÂ  LIABLE FOR ANYÂ  DIRECT,Â  INDIRECT,Â  INCIDENTAL,
+SPECIAL,Â  EXEMPLARY,Â  ORÂ  CONSEQUENTIAL DAMAGESÂ  (INCLUDING,Â  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS INTERRUPTION)Â  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,Â  STRICT LIABILITY,Â  OR TORT(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 -----------------------------------------------------------------
@@ -77,7 +77,7 @@ notice, this list of conditions and the following disclaimer.
 
 3. The names of its contributors may not be used to endorse or promote products derived from this software without specific prior written permission.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.Â  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
 SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
@@ -107,11 +107,11 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
-    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Â Â Â  * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
 
-    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+Â Â Â  * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
-    * Neither the names of the copyright holders nor the names of the University of New South Wales and the University of Waikato and its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+Â Â Â  * Neither the names of the copyright holders nor the names of the University of New South Wales and the University of Waikato and its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
@@ -155,18 +155,18 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
    
    Intel(R) OpenMP* Runtime:
-   Copyright 1985-2019 Intel Corporation.  All Rights Reserved.
+   Copyright 1985-2019 Intel Corporation.Â  All Rights Reserved.
 
-The source code contained or described herein and all  documents related to the source code ("Material") are owned by Intel Corporation or its suppliers or licensors.  Title to the Material remains with Intel Corporation or its suppliers and licensors.  The Material is protected by worldwide copyright laws and treaty provisions.  No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without Intel's prior express written permission.
+The source code contained or described herein and all  documents related to the source code ("Material") are owned by Intel Corporation or its suppliers or licensors.Â  Title to the Material remains with Intel Corporation or its suppliers and licensors.Â  The Material is protected by worldwide copyright laws and treaty provisions.Â  No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without Intel's prior express written permission.
 
-No license under any patent, copyright, trade secret or other intellectual property right is granted to or conferred upon you by disclosure or delivery of the Materials, either expressly, by implication, inducement, estoppel or otherwise.  Any license under such intellectual property rights must be express and approved by Intel in writing.
+No license under any patent, copyright, trade secret or other intellectual property right is granted to or conferred upon you by disclosure or delivery of the Materials, either expressly, by implication, inducement, estoppel or otherwise.Â  Any license under such intellectual property rights must be express and approved by Intel in writing.
 
 Portions of this software are protected under the following patents:
-        U.S. Patent 5,812,852
-        U.S. Patent 6,792,599
-        U.S. Patent 7,069,556
-        U.S. Patent 7,328,433
-        U.S. Patent 7,500,242
+Â Â Â Â Â Â Â  U.S. Patent 5,812,852
+Â Â Â Â Â Â Â  U.S. Patent 6,792,599
+Â Â Â Â Â Â Â  U.S. Patent 7,069,556
+Â Â Â Â Â Â Â  U.S. Patent 7,328,433
+Â Â Â Â Â Â Â  U.S. Patent 7,500,242
 
    List of third party for Intel(R) OpenMP* Runtime is available in the third-party-programs-openmp.txt file.
 
@@ -189,6 +189,10 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
    Copyright (c) 2008-2011 by Cisco Systems, Inc. All rights          reserved.
 
    List of third party for Intel Open Source Technology Center Safe String Library is available in the third-party-programs-safestring.txt.
+
+   
+   level-zero:
+   Copyright (c) 2019 Intel Corporation
        
    MIT License
 
@@ -258,15 +262,15 @@ This computer code material was prepared, in part, as an account of work sponsor
 
   --------------------------------------------------------------
 12. Intel(R) oneAPI Threading Building Blocks: 
-    Copyright 2005-2019 Intel Corporation.  All Rights Reserved.
+    Copyright 2005-2019 Intel Corporation.Â  All Rights Reserved.
 
-    List of third party for Intel(R) oneAPI Threading Building Blocks for Linux is available in /opt/intel/inteloneapi/tbb/<version>/licensing/third-party-programs.txt.
+Â Â Â  List of third party for Intel(R) oneAPI Threading Building Blocks for Linux is available in /opt/intel/inteloneapi/tbb/<version>/licensing/third-party-programs.txt.
 
    Intel Simplified Software License (Version April 2018)
 
 Copyright (c) 2018 Intel Corporation.
 
-Use and Redistribution.  You may use and redistribute the software (the “Software”), without modification, provided the following conditions are met:
+Use and Redistribution.  You may use and redistribute the software (the Â“SoftwareÂ”), without modification, provided the following conditions are met:
 
 * Redistributions must reproduce the above copyright notice and the
 following terms of use in the Software and in the documentation and/or other materials provided with the distribution.
@@ -278,14 +282,14 @@ following terms of use in the Software and in the documentation and/or other mat
 
 Limited patent license.  Intel grants you a world-wide, royalty-free,
 non-exclusive license under patents it now or hereafter owns or controls to
-make, have made, use, import, offer to sell and sell (“Utilize”) this Software,
+make, have made, use, import, offer to sell and sell (Â“UtilizeÂ”) this Software,
 but solely to the extent that any such patent is necessary to Utilize the 
 Software alone. The patent license shall not apply to any combinations
 which include this software.  No hardware per se is licensed hereunder.
 
-Third party and other Intel programs.  “Third Party Programs” are the files listed in the “third-party-programs.txt” text file that is included with the Software and may include Intel programs under separate license terms. Third Party Programs, even if included with the distribution of the Materials, are governed by separate license terms and those license terms solely govern your use of those programs.  
+Third party and other Intel programs.  Â“Third Party ProgramsÂ” are the files listed in the Â“third-party-programs.txtÂ” text file that is included with the Software and may include Intel programs under separate license terms. Third Party Programs, even if included with the distribution of the Materials, are governed by separate license terms and those license terms solely govern your use of those programs.  
 
-DISCLAIMER.  THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. THIS SOFTWARE IS NOT INTENDED FOR USE IN SYSTEMS OR APPLICATIONS WHERE FAILURE OF THE SOFTWARE MAY CAUSE PERSONAL INJURY OR DEATH AND YOU AGREE THAT YOU ARE FULLY RESPONSIBLE FOR ANY CLAIMS, COSTS, DAMAGES, EXPENSES, AND ATTORNEYS’ FEES ARISING OUT OF ANY SUCH USE, EVEN IF ANY CLAIM ALLEGES THAT INTEL WAS NEGLIGENT REGARDING THE DESIGN OR MANUFACTURE OF THE MATERIALS.
+DISCLAIMER.  THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. THIS SOFTWARE IS NOT INTENDED FOR USE IN SYSTEMS OR APPLICATIONS WHERE FAILURE OF THE SOFTWARE MAY CAUSE PERSONAL INJURY OR DEATH AND YOU AGREE THAT YOU ARE FULLY RESPONSIBLE FOR ANY CLAIMS, COSTS, DAMAGES, EXPENSES, AND ATTORNEYSÂ’ FEES ARISING OUT OF ANY SUCH USE, EVEN IF ANY CLAIM ALLEGES THAT INTEL WAS NEGLIGENT REGARDING THE DESIGN OR MANUFACTURE OF THE MATERIALS.
 
 LIMITATION OF LIABILITY. IN NO EVENT WILL INTEL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. YOU AGREE TO INDEMNIFY AND HOLD INTEL HARMLESS AGAINST ANY CLAIMS AND EXPENSES RESULTING FROM YOUR USE OR UNAUTHORIZED USE OF THE SOFTWARE.
 
@@ -293,7 +297,7 @@ No support.  Intel may make changes to the Software, at any time without notice,
 
 Termination. Intel may terminate your right to use the Software in the event of your breach of this Agreement and you fail to cure the breach within a reasonable period of time.
 
-Feedback.  Should you provide Intel with comments, modifications, corrections, enhancements or other input (“Feedback”) related to the Software Intel will be free to use, disclose, reproduce, license or otherwise distribute or exploit the Feedback in its sole discretion without any obligations or restrictions of any kind, including without limitation, intellectual property rights or licensing obligations.
+Feedback.  Should you provide Intel with comments, modifications, corrections, enhancements or other input (Â“FeedbackÂ”) related to the Software Intel will be free to use, disclose, reproduce, license or otherwise distribute or exploit the Feedback in its sole discretion without any obligations or restrictions of any kind, including without limitation, intellectual property rights or licensing obligations.
 
 Compliance with laws.  You agree to comply with all relevant laws and regulations governing your use, transfer, import or export (or prohibition thereof) of the Software.
 
