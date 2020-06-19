@@ -4,17 +4,17 @@
 # Check if we are on a supported OS
 # We don't want to set up any FPGA environment variables in
 # such cases because they can break non-FPGA targets as well
-DISTRO=Ubuntu
+DISTRO=$( grep '^ID=' /etc/os-release | sed 's/^ID=//' | sed 's/"//g' )
 DISTRO_STATUS=$?
-RELEASE=18.04
+RELEASE=$( grep '^VERSION_ID=' /etc/os-release | sed 's/^VERSION_ID=//' | sed 's/"//g' )
 RELEASE_STATUS=$?
 SUPPORTED_OS=0
 
 if [ $DISTRO_STATUS == 0 ] && [ $RELEASE_STATUS == 0 ]; then
-  if [ "$DISTRO" == "RedHatEnterpriseServer" ] || [ "$DISTRO" == "CentOS" ] && [[ $RELEASE =~ ^7.[0-9]+ ]]; then
+  if [ "$DISTRO" == "rhel" ] || [ "$DISTRO" == "centos" ] && [[ $RELEASE =~ ^7 ]]; then
     SUPPORTED_OS=1
   fi
-  if [ "$DISTRO" == "Ubuntu" ] && [ "$RELEASE" == "18.04" ]; then
+  if [ "$DISTRO" == "ubuntu" ] && [ "$RELEASE" == "18.04" ]; then
     SUPPORTED_OS=1
   fi
 fi
@@ -43,6 +43,7 @@ if [ $SUPPORTED_OS -eq 1 ]; then
   icdadd "libalteracl.so"
   icdadd "libintelocl_emu.so"
   export ACL_BOARD_VENDOR_PATH=/opt/Intel/OpenCLFPGA/oneAPI/Boards
+  export INTELFPGAOCLSDKROOT=${SCRIPTDIR}
   source ${SCRIPTDIR}/init_opencl.sh > /dev/null
 
   #Configure the PAC system
