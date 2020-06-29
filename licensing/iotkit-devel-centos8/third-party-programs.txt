@@ -100,6 +100,8 @@ Software.
    Intel(R) Open Image Denoise
    Intel(R) Open Volume Kernel Library
    Intel(R) Optimization for Tensorflow*
+   Model Zoo for Intel(R) Architecture
+   Intel(R) AI Quantization Tools for TensorFlow*
 
    ninja
 
@@ -108,6 +110,10 @@ Software.
    google-pasta
 
    grpcio
+
+   google-auth
+
+   google-auth-oauthlib
 
    tensorboard
    Copyright 2017 The TensorFlow Authors.  All rights reserved.
@@ -120,6 +126,9 @@ Software.
 
    tensorflow-estimator
    Copyright 2018 The TensorFlow Authors.  All rights reserved.
+
+   rsa
+   Copyright 2011 Sybren A. Stüvel
 
                                  Apache License
                            Version 2.0, January 2004
@@ -1959,7 +1968,7 @@ Intel(R) oneAPI Rendering Toolkit (Render Kit):
  31. Intel(R) Open Image Denoise <install_dir>/oidn/latest/licensing/third-party-programs.txt
  32. Intel(R) Open Volume Kernel Library (Intel(R) Open VKL) <install_dir>/openvkl/latest/licensing/third-party-programs.txt
 
-Intel(R) System Bring-up Kit (Bringup Kit):
+Intel(R) System Bring-up Toolkit (Bringup Kit):
  33. Intel(R) Vtune(TM) Profiler <install_dir>/vtune/latest/licensing/third-party-programs.txt
  34. Intel(R) SoC Watch <install_dir>/socwatch/latest/socwatch_for_target/socwatch_android_<version>_x86_64/third-party-programs.txt
                         <install_dir>/socwatch/latest/socwatch_for_target/socwatch_linux_<version>_x86_64/third-party-programs.txt
@@ -1969,8 +1978,10 @@ Intel(R) AI Analytics Toolkit (AI Kit):
  36. Intel(R) Distribution for Python* <install_dir>/intelpython/latest/licensing/third-party-programs.txt
  37. Intel(R) Optimization for Tensorflow* <install_dir>/tensorflow/latest/licensing/third-party-programs.txt
  38. PyTorch* <install_dir>/pytorch/latest/licensing/third-party-programs.txt
+ 39. Model Zoo for Intel(R) Architecture <install_dir>/modelzoo/latest/licensing/third-party-programs.txt
+ 40. Intel(R) AI Quantization Tools for TensorFlow* <install_dir>/IQT/latest/licensing/third-party-programs.txt
 
-All paths are relative to the Intel(R) Parallel Studio XE installation directory. 
+All paths are relative to the Intel(R) oneAPI Toolkits installation directory. 
 By default, it is /opt/intel/inteloneapi
 
 --------------------------------------------------------------------------------

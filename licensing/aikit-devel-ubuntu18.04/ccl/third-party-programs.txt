@@ -1,21 +1,19 @@
+Intel(R) Intel(R) oneAPI Collective Communications Library (oneCCL)
+2021.1-beta07 Third Party Programs File
+
 This file is the "third-party-programs.txt" file specified in the associated 
 Intel end user license agreement for the Intel software you are licensing. The 
 third party programs and their corresponding required notices and/or license 
 terms are listed below.
 
-This third-party-programs.txt file applies to Intel(R) oneAPI Collective
-Communications Library (oneCCL) 2021.1-beta06.
+-------------------------------------------------------------------------------
 
-1. MPICH* BSD License
+1. MPICH
 
-                	        COPYRIGHT
+   Copyright Notice + 2002 University of Chicago
 
-  The following is a notice of limited availability of the code, and disclaimer
-  which must be included in the prologue of the code and in all source listings
-  of the code.
 
-  Copyright Notice
-   + 2002 University of Chicago
+  Mpich license
 
   Permission is hereby granted to use, reproduce, prepare derivative works, and
   to redistribute to others.  This software was authored by:
@@ -28,7 +26,8 @@ Communications Library (oneCCL) 2021.1-beta06.
   Department of Computer Science
   University of Illinois at Urbana-Champaign
 
-  				GOVERNMENT LICENSE
+
+  GOVERNMENT LICENSE
 
   Portions of this material resulted from work developed under a U.S.
   Government Contract and are subject to the following license: the Government
@@ -36,7 +35,7 @@ Communications Library (oneCCL) 2021.1-beta06.
   irrevocable worldwide license in this computer software to reproduce, prepare
   derivative works, and perform publicly and display publicly.
 
-  				DISCLAIMER
+  DISCLAIMER
 
   This computer code material was prepared, in part, as an account of work
   sponsored by an agency of the United States Government.  Neither the United
@@ -46,12 +45,15 @@ Communications Library (oneCCL) 2021.1-beta06.
   product, or process disclosed, or represents that its use would not infringe
   privately owned rights.
 
-2. OpenSHMEM*: BSD License 
+-------------------------------------------------------------------------------
+
+2. OpenSHMEM 
 
   Copyright (c) 2017 Intel Corporation. All rights reserved.
   This software is available to you under the BSD license.
 
-  COPYRIGHT
+  
+  The -3-Clause BSD license
 
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions are
@@ -88,4 +90,6 @@ Communications Library (oneCCL) 2021.1-beta06.
   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-* Other names and brands may be claimed as the property of others.
+-------------------------------------------------------------------------------
+
+Other names and brands may be claimed as the property of others.
