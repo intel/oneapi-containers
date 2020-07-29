@@ -12,7 +12,7 @@ terms are listed below.
    All rights reserved.
 
    pyArrow
-   © 2016-2019 The Apache Software Foundatio
+   © 2016-2019 The Apache Software Foundaion
 
 Apache License 2.0 (w/third party dependencies in the license)
                                  Apache License
@@ -2344,11 +2344,11 @@ For t_cl_generator.cc
    daal4py
    Copyright (c) 2018 Intel Corporation.  
 
-   dppy
-   Copyright (c) 2020 Intel Corporation.  
-
    funcsigs
    © Copyright 2013, Aaron Iles
+
+   pydppl
+   Copyright (c) 2020 Intel Corporation.
 
    pyOpenSSL
    © Copyright 2001 The pyOpenSSL developers
@@ -3222,7 +3222,67 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------
-18. kiwisolver
+18. mkl_sparse
+    Copyright (c) 2020, Intel Corporation
+
+BSD 3-clause "New" or "Revised" License (Customized)
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+ * Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+ * Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+ * Neither the name Facebook nor the names of its contributors may be used to
+   endorse or promote products derived from this software without specific
+   prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+------------------------------------------------------------
+19. mkl_umath
+    Copyright (c) 2020, Intel Corporation
+
+BSD 3-clause "New" or "Revised" License (Customized)
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+ * Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+ * Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+ * Neither the name Facebook nor the names of its contributors may be used to
+   endorse or promote products derived from this software without specific
+   prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+------------------------------------------------------------
+20. kiwisolver
     Copyright (c) 2013, Nucleic Development Team
 
 BSD 3-clause "New" or "Revised" License (Customized)
@@ -3252,7 +3312,7 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------
-19. numpy  
+21. numpy  
     Copyright (c) 2005-2020, NumPy Developers.
     All rights reserved.
 
@@ -3282,7 +3342,7 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ------------------------------------------------------------
-20. pycparser
+22. pycparser
     Copyright (c) 2008-2017, Eli Bendersky
     All rights reserved.
 
@@ -3313,7 +3373,7 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------
-21. cycler
+23. cycler
    ©2015, Matplotlib Developer
 
 BSD 3-clause "New" or "Revised" License (Customized)
@@ -3343,7 +3403,7 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------
-22. pyeditline
+24. pyeditline
     Copyright (c) 2017, Mark Nicholson
     All rights reserved.
 
@@ -3374,7 +3434,7 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------
-23.  scikit-learn
+25.  scikit-learn
      Copyright (c) 2007-2020 The scikit-learn developers.
      All rights reserved.
 
@@ -3404,7 +3464,7 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ------------------------------------------------------------
-24. scikit-ipp
+26. scikit-ipp
     Copyright (c) 2017-2019, Intel Corporation
 
 BSD 3-clause "New" or "Revised" License (Customized)
@@ -3433,7 +3493,7 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ------------------------------------------------------------
-25. snappy
+27. snappy
     Copyright 2011, Google Inc.
     All rights reserved.
     
@@ -3464,7 +3524,7 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ------------------------------------------------------------
-26. bzip2
+28. bzip2
     Copyright (C) 1996-2010 Julian R Seward
 
 Bzip2 License
@@ -3507,7 +3567,7 @@ Julian Seward, jseward@acm.org
 bzip2/libbzip2 version 1.0.8 of 13 July 2019
 
 ------------------------------------------------------------
-27. python-libarchive-c
+29. python-libarchive-c
    (No copyright found)
 
 Creative Commons Zero v1.0 Universal
@@ -3629,7 +3689,7 @@ For more information, please see
 <http://creativecommons.org/publicdomain/zero/1.0/>
 
 ------------------------------------------------------------
-28. Intel Compiler Classic
+30. Intel Compiler Classic
 
 End User License Agreement for the Intel Compiler Runtime Libraries
 IMPORTANT - READ BEFORE COPYING, DISTRIBUTING, INSTALLING OR USING.
@@ -3680,7 +3740,7 @@ Attn: DPD Contracts Management, JF1-15
 12. THIRD PARTY PROGRAMS. The Materials may include third party programs or materials. The license terms with those programs or materials apply to your use of them, and Intel is not liable for them.
 
 ------------------------------------------------------------
-29. freetype
+31. freetype
     Copyright 1996-2002, 2006 by David Turner, Robert Wilhelm, and Werner Lemberg
 
 FreeType Project LICENSE
@@ -3854,7 +3914,7 @@ Legal Terms
 
 --- end of FTL.TXT ---
 ------------------------------------------------------------
-30. libgcc
+32. libgcc
     Copyright (C) 2009 Free Software Foundation, Inc.
 
 GCC Runtime Library Exception 3.1 to GPL 3.0
@@ -3925,7 +3985,7 @@ The availability of this Exception does not imply any general
 presumption that third-party software is unaffected by the copyleft
 requirements of the license of GCC.
 ------------------------------------------------------------
-31. lzo
+33. lzo
     Copyright (C) 1996 - 2017 Markus F.X.J. Oberhumer
 
     xz
@@ -4273,7 +4333,7 @@ library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.
 
 ------------------------------------------------------------
-32. libstdc++
+34. libstdc++
     Copyright (C) 2009 Free Software Foundation, Inc.
 
 GNU General Public License v3.0 w/GCC Runtime Library exception
@@ -4350,7 +4410,7 @@ requirements of the license of GCC.
 * Other names and brands may be claimed as the property of others.
 
 ------------------------------------------------------------
-33. chardet
+35. chardet
     Copyright (C) 1991, 1999 Free Software Foundation, Inc.
 
     libiconv
@@ -4410,7 +4470,7 @@ Each version is given a distinguishing version number. If the Library as you rec
 If the Library as you received it specifies that a proxy can decide whether future versions of the GNU Lesser General Public License shall apply, that proxy's public statement of acceptance of any version is permanent authorization for you to choose that version for the Library.
 
 ------------------------------------------------------------
-34. DAAL
+36. DAAL
     Copyright (c) 2017-2019, Intel Corporation
 
     IPP
@@ -4504,7 +4564,7 @@ Software.
 *Other names and brands may be claimed as the property of others.
 
 ------------------------------------------------------------
-35. pywin32
+37. pywin32
     (No copyright found)
 
     glibc/libc
@@ -4642,7 +4702,7 @@ NO WARRANTY
 END OF TERMS AND CONDITIONS
 
 ------------------------------------------------------------
-36. libpng
+38. libpng
     * Copyright (c) 1995-2020 The PNG Reference Library Authors.
     * Copyright (c) 2018-2020 Cosmin Truta.
     * Copyright (c) 2000-2002, 2004, 2006-2018 Glenn Randers-Pehrson.
@@ -4773,7 +4833,7 @@ this source code in a product, acknowledgment is not required but would
 be appreciated.
 
 ------------------------------------------------------------
-37. matplotlib
+39. matplotlib
     Copyright 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team
     2012 - 2018 The Matplotlib development team
 
@@ -4878,7 +4938,7 @@ Licensee agrees to be bound by the terms and conditions of this License
 Agreement.
 
 ------------------------------------------------------------
-38. vs2017_runtime
+40. vs2017_runtime
     (c) Microsoft 2020
 
 Microsoft Visual Studio 2015 Enterprise, Professional, Test Professional and Trial Edition Update 2 License
@@ -4931,7 +4991,7 @@ This limitation applies to
 It also applies even if Microsoft knew or should have known about the possibility of the damages. The above limitation or exclusion may not apply to you because your country may not allow the exclusion or limitation of incidental, consequential or other damages.
 
 ------------------------------------------------------------
-39. brotli
+41. brotli
     Copyright (c) 2009, 2010, 2013-2016 by the Brotli Authors.
 
     cffi
@@ -4998,7 +5058,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 ------------------------------------------------------------
-40. certifi
+42. certifi
     © Copyright 2014, A Kenneth Reitz Project
 
     tqdm
@@ -5024,7 +5084,7 @@ one at http://mozilla.org/MPL/2.0/.
 @(#) $RCSfile: certdata.txt,v $ $Revision: 1.80 $ $Date: 2011/11/03 15:11:58 $
 
 ------------------------------------------------------------
-41. openssl
+43. openssl
     Copyright © 1999-2018, OpenSSL Software Foundation
 
 OpenSSL Combined License
@@ -5143,7 +5203,7 @@ OpenSSL Combined License
  */
 
 ------------------------------------------------------------
-42. futures
+44. futures
     © Copyright 2001-2020, Python Software Foundation.
 
     python
@@ -5204,7 +5264,7 @@ Standard License Header
 There is no standard license header for the license
 
 ------------------------------------------------------------
-43. sqlite
+45. sqlite
     (No copyright found)
 
 Public Domain
@@ -5215,7 +5275,7 @@ May you find forgiveness for yourself and forgive others.
 May you share freely, never taking more than you give.
 
 ------------------------------------------------------------
-44. win_inet_pton
+46. win_inet_pton
     (No copyright found)
 
 Public Domain
@@ -5225,7 +5285,7 @@ either in source code form or as a compiled binary, for any purpose,
 commercial or non-commercial, and by any means.
 
 ------------------------------------------------------------
-45. xz
+47. xz
     (No copyright found)
 
 Public Domain
@@ -5294,7 +5354,7 @@ XZ Utils Licensing
      information.
 
 ------------------------------------------------------------
-46. tcl
+48. tcl
     (No copyright found)
 
     tk
@@ -5342,7 +5402,7 @@ authors grant the U.S. Government and others acting in its behalf
 permission to use and distribute the software in accordance with the
 terms specified in this license.
 ------------------------------------------------------------
-47. zlib
+49. zlib
     (C) 1995-2017 Jean-loup Gailly and Mark Adler
 
 Zlib License
@@ -5365,7 +5425,7 @@ freely, subject to the following restrictions:
 Jean-loup Gailly        Mark Adler
 jloup@gzip.org          madler@alumni.caltech.edu
 ------------------------------------------------------------
-48. llvmdev
+50. llvmdev
     © Copyright 2003-2020, LLVM Project
 
     libllvm10
@@ -5656,7 +5716,7 @@ SOFTWARE.
 
 
 ------------------------------------------------------------
-49. LLVM-SPIRV
+51. LLVM-SPIRV
     Copyright (c) 2015-2016 The Khronos Group Inc.
 
 LLVM Release License
