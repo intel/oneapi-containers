@@ -1,0 +1,22 @@
+Package ID: <package_id>
+This package contains: Intel® Low Precision Optimization Tool 1.0  <product_version> for Linux*.
+Please use the above information when submitting customer support requests.
+-----------------
+Technical Support
+-----------------
+
+Your feedback is very important to us. You can submit a support issue to us 
+via email: cpdp.mlt.scaling@intel.com
+
+When submitting a support issue to us, please provide specific details of your
+problem, including:
+    - Intel package and version information
+    - Host architecture (for example, Intel(R) 64 architecture)
+    - Compiler(s) and versions
+    - Operating system(s) and versions
+    - Specifics on how to reproduce the problem. 
+
+* Other names and brands may be claimed as the property of others.
+Note: If your distributor provides technical support for this product, please 
+contact them for support rather than Intel.
+You need a valid license to use this product.

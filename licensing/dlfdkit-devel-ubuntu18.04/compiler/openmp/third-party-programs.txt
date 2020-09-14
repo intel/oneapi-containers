@@ -1,11 +1,11 @@
-This file is the "third-party-programs.txt" file for OpenMP Runtime, and the following is 
-the list of third party programs and their corresponding required notices and/or license terms.
+OpenMP Runtime library
 
-1. The BGET Memory Allocator
+This file is the "third-party-programs.txt" file specified in the associated Intel end user license agreement for the Intel software you are licensing.
 
-   This program is in the public domain.
+Third party programs and their corresponding required notices and/or license terms are listed below.
 
-2. Instrumentation and Tracing Technology (ITT) Notify User API
+-------------------------------------------------------------
+1. Instrumentation and Tracing Technology (ITT) Notify User API
   Copyright (c) 2005-2014 Intel Corporation. All rights reserved.
 
   The 3-Clause BSD License
@@ -36,7 +36,117 @@ the list of third party programs and their corresponding required notices and/or
   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-3. LLVM OpenMP
+-------------------------------------------------------------
+
+2. Portable Hardware Locality (hwloc)
+   Copyright (c) 2004-2006 The Trustees of Indiana University and Indiana University Research and Technology Corporation.  All rights reserved.
+   Copyright (c) 2004-2005 The University of Tennessee and The University of Tennessee Research Foundation.  All rights reserved.
+   Copyright (c) 2004-2005 High Performance Computing Center Stuttgart, University of Stuttgart.  All rights reserved.
+   Copyright (c) 2004-2005 The Regents of the University of California. All rights reserved.
+   Copyright (c) 2009      CNRS
+   Copyright (c) 2009-2016 Inria.  All rights reserved.
+   Copyright (c) 2009-2015 Universite Bordeaux
+   Copyright (c) 2009-2015 Cisco Systems, Inc.  All rights reserved.
+   Copyright (c) 2009-2012 Oracle and/or its affiliates.  All rights reserved.
+   Copyright (c) 2010      IBM
+   Copyright (c) 2010      Jirka Hladky
+   Copyright (c) 2012      Aleksej Saushev, The NetBSD Foundation
+   Copyright (c) 2012      Blue Brain Project, EPFL. All rights reserved.
+   Copyright (c) 2013-2014 University of Wisconsin-La Crosse. All rights reserved.
+   Copyright (c) 2015      Research Organization for Information Science and Technology (RIST). All rights reserved.
+   Copyright (c) 2015-2016 Intel, Inc.  All rights reserved.
+   See COPYING in top-level directory.
+
+   Redistribution and use in source and binary forms, with or without
+   modification, are permitted provided that the following conditions
+   are met:
+   1. Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+   2. Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+   3. The name of the author may not be used to endorse or promote products
+      derived from this software without specific prior written permission.
+
+   THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+   IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+   OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+   INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+   NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+   THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-------------------------------------------------------------
+3. Safe C Library
+   Copyright (c) 2008-2013 by Cisco Systems, Inc
+   Copyright (c) 2017-2018 by Reini Urban
+   All rights reserved.
+
+   MIT License
+
+   Permission is hereby granted, free of charge, to any person
+   obtaining a copy of this software and associated documentation
+   files (the "Software"), to deal in the Software without
+   restriction, including without limitation the rights to use,
+   copy, modify, merge, publish, distribute, sublicense, and/or
+   sell copies of the Software, and to permit persons to whom the
+   Software is furnished to do so, subject to the following
+   conditions:
+
+   The above copyright notice and this permission notice shall be
+   included in all copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+   OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+   HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+   WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+   OTHER DEALINGS IN THE SOFTWARE.
+
+-------------------------------------------------------------
+4. Intel(R) Threading Building Blocks (Intel(R) TBB)
+
+   Copyright (c) 2018 Intel Corporation.
+
+Intel Simplified Software License (Version February 2020)
+
+Use and Redistribution. You may use and redistribute the software (the “Software”), without modification, provided the following conditions are met:
+
+Redistributions must reproduce the above copyright notice and the following terms of use in the Software and in the documentation and/or other materials provided with the distribution.
+Neither the name of Intel nor the names of its suppliers may be used to endorse or promote products derived from this Software without specific prior written permission.
+No reverse engineering, decompilation, or disassembly of this Software is permitted.
+Limited patent license. Intel grants you a world-wide, royalty-free, non-exclusive license under patents it now or hereafter owns or controls to make, have made, use, import, offer to sell and sell (“Utilize”) this Software, but solely to the extent that any such patent is necessary to Utilize the Software alone. The patent license shall not apply to any combinations which include this software. No hardware per se is licensed hereunder.
+
+Third party programs. The Software may contain Third Party Programs. “Third Party Programs” are third party software, open source software or other Intel software listed in the “third-party-programs.txt” or other similarly named text file that is included with the Software. Third Party Programs, even if included with the distribution of the Software, may be governed by separate license terms, including without limitation, third party license terms, open source software notices and terms, and/or other Intel software license terms. These separate license terms may govern your use of the Third Party Programs.
+
+DISCLAIMER. THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. THIS SOFTWARE IS NOT INTENDED FOR USE IN SYSTEMS OR APPLICATIONS WHERE FAILURE OF THE SOFTWARE MAY CAUSE PERSONAL INJURY OR DEATH AND YOU AGREE THAT YOU ARE FULLY RESPONSIBLE FOR ANY CLAIMS, COSTS, DAMAGES, EXPENSES, AND ATTORNEYS’ FEES ARISING OUT OF ANY SUCH USE, EVEN IF ANY CLAIM ALLEGES THAT INTEL WAS NEGLIGENT REGARDING THE DESIGN OR MANUFACTURE OF THE MATERIALS.
+
+LIMITATION OF LIABILITY. IN NO EVENT WILL INTEL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. YOU AGREE TO INDEMNIFY AND HOLD INTEL HARMLESS AGAINST ANY CLAIMS AND EXPENSES RESULTING FROM YOUR USE OR UNAUTHORIZED USE OF THE SOFTWARE.
+
+No support. Intel may make changes to the Software, at any time without notice, and is not obligated to support, update or provide training for the Software.
+
+Termination. Intel may terminate your right to use the Software in the event of your breach of this Agreement and you fail to cure the breach within a reasonable period of time.
+
+Feedback. Should you provide Intel with comments, modifications, corrections, enhancements or other input (“Feedback”) related to the Software Intel will be free to use, disclose, reproduce, license or otherwise distribute or exploit the Feedback in its sole discretion without any obligations or restrictions of any kind, including without limitation, intellectual property rights or licensing obligations.
+
+Compliance with laws. You agree to comply with all relevant laws and regulations governing your use, transfer, import or export (or prohibition thereof) of the Software.
+
+Governing law. All disputes will be governed by the laws of the United States of America and the State of Delaware without reference to conflict of law principles and subject to the exclusive jurisdiction of the state or federal courts sitting in the State of Delaware, and each party agrees that it submits to the personal jurisdiction and venue of those courts and waives any objections. The United Nations Convention on Contracts for the International Sale of Goods (1980) is specifically excluded and will not apply to the Software.
+
+-------------------------------------------------------------
+
+5. The BGET Memory Allocator
+
+   This program is in the public domain.
+
+-------------------------------------------------------------
+
+6. LLVM OpenMP
 
   Apache License v2.0 with LLVM Exceptions
 
@@ -396,138 +506,12 @@ the list of third party programs and their corresponding required notices and/or
    conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
    PARTICULAR PURPOSE.
 
-4. Portable Hardware Locality (hwloc)
+-------------------------------------------------------------
 
-   New BSD license
-
-   Copyright (c) 2004-2006 The Trustees of Indiana University and Indiana University Research and Technology Corporation.  All rights reserved.
-   Copyright (c) 2004-2005 The University of Tennessee and The University of Tennessee Research Foundation.  All rights reserved.
-   Copyright (c) 2004-2005 High Performance Computing Center Stuttgart, University of Stuttgart.  All rights reserved.
-   Copyright (c) 2004-2005 The Regents of the University of California. All rights reserved.
-   Copyright (c) 2009      CNRS
-   Copyright (c) 2009-2016 Inria.  All rights reserved.
-   Copyright (c) 2009-2015 Universite Bordeaux
-   Copyright (c) 2009-2015 Cisco Systems, Inc.  All rights reserved.
-   Copyright (c) 2009-2012 Oracle and/or its affiliates.  All rights reserved.
-   Copyright (c) 2010      IBM
-   Copyright (c) 2010      Jirka Hladky
-   Copyright (c) 2012      Aleksej Saushev, The NetBSD Foundation
-   Copyright (c) 2012      Blue Brain Project, EPFL. All rights reserved.
-   Copyright (c) 2013-2014 University of Wisconsin-La Crosse. All rights reserved.
-   Copyright (c) 2015      Research Organization for Information Science and Technology (RIST). All rights reserved.
-   Copyright (c) 2015-2016 Intel, Inc.  All rights reserved.
-   See COPYING in top-level directory.
-
-   Redistribution and use in source and binary forms, with or without
-   modification, are permitted provided that the following conditions
-   are met:
-   1. Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-   2. Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-   3. The name of the author may not be used to endorse or promote products
-      derived from this software without specific prior written permission.
-
-   THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
-   IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-   OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
-   INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
-   NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-   THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
-   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-5. Safe C Library
-
-   Copyright (c) 2008-2013 by Cisco Systems, Inc
-   Copyright (c) 2017-2018 by Reini Urban
-   All rights reserved.
-
-   MIT License
-
-   Permission is hereby granted, free of charge, to any person
-   obtaining a copy of this software and associated documentation
-   files (the "Software"), to deal in the Software without
-   restriction, including without limitation the rights to use,
-   copy, modify, merge, publish, distribute, sublicense, and/or
-   sell copies of the Software, and to permit persons to whom the
-   Software is furnished to do so, subject to the following
-   conditions:
-
-   The above copyright notice and this permission notice shall be
-   included in all copies or substantial portions of the Software.
-
-   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-   OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-   NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-   HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-   WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-   OTHER DEALINGS IN THE SOFTWARE.
-
-6. Intel(R) Threading Building Blocks (Intel(R) TBB) 
-
-   Copyright (c) 2018 Intel Corporation.
+The following third party programs have their own third party program files. These additional third party program files are as follows:
 
    Third-party-program.txt file for Intel(R) TBB is located here:
-      <install_dir>/tbb/<version>/licensing/third-party-programs-tbb.txt
+      <install_dir>/tbb/<version>/licensing/third-party-programs.txt
 
-   Intel Simplified Software License (Version April 2018)
-
-   Use and Redistribution.  You may use and redistribute the software (the
-   "Software"), without modification, provided the following conditions are met:
-
-   * Redistributions must reproduce the above copyright notice and the following
-     terms of use in the Software and in the documentation and/or other materials
-     provided with the distribution.
-   * Neither the name of Intel nor the names of its suppliers may be used to
-     endorse or promote products derived from this Software without specific prior
-     written permission.
-   * No reverse engineering, decompilation, or disassembly of this Software is
-     permitted.
-
-   Limited patent license.  Intel grants you a world-wide, royalty-free,
-   non-exclusive license under patents it now or hereafter owns or controls to
-   make, have made, use, import, offer to sell and sell ("Utilize") this Software,
-   but solely to the extent that any such patent is necessary to Utilize the
-   Software alone. The patent license shall not apply to any combinations which
-   include this software. No hardware per se is licensed hereunder.
-
-   Third party and other Intel programs.  "Third Party Programs" are the files
-   listed in the "third-party-programs.txt" text file that is included with the
-   Software and may include Intel programs under separate license terms. Third
-   Party Programs, even if included with the distribution of the Materials, are
-   governed by separate license terms and those license terms solely govern your
-   use of those programs.
-
-   DISCLAIMER.  THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
-   WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE
-   DISCLAIMED. THIS SOFTWARE IS NOT INTENDED FOR USE IN SYSTEMS OR APPLICATIONS
-   WHERE FAILURE OF THE SOFTWARE MAY CAUSE PERSONAL INJURY OR DEATH AND YOU AGREE
-   THAT YOU ARE FULLY RESPONSIBLE FOR ANY CLAIMS, COSTS, DAMAGES, EXPENSES, AND
-   ATTORNEYS' FEES ARISING OUT OF ANY SUCH USE, EVEN IF ANY CLAIM ALLEGES THAT
-   INTEL WAS NEGLIGENT REGARDING THE DESIGN OR MANUFACTURE OF THE MATERIALS.
-
-   LIMITATION OF LIABILITY.  IN NO EVENT WILL INTEL BE LIABLE FOR ANY DIRECT,
-   INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
-   BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-   LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
-   OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
-   ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. YOU AGREE TO INDEMNIFY AND HOLD INTEL
-   HARMLESS AGAINST ANY CLAIMS AND EXPENSES RESULTING FROM YOUR USE OR UNAUTHORIZED
-   USE OF THE SOFTWARE.
-
-   No support.  Intel may make changes to the Software, at any time without notice,
-   and is not obligated to support, update or provide training for the Software.
-
-   Termination.  Intel may terminate your right to use the Software in the event of
-   your breach of this Agreement and you fail to cure the breach within a
-   reasonable period of time.
-
-   *Other names and brands may be claimed as the property of others.
+-------------------------------------------------------------
+Other names and brands may be claimed as the property of others.

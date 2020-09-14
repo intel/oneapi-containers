@@ -7,94 +7,7 @@ terms are listed below.
 
 --------------------------------------------------------------------------------
 
-1. Intel(R) oneAPI Math Kernel Library (oneMKL)
-   Intel(R) Integrated Performance Primitives (Intel(R) IPP)
-   Intel(R) oneAPI Threading Building Blocks (oneTBB)
-   Intel(R) oneAPI Data Analytics Library (oneDAL)
-   Intel(R) Distribution for Python*
-   Intel(R) MPI Library
-   Intel(R) Cluster Checker
-   Intel(R) oneAPI Collective Communications Library (oneCCL)
-
-   Intel Simplified Software License (Version April 2018)
-
-   Copyright (c) 2018 Intel Corporation.
-
-Use and Redistribution.  You may use and redistribute the software (the
-"Software"), without modification, provided the following conditions are met:
-
-* Redistributions must reproduce the above copyright notice and the following
-  terms of use in the Software and in the documentation and/or other materials
-  provided with the distribution.
-* Neither the name of Intel nor the names of its suppliers may be used to
-  endorse or promote products derived from this Software without specific prior
-  written permission.
-* No reverse engineering, decompilation, or disassembly of this Software is
-  permitted.
-
-Limited patent license.  Intel grants you a world-wide, royalty-free,
-non-exclusive license under patents it now or hereafter owns or controls to
-make, have made, use, import, offer to sell and sell ("Utilize") this Software,
-but solely to the extent that any such patent is necessary to Utilize the
-Software alone. The patent license shall not apply to any combinations which
-include this software. No hardware per se is licensed hereunder.
-
-Third party and other Intel programs.  "Third Party Programs" are the files
-listed in the "third-party-programs.txt" text file that is included with the
-Software and may include Intel programs under separate license terms. Third
-Party Programs, even if included with the distribution of the Materials, are
-governed by separate license terms and those license terms solely govern your
-use of those programs.
-
-DISCLAIMER.  THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
-WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE
-DISCLAIMED. THIS SOFTWARE IS NOT INTENDED FOR USE IN SYSTEMS OR APPLICATIONS
-WHERE FAILURE OF THE SOFTWARE MAY CAUSE PERSONAL INJURY OR DEATH AND YOU AGREE
-THAT YOU ARE FULLY RESPONSIBLE FOR ANY CLAIMS, COSTS, DAMAGES, EXPENSES, AND
-ATTORNEYS' FEES ARISING OUT OF ANY SUCH USE, EVEN IF ANY CLAIM ALLEGES THAT
-INTEL WAS NEGLIGENT REGARDING THE DESIGN OR MANUFACTURE OF THE MATERIALS.
-
-LIMITATION OF LIABILITY.  IN NO EVENT WILL INTEL BE LIABLE FOR ANY DIRECT,
-INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
-BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
-OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
-ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. YOU AGREE TO INDEMNIFY AND HOLD INTEL
-HARMLESS AGAINST ANY CLAIMS AND EXPENSES RESULTING FROM YOUR USE OR UNAUTHORIZED
-USE OF THE SOFTWARE.
-
-No support.  Intel may make changes to the Software, at any time without notice,
-and is not obligated to support, update or provide training for the Software.
-
-Termination.  Intel may terminate your right to use the Software in the event of
-your breach of this Agreement and you fail to cure the breach within a
-reasonable period of time.
-
-Feedback.  Should you provide Intel with comments, modifications, corrections,
-enhancements or other input ("Feedback") related to the Software Intel will be
-free to use, disclose, reproduce, license or otherwise distribute or exploit the
-Feedback in its sole discretion without any obligations or restrictions of any
-kind, including without limitation, intellectual property rights or licensing
-obligations.
-
-Compliance with laws.  You agree to comply with all relevant laws and
-regulations governing your use, transfer, import or export (or prohibition
-thereof) of the Software.
-
-Governing law.  All disputes will be governed by the laws of the United States
-of America and the State of Delaware without reference to conflict of law
-principles and subject to the exclusive jurisdiction of the state or federal
-courts sitting in the State of Delaware, and each party agrees that it submits
-to the personal jurisdiction and venue of those courts and waives any
-objections. The United Nations Convention on Contracts for the International
-Sale of Goods (1980) is specifically excluded and will not apply to the
-Software.
-
---------------------------------------------------------------------------------
-
-2. Intel(R) oneAPI Deep Neural Network Library (oneDNN)
+1. Intel(R) oneAPI Deep Neural Network Library (oneDNN)
    Intel(R) Embree
    Intel(R) OSPRay
    Intel(R) Open Image Denoise
@@ -333,7 +246,7 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
 --------------------------------------------------------------------------------
 
-3. GNU* Project Debugger, GDB
+2. GNU* Project Debugger, GDB
 
                    GNU GENERAL PUBLIC LICENSE
                       Version 3, 29 June 2007
@@ -1012,7 +925,7 @@ Public License instead of this License.  But first, please read
 
 --------------------------------------------------------------------------------
 
-4. Intel(R) oneAPI Video Processing Library (oneVPL): Provided under MIT License.
+3. Intel(R) oneAPI Video Processing Library (oneVPL): Provided under MIT License.
 
    Copyright (c) 2019 Intel Corporation
 
@@ -1036,7 +949,7 @@ SOFTWARE.
 
 --------------------------------------------------------------------------------
 
-5. PyTorch*: Provided under BSD license.
+4. PyTorch*: Provided under BSD license.
 
   From PyTorch:
 
@@ -1111,7 +1024,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
 --------------------------------------------------------------------------------
 
-6. Ncurses: Provided under modified MIT License.
+5. Ncurses: Provided under modified MIT License.
 
 Copyright (c) 1998, 1999, 2000 Thai Open Source Software Center Ltd
 Permission is hereby granted, free of charge, to any person obtaining
@@ -1133,7 +1046,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 --------------------------------------------------------------------------------
 
-7. Zlib: Provided under zlib License.
+6. Zlib: Provided under zlib License.
 
    Software Licenses that apply to the DotNetZip library and tools.
 
@@ -1277,7 +1190,7 @@ Many thanks to Julian Seward for the original C implementation of BZip2
 
 --------------------------------------------------------------------------------
 
-8. Python*: Provided under Python Software Foundation (PSF) License.
+7. Python*: Provided under Python Software Foundation (PSF) License.
    From  https://docs.python.org/3/license.html#psf-license-agreement-for-python-release 
 
 Terms and conditions for accessing or otherwise using Python
@@ -1327,7 +1240,7 @@ PSF LICENSE AGREEMENT FOR PYTHON 3.8.0
 
 --------------------------------------------------------------------------------
 
-9. Liblzma: XZ Utils Licensing
+8. Liblzma: XZ Utils Licensing
 
 Different licenses apply to different files in this package. Here
 is a rough summary of which licenses apply to which parts of this
@@ -1378,7 +1291,7 @@ information.
 
 --------------------------------------------------------------------------------
 
-10. The GDB Eclipse Integration: Provided under Eclipse Public License v.1.0.
+9. The GDB Eclipse Integration: Provided under Eclipse Public License v.1.0.
 
                   Eclipse Public License - v 1.0
 THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC 
@@ -1553,7 +1466,7 @@ CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
 
 --------------------------------------------------------------------------------
 
-11. libelfdwarf: Provided under GNU Lesser General Public License Version 2.1.
+10. libelfdwarf: Provided under GNU Lesser General Public License Version 2.1.
 
  0. This License Agreement applies to any software library or other
  program which contains a notice placed by the copyright holder or
@@ -1897,7 +1810,7 @@ CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
 
 --------------------------------------------------------------------------------
 
-12. Expat: Provided under MIT License.
+11. Expat: Provided under MIT License.
 
    Copyright (c) 1998-2000 Thai Open Source Software Center Ltd and Clark Cooper
    Copyright (c) 2001-2017 Expat maintainers
