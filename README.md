@@ -12,6 +12,8 @@ Containers allow you to set up and configure environments for profiling and dist
 
 [oneAPI Docker Hub](https://hub.docker.com/r/intel/oneapi)
 
+Explore more container solutions on the [Intel<sup>®</sup> oneContainer Portal](https://software.intel.com/containers)
+
 # License Agreement
 
 By downloading and using this container and the included software, you agree to the terms and conditions of the [software license agreements](https://github.com/intel/oneapi-containers/tree/master/licensing).
