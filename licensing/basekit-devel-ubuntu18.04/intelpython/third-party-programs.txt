@@ -1,4 +1,4 @@
-Intel(R) Distribution for Python Third Party Programs File
+Intel(R) Distribution for Python* Third Party Programs File
 
 This file is the "third-party-programs.txt" file specified in the associated Intel end
 user license agreement for the Intel software you are licensing.
@@ -670,6 +670,7 @@ SOFTWARE.
 The file cpp/src/arrow/vendored/string_view.hpp has the following license
 
 Boost Software License - Version 1.0 - August 17th, 2003
+Copyright (c) 2008-2009 Bjoern Hoehrmann <bjoern@hoehrmann.de>
 
 Permission is hereby granted, free of charge, to any person or organization
 obtaining a copy of the software and accompanying documentation covered by
@@ -698,6 +699,7 @@ DEALINGS IN THE SOFTWARE.
 The file cpp/src/arrow/vendored/variant.hpp has the following license
 
 Boost Software License - Version 1.0 - August 17th, 2003
+Copyright (c) 2008-2009 Bjoern Hoehrmann <bjoern@hoehrmann.de>
 
 Permission is hereby granted, free of charge, to any person or organization
 obtaining a copy of the software and accompanying documentation covered by
@@ -2148,6 +2150,7 @@ The file cpp/src/arrow/vendored/optional.hpp has the following license
 
 Boost Software License - Version 1.0 - August 17th, 2003
 
+Copyright (c) 2008-2009 Bjoern Hoehrmann <bjoern@hoehrmann.de>
 Permission is hereby granted, free of charge, to any person or organization
 obtaining a copy of the software and accompanying documentation covered by
 this license (the "Software") to use, reproduce, display, distribute,
@@ -2999,9 +3002,84 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------
-5. boost-cpp
-   Copyright Beman Dawes, David Abrahams, 1998-2005.
-   Copyright Rene Rivera 2004-2007.   
+5. boost-cpp (Atomic)
+   Copyright © 2011 Helge Bahmann
+   Copyright © 2012 Tim Blechmann
+   Copyright © 2013, 2017, 2018 Andrey Semashev
+   
+   boost-cpp (Chrono)
+   Copyright © 2008 Howard Hinnant
+   Copyright © 2006, 2008 Beman Dawes
+   Copyright © 2009-2013 Vicente J. Botet Escriba
+
+   boost-cpp (Container)
+   Copyright © 2009-2018 Ion Gaztanaga
+
+   boost-cpp (Context)
+   Copyright © 2014 Oliver Kowalke
+
+   boost-cpp (Contract)
+   Copyright © 2008-2019 Lorenzo Caminiti
+
+   boost-cpp (Coroutine2)
+   Copyright © 2009 Oliver Kowalke
+
+   boost-cpp (Date Time)
+   Copyright © 2001-2005 CrystalClear Software, Inc
+
+   boost-cpp (Filesystem)
+   Copyright 2009 Beman Dawes
+   
+   boost-cpp (Graph)
+   Copyright 2003 Jeremy Siek and a University of Notre Dame team.
+
+   boost-cpp (Iostreams)
+   Copyright 2000-2004 Jonathan Turkanis
+
+   boost-cpp (Locale)
+   Copyright (c) 2009-2011 Artyom Beilis
+
+   boost-cpp (Log)
+   Copyright (c) 2007-2016 Andrey Semashev
+
+   boost-cpp (Math Common Factor)
+   Copyright (c) 2001-2002 Daryle Walker
+
+   boost-cpp (Math/Special Functions)
+   Copyright (c) 2006, 2007, 2012 John Maddock, Paul Bristow, Hubert Holin and Xiaogang Zhang
+
+   boost-cpp (Math/Statistical Distributions)
+   Copyright (c) 2006-2010, 2012, 2013 John Maddock and Paul Bristow
+
+   boost-cpp (Program Options)
+   Copyright (c) 2002-2004 Vladimir Prus
+
+   boost-cpp (Random)
+   Copyright (c) 2009, 2010 Jens Maurer
+
+   boost-cpp (Regex)
+   Copyright (c) 1998-2002 John Maddock
+
+   boost-cpp (Serialization)
+   Copyright (c) 2002 Robert Ramey
+
+   boost-cpp (System)
+   Copyright (c) 1996, 1997 Beman Dawes
+
+   boost-cpp (Thread)
+   Copyright (c) 2011-2017 Anthony Williams and Vicente J. Botet Escriba
+
+   boost-cpp (Timer)
+   Copyright (c) 1994-1999 Beman Dawes
+
+   boost-cpp (Type Erasure)
+   Copyright (c) 2011-2013 Steven Watanabe
+
+   boost-cpp (Units)
+   Copyright (c) 2003-2008 Matthias Schabel and Steven Watanabe
+   
+   boost-cpp (Wave)
+   Copyright (c) 2003-2008 Hartmut Kaiser
 
 Boost 1.0
 Boost Software License - Version 1.0 - August 17th, 2003
@@ -3086,6 +3164,8 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ------------------------------------------------------------
 7. libarchive (subset a)
+   Copyright (c) 2003-2018 Tim Kientzle
+   All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions
@@ -3748,10 +3828,7 @@ bzip2/libbzip2 version 1.0.8 of 13 July 2019
 
 ------------------------------------------------------------
 25. python-libarchive-c
-    (No copyright found)
-
     versioneer
-    (No copyright found)
 
 Creative Commons Zero v1.0 Universal
 CC0 1.0 Universal
@@ -3873,6 +3950,7 @@ For more information, please see
 
 ------------------------------------------------------------
 26. Intel Compiler Classic
+    Copyright (c) 2017-2019, Intel Corporation
 
 End User License Agreement for the Intel Compiler Runtime Libraries
 IMPORTANT - READ BEFORE COPYING, DISTRIBUTING, INSTALLING OR USING.
@@ -4098,7 +4176,7 @@ Legal Terms
 --- end of FTL.TXT ---
 ------------------------------------------------------------
 28. libgcc
-    Copyright (C) 2009 Free Software Foundation, Inc.
+    Copyright (C) 2007 Free Software Foundation, Inc.
 
 GCC Runtime Library Exception 3.1 to GPL 3.0
 Everyone is permitted to copy and distribute verbatim copies of this
@@ -4172,8 +4250,6 @@ requirements of the license of GCC.
     Copyright (C) 1996 - 2017 Markus F.X.J. Oberhumer
 
     xz
-    (No copyright found)
-
 
                     GNU GENERAL PUBLIC LICENSE
                        Version 2, June 1991
@@ -4600,7 +4676,6 @@ requirements of the license of GCC.
     Copyright (C) 1998, 2019 Free Software Foundation, Inc.
 
     pywin32
-    (No copyright found)
 
 GNU Lesser General Public License v2.1
 Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
@@ -5286,10 +5361,7 @@ There is no standard license header for the license
 
 ------------------------------------------------------------
 40. tcl
-    (No copyright found)
-
     tk
-    (No copyright found)
 
 Tcl/Tk License
 This software is copyrighted by the Regents of the University of
@@ -5735,3 +5807,4 @@ The following third party programs have their own third party programs. These ad
 6. TBB https://raw.githubusercontent.com/intel/oneapi-containers/master/licensing/iotkit-devel-ubuntu18.04/tbb/third-party-programs.txt
 ------------------------------------------------------------
 Other names and brands may be claimed as the property of others.
+

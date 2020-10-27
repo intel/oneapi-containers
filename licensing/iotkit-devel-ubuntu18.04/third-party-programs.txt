@@ -15,6 +15,7 @@ terms are listed below.
    Intel(R) Optimization for Tensorflow*
    Model Zoo for Intel(R) Architecture
    Intel(R) AI Quantization Tools for TensorFlow*
+   Intel(R) Low Precision Optimization Tool
 
    ninja
 
@@ -246,7 +247,7 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
 --------------------------------------------------------------------------------
 
-2. GNU* Project Debugger, GDB
+2. Intel(R) Distribution for GDB*
 
                    GNU GENERAL PUBLIC LICENSE
                       Version 3, 29 June 2007
@@ -949,7 +950,7 @@ SOFTWARE.
 
 --------------------------------------------------------------------------------
 
-4. PyTorch*: Provided under BSD license.
+4. Intel(R) Optimization for PyTorch*: Provided under BSD license.
 
   From PyTorch:
 
@@ -1844,18 +1845,18 @@ Intel(R) oneAPI Base Toolkit (Base Kit):
  2.  Intel(R) oneAPI DPC++ Library (oneDPL) <install_dir>/compiler/latest/licensing/dpcpp_library/third-party-programs.txt
  3.  Intel(R) oneAPI Math Kernel Library (oneMKL) <install_dir>/mkl/latest/licensing/en/third-party-programs.txt
  4.  Intel(R) oneAPI Threading Building Blocks (oneTBB) <install_dir>/tbb/latest/licensing/third-party-programs.txt
- 5.  Intel(R) oneAPI Data Analytics Library (oneDAL) <install_dir>/daal/latest/licensing/third-party-programs.txt
+ 5.  Intel(R) oneAPI Data Analytics Library (oneDAL) <install_dir>/daal/latest/licensing/en/third-party-programs.txt
  6.  Intel(R) oneAPI Collective Communications Library (oneCCL) <install_dir>/ccl/latest/licensing/third-party-programs.txt
- 7.  Intel(R) oneAPI Deep Neural Network Library (oneDNN) <install_dir>/onednn/latest/licensing/third-party-programs.txt
+ 7.  Intel(R) oneAPI Deep Neural Network Library (oneDNN) <install_dir>/dnnl/latest/licensing/third-party-programs.txt
  8.  Intel(R) oneAPI Video Processing Library (oneVPL) <install_dir>/vpl/latest/licensing/third-party-programs.txt
  9.  Intel(R) DPC++ Compatibility Tool <install_dir>/dpcpp-ct/latest/licensing/third-party-programs.txt
- 10. GDB* <install_dir>/debugger/latest/licensing/third-party-programs.txt
+ 10. Intel(R) Distribution for GDB* <install_dir>/debugger/latest/licensing/third-party-programs.txt
  11. Intel(R) Integrated Performance Primitives (Intel(R) IPP) <install_dir>/ipp/latest/licensing/third-party-programs.txt
  12. Intel(R) Distribution for Python* <install_dir>/intelpython/latest/licensing/third-party-programs.txt
  13. Intel(R) Vtune(TM) Profiler <install_dir>/vtune/latest/licensing/third-party-programs.txt
  14. Intel(R) Advisor <install_dir>/advisor/latest/licensing/third-party-programs.txt
  15. Dev Utilities <install_dir>/dev-utilities/latest/licensing/third-party-programs.txt
- 16. PSET <install_dir>/pset/licensing/third-party-programs.txt
+ 16. PSET <install_dir>/installer/third-party-programs.txt
 
 Intel(R) oneAPI HPC Toolkit (HPC Kit):
  17. Intel(R) C++ Compiler <install_dir>/compiler/latest/licensing/c/third-party-programs.txt
@@ -1873,7 +1874,7 @@ Intel(R) oneAPI IoT Toolkit (IoT Kit):
 
 Intel(R) oneAPI DL Framework Developer Toolkit (DLFD Kit):
  27. Intel(R) oneAPI Collective Communications Library (oneCCL) <install_dir>/ccl/latest/licensing/third-party-programs.txt
- 28. Intel(R) oneAPI Deep Neural Network Library (oneDNN) <install_dir>/onednn/latest/licensing/third-party-programs.txt
+ 28. Intel(R) oneAPI Deep Neural Network Library (oneDNN) <install_dir>/dnnl/latest/licensing/third-party-programs.txt
 
 Intel(R) oneAPI Rendering Toolkit (Render Kit):
  29. Intel(R) Embree <install_dir>/embree/latest/licensing/third-party-programs.txt
@@ -1881,21 +1882,16 @@ Intel(R) oneAPI Rendering Toolkit (Render Kit):
  31. Intel(R) Open Image Denoise <install_dir>/oidn/latest/licensing/third-party-programs.txt
  32. Intel(R) Open Volume Kernel Library (Intel(R) Open VKL) <install_dir>/openvkl/latest/licensing/third-party-programs.txt
 
-Intel(R) System Bring-up Toolkit (Bringup Kit):
- 33. Intel(R) Vtune(TM) Profiler <install_dir>/vtune/latest/licensing/third-party-programs.txt
- 34. Intel(R) SoC Watch <install_dir>/socwatch/latest/socwatch_for_target/socwatch_android_<version>_x86_64/third-party-programs.txt
-                        <install_dir>/socwatch/latest/socwatch_for_target/socwatch_linux_<version>_x86_64/third-party-programs.txt
- 35. Intel(R) System Debugger <install_dir>/system_debugger/latest/licensing/third-party-programs.txt
-
 Intel(R) AI Analytics Toolkit (AI Kit):
- 36. Intel(R) Distribution for Python* <install_dir>/intelpython/latest/licensing/third-party-programs.txt
- 37. Intel(R) Optimization for Tensorflow* <install_dir>/tensorflow/latest/licensing/third-party-programs.txt
- 38. PyTorch* <install_dir>/pytorch/latest/licensing/third-party-programs.txt
- 39. Model Zoo for Intel(R) Architecture <install_dir>/modelzoo/latest/licensing/third-party-programs.txt
- 40. Intel(R) AI Quantization Tools for TensorFlow* <install_dir>/IQT/latest/licensing/third-party-programs.txt
+ 33. Intel(R) Distribution for Python* <install_dir>/intelpython/latest/licensing/third-party-programs.txt
+ 34. Intel(R) Optimization for Tensorflow* <install_dir>/tensorflow/latest/licensing/third-party-programs.txt
+ 35. Intel(R) Optimization for PyTorch* <install_dir>/pytorch/latest/licensing/third-party-programs.txt
+ 36. Model Zoo for Intel(R) Architecture <install_dir>/modelzoo/latest/licensing/third-party-programs.txt
+ 37. Intel(R) AI Quantization Tools for TensorFlow* <install_dir>/IQT/latest/licensing/third-party-programs.txt
+ 38. Intel(R) Low Precision Optimization Tool <install_dir>/iLiT/latest/licensing/third-party-programs.txt
 
 All paths are relative to the Intel(R) oneAPI Toolkits installation directory. 
-By default, it is /opt/intel/inteloneapi
+By default, it is /opt/intel/oneapi
 
 --------------------------------------------------------------------------------
 * Other names and brands may be claimed as the property of others.

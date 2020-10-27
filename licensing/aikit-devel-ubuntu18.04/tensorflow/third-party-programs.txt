@@ -33,7 +33,7 @@ Third party programs and their corresponding required notices and/or license ter
    rsa
    Copyright 2011 Sybren A. Stüvel
 
-   importlib-metadata
+   import lib-metadata
    Copyright 2017-2019 Jason R. Coombs, Barry Warsaw
 	
 	Apache License 2.0
@@ -258,13 +258,7 @@ Third party programs and their corresponding required notices and/or license ter
 	
 ----------------------------------------------------------------------------------
 
-3. keras-applications
-   Copyright (c) 2016 - 2018, the respective contributors. All rights reserved.
-
-   keras-preprocessing
-   Copyright (c) 2015 - 2018, the respective contributors. All rights reserved.
-
-   termcolor
+3. termcolor
    Copyright (c) 2008-2011 Volvox Development Team.
 
    cachetools
@@ -453,7 +447,6 @@ Third party programs and their corresponding required notices and/or license ter
 7. gast
    Copyright (c) 2016, Serge Guelton. All rights reserved. 
 
-   BSD 3-Clause (customized)
  
 Redistribution and use in source and binary forms, with or without 
 modification, are permitted provided that the following conditions are met: 
@@ -488,7 +481,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     protobuf
     Copyright 2008 Google Inc.  All rights reserved.
  
-    BSD 3-Clause (customized)
+
  
 Redistribution and use in source and binary forms, with or without 
 modification, are permitted provided that the following conditions are  
@@ -529,7 +522,6 @@ support library is itself covered by the above license.
    Copyright 2004 Manfred Stienstra (the original version) 
    All rights reserved. 
 
-  BSD 3-Clause (customized)
  
 Redistribution and use in source and binary forms, with or without 
 modification, are permitted provided that the following conditions are met: 
@@ -557,10 +549,10 @@ POSSIBILITY OF SUCH DAMAGE.
 
 ----------------------------------------------------------------------------------
 
-10.oauthlib
-   Copyright (c) 2019 The OAuthlib Community. All rights reserved. 
+10. oauthlib
+    Copyright (c) 2019 The OAuthlib Community. All rights reserved. 
 
-   BSD 3-Clause (customized)
+
  
 Redistribution and use in source and binary forms, with or without 
 modification, are permitted provided that the following conditions are met: 
@@ -589,10 +581,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ----------------------------------------------------------------------------------
 
-11.webencodings
-   Copyright (c) 2012 by Simon Sapin. Some rights reserved. 
+11. webencodings
+    Copyright (c) 2012 by Simon Sapin. Some rights reserved. 
 
-   BSD 3-Clause (customized)
  
 Redistribution and use in source and binary forms, with or without 
 modification, are permitted provided that the following conditions are  
@@ -624,15 +615,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ---------------------------------------------------------------------------------- 
  
-12.c-ares
-   Copyright 1998 by the Massachusetts Institute of Technology.
-
-# c-ares license
-
-Copyright (c) 2007 - 2018, Daniel Stenberg with many contributors, see AUTHORS
+12. c-ares
+    Copyright (c) 2007 - 2018, Daniel Stenberg with many contributors, see AUTHORS
 file.
-
-Copyright 1998 by the Massachusetts Institute of Technology.
+    Copyright 1998 by the Massachusetts Institute of Technology.
 
 Permission to use, copy, modify, and distribute this software and its
 documentation for any purpose and without fee is hereby granted, provided that
@@ -649,7 +635,6 @@ purpose.  It is provided "as is" without express or implied warranty.
 13. astunparse
    Copyright (c) 2014, Simon Percivall. All rights reserved.
    
-	BSD 3C (customized) + Python Software Foundation LicenseÊV2
    
 	LICENSE
 	=======
@@ -718,5 +703,47 @@ purpose.  It is provided "as is" without express or implied warranty.
 
 ----------------------------------------------------------------------------------  
 
+14. keras-applications
+    Copyright (c) 2016 - 2018, the respective contributors. All rights reserved.
 
+    keras-preprocessing
+    Copyright (c) 2015 - 2018, the respective contributors. All rights reserved.
+
+Each contributor holds copyright over their respective contributions.
+The project versioning (Git) records all such contribution source information.
+The initial code of this repository came from https://github.com/keras-team/keras
+(the Keras repository), hence, for author information regarding commits
+that occured earlier than the first commit in the present repository,
+please see the original Keras repository.
+
+LICENSE
+
+The MIT License (MIT)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+----------------------------------------------------------------------------------  
+
+The following third party programs have their own third party program files. These additional third party program files are as follows:
+
+1. Intel Optimization for Tensorflow : /opt/intel/oneapi/tensorflow/2.2.0/licensing/third-party-programs-tf.txt
+ 
+
+----------------------------------------------------------------------------------  
 Other names and brands may be claimed as the property of others.   

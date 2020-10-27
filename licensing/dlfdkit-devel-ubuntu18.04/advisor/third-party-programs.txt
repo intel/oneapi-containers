@@ -10,8 +10,7 @@ your use of the third party programs.
 This third-party-programs.txt file applies to Intel(R) Advisor product.
 
 All paths are relative to the Intel(R) Advisor installation directory.
-By default, it is /opt/intel for standalone release and /opt/intel/inteloneapi
-for oneAPI packages.
+By default, it is /opt/intel/oneapi for oneAPI packages.
 
 The following samples are subject to the terms of sample code license agreement
 of http://software.intel.com/en-us/articles/intel-sample-source-code-license-agreement/
@@ -77,6 +76,9 @@ of http://software.intel.com/en-us/articles/intel-sample-source-code-license-agr
    vuejs/vuejs.org
    Copyright (c) 2013-present Yuxi Evan You
 
+   Intel compute-runtime
+   Copyright (c) 2018 Intel Corporation
+   
 The MIT License:
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1043,8 +1045,8 @@ ings in this Software without prior written authorization from him.
 The following third party programs have their own third party programs. These additional third
 party program files are as follows:
 
-1. PIN: <install_dir>\licensing\PIN third-party-programs.txt
-2. GT-PIN: <install_dir>\licensing\GT-PIN third-party-programs.txt
-3. FGA: <install_dir>\fga\doc\third-party-programs.txt
+1. PIN: <install_dir>/licensing/PIN third-party-programs.txt
+2. GT-PIN: <install_dir>/licensing/GT-PIN third-party-programs.txt
+3. FGA: <install_dir>/fga/doc/third-party-programs.txt
 -------------------------------------------------------------------------------------
 Other names and brands may be claimed as the property of others.
