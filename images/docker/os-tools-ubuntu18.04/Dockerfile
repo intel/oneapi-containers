@@ -6,11 +6,11 @@ ARG DEBIAN_FRONTEND=noninteractive
 ARG APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=1
 
 # install OS tools
+RUN sed -e '/bionic-updates main restricted/ s/^#*/#/' -i /etc/apt/sources.list
 RUN apt-get update -y && \
-apt-get install -y --no-install-recommends -o=Dpkg::Use-Pty=0 \
-# make
+apt-get install -y --allow-downgrades --no-install-recommends -o=Dpkg::Use-Pty=0 \
+libc6-dev=2.27-3ubuntu1.2 libc6=2.27-3ubuntu1.2 libc-bin=2.27-3ubuntu1.2 \
 build-essential \
-# library helper
 pkg-config \
 cmake \
 ca-certificates \
@@ -24,5 +24,5 @@ RUN file=$(basename "$url") && \
     rm "$file"
 
 # configure the repository
-ARG apt_repo=https://apt.repos.intel.com/oneapi
-RUN echo "deb $apt_repo all main" > /etc/apt/sources.list.d/oneAPI.list
+ARG repo=https://apt.repos.intel.com/oneapi
+RUN echo "deb $repo all main" > /etc/apt/sources.list.d/oneAPI.list

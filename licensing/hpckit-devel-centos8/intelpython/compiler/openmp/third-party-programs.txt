@@ -1,1 +1,1 @@
-../../../../hpckit-devel-centos8/compiler/openmp/third-party-programs.txt
+/opt/intel//oneapi/compiler/2021.1.1/licensing/openmp/third-party-programs.txt

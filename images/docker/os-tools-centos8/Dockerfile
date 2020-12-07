@@ -13,12 +13,13 @@ RUN dnf install -y bzip2
 ENV LANG=C.UTF-8
 
 # oneAPI repository
-RUN echo $'\
+ARG repo=https://yum.repos.intel.com/oneapi
+RUN echo -e "\
 [oneAPI]\n\
 name=Intel(R) oneAPI repository\n\
-baseurl=https://yum.repos.intel.com/oneapi\n\
+baseurl=${repo}\n\
 enabled=1\n\
 gpgcheck=1\n\
 repo_gpgcheck=1\n\
-gpgkey=https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2023.PUB' \
+gpgkey=https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2023.PUB" \
 > /etc/yum.repos.d/oneAPI.repo

@@ -1,1 +1,1 @@
-../../../../dlfdkit-devel-ubuntu18.04/compiler/openmp/third-party-programs.txt
+/opt/intel//oneapi/compiler/2021.1.1/licensing/openmp/third-party-programs.txt

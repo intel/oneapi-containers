@@ -1,12 +1,13 @@
-# Intel<sup>®</sup> oneAPI Toolkit Containers
+# Intel<sup>®</sup> oneAPI Containers
 
-Intel<sup>®</sup> oneAPI products will deliver the tools needed to deploy applications and solutions across scalar, vector, matrix, and spatial (SVMS) architectures. Its set of complementary toolkits—a base kit and specialty add-ons—simplify programming and help developers improve efficiency and innovation. [oneAPI Toolkit Details](https://software.intel.com/oneapi)
+Intel<sup>®</sup> oneAPI products will deliver the tools needed to deploy applications and solutions across scalar, vector, matrix, and spatial (SVMS) architectures. Its set of complementary toolkits—a base kit and specialty add-ons—simplify programming and help developers improve efficiency and innovation. [oneAPI Details](https://software.intel.com/oneapi)
 
 Containers allow you to set up and configure environments for profiling and distribute them using images:
 
 * You can install an image containing an environment pre-configured with all the tools you need, then develop within that environment.
 * You can save an environment and use the image to move that environment to another machine without additional setup.
 * You can prepare containers with different sets of languages and runtimes, analysis tools, or other tools, as needed.
+* You can use runtime containers to execute your applications built with oneAPI toolkits.
 
 [oneAPI Containers Get Started Guide](https://software.intel.com/get-started-with-intel-oneapi-base-linux-using-containers)
 
@@ -17,6 +18,20 @@ Explore more containers, models, and more on the [Intel<sup>®</sup> oneContaine
 # License Agreement
 
 By downloading and using this container and the included software, you agree to the terms and conditions of the [software license agreements](https://github.com/intel/oneapi-containers/tree/master/licensing).
+
+# Intel<sup>®</sup> oneAPI Runtime Libraries
+
+Get started running or deploying applications built with oneAPI toolkits. [Runtime Details](https://software.intel.com/oneapi/runtime)
+
+```sh
+image=intel/oneapi
+docker pull "$image"
+docker run --device=/dev/dri -it "$image"
+```
+
+* [oneAPI Runtime Containers Get Started Guide](https://software.intel.com/get-started-with-intel-oneapi-runtime-linux-using-containers)
+* [Runtime Libraries Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/runtime-ubuntu18.04/Dockerfile)
+
 
 # Intel<sup>®</sup> oneAPI Base Toolkit
 

@@ -11,23 +11,17 @@ Copyright (c) 1992-2013 The University of Tennessee and The                     
 Copyright (c) 2000-2013 The University of California Berkeley. All rights reserved.
 Copyright (c) 2006-2013 The University of Colorado Denver. All rights reserved.
 
-Netlib LAPACK:
+   Netlib LAPACK:
 Copyright (c) 1992-2013 The University of Tennessee and The                          University of Tennessee Research Foundation. All rights  reserved.
 Copyright (c) 2000-2013 The University of California Berkeley. All rights reserved.
 Copyright (c) 2006-2013 The University of Colorado Denver. All rights reserved.
 
-Netlib LAPACK95:
-Copyright (c) 1992-2013 The University of Tennessee and The                          University of Tennessee Research Foundation. All rights  reserved.
-Copyright (c) 2000-2013 The University of California Berkeley. All rights reserved.
-Copyright (c) 2006-2013 The University of Colorado Denver. All rights reserved.
-
-Netlib ScaLAPACK:
+   Netlib ScaLAPACK:
 Copyright (c) 1992-2013 The University of Tennessee and The                          University of Tennessee Research Foundation. All rights  reserved.
 Copyright (c) 2000-2013 The University of California Berkeley. All rights reserved.
 Copyright (c) 2006-2013 The University of Colorado Denver. All rights reserved.
 
 
-Modified BSD License
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -44,38 +38,37 @@ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PRO
 
 -------------------------------------------------------------
 2. HPCG: High Performance Conjugate Gradient Benchmark: 
-   HPCG - 3.1 - March 28, 2019
-   Michael A. Heroux
-   Scalable Algorithms Group, Center for Computing Research
-   Sandia National Laboratories, Albuquerque, NM
-   Piotr Luszczek
-   Jack Dongarra
-   University of Tennessee, Knoxville
-   Innovative Computing Laboratory
-   (C) Copyright 2013-2019 All Rights Reserved
+   Copyright (c) 2013-2019, hpcg-benchmark
+   All rights reserved.
 
-Modified BSD License
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
 
-Redistribution  and  use in  source and binary forms, with or without modification, are  permitted provided  that the following  conditions are met:
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
 
-1. Redistributions  of  source  code  must retain the above copyright notice, this list of conditions and the following disclaimer.
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
 
-2. Redistributions in binary form must reproduce  the above copyright notice, this list of conditions,  and the following disclaimer in the documentation and/or other materials provided with the distribution.
+* Neither the name of hpcg nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
 
-3. The name of the  University,  the name of the  Laboratory,  or the names  of  its  contributors  may  not  be used to endorse or promote products  derived   from   this  software  without  specific  written permission.
-
--- Disclaimer:
-
-THIS  SOFTWARE  IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,  INCLUDING,  BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE UNIVERSITY
-OR  CONTRIBUTORS  BE  LIABLE FOR ANY  DIRECT,  INDIRECT,  INCIDENTAL,
-SPECIAL,  EXEMPLARY,  OR  CONSEQUENTIAL DAMAGES  (INCLUDING,  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS INTERRUPTION)  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,  STRICT LIABILITY,  OR TORT(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ----------------------------------------------------------------
 3. Mersenne Twister with improved initialization: 
    Copyright (C) 1997 - 2002, Makoto Matsumoto and Takuji  Nishimura, All rights reserved.
-
-   Modified BSD License
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -94,8 +87,6 @@ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PRO
 4. SFMT:
    Copyright (c) 2006,2007-2014 Mutsuo Saito, Makoto Matsumoto  and Hiroshima University. All rights reserved.
 
-   Modified BSD License
-
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
 * Redistributions in binary form must reproduce the above
@@ -112,8 +103,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 5. Sobol sequence generator:
    Copyright (c) 2008, Frances Y. Kuo and Stephen Joe, All rights reserved.
 
-        Modified BSD License
-
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
     * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -129,8 +118,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ``AS IS'' AND ANY EXPRESS OR 
 6. The FEAST Eigenvalue Solver:
    Copyright (c) 2009-2012, The Regents of the University of  Massachusetts, Amherst. Developed by E. Polizzi. All rights reserved.
 
-   Modified BSD License
-
 Redistribution and use in source and binary forms, with or without modification,are permitted provided that the following conditions are met:
 
 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -143,45 +130,44 @@ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT(INCLUDING NEGLIGENCE O
 
 ----------------------------------------------------------------
 7. xbyak:
-   Copyright (c) 2007 MITSUNARI Shigeo, All rights reserved.
+Copyright (c) 2007 MITSUNARI Shigeo
+All rights reserved.
 
-   Modified BSD License
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
 
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+Redistributions of source code must retain the above copyright notice, this
+list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation
+and/or other materials provided with the distribution.
+Neither the name of the copyright owner nor the names of its contributors may
+be used to endorse or promote products derived from this software without
+specific prior written permission.
 
-Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-Neither the name of the copyright owner nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
------------------------------------------------------------------------------
-ソースコード形式かバイナリ形式か、変更するかしないかを問わず、以下の条件を満た
-す場合に限り、再頒布および使用が許可されます。
-
-ソースコードを再頒布する場合、上記の著作権表示、本条件一覧、および下記免責条項
-を含めること。
-バイナリ形式で再頒布する場合、頒布物に付属のドキュメント等の資料に、上記の著作
-権表示、本条件一覧、および下記免責条項を含めること。
-書面による特別の許可なしに、本ソフトウェアから派生した製品の宣伝または販売促進
-に、著作権者の名前またはコントリビューターの名前を使用してはならない。
-本ソフトウェアは、著作権者およびコントリビューターによって「現状のまま」提供さ
-れており、明示黙示を問わず、商業的な使用可能性、および特定の目的に対する適合性
-に関する暗黙の保証も含め、またそれに限定されない、いかなる保証もありません。
-著作権者もコントリビューターも、事由のいかんを問わず、 損害発生の原因いかんを
-問わず、かつ責任の根拠が契約であるか厳格責任であるか（過失その他の）不法行為で
-あるかを問わず、仮にそのような損害が発生する可能性を知らされていたとしても、
-本ソフトウェアの使用によって発生した（代替品または代用サービスの調達、使用の
-喪失、データの喪失、利益の喪失、業務の中断も含め、またそれに限定されない）直接
-損害、間接損害、偶発的な損害、特別損害、懲罰的損害、または結果損害について、
-一切責任を負わないものとします。
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+THE POSSIBILITY OF SUCH DAMAGE.
 
 ----------------------------------------------------------------
 8. Intel(R) Instrumentation and Tracing Technology API: 
-   Copyright(c) 2005-2014, Intel Corporation, All rights reserved.
+   Copyright(c) 2019, Intel Corporation, All rights reserved.
 
-   Modified BSD License
+   LAPACK95
+   Copyright (c) 2000, Netlib
+   All rights reserved.
+
+   XBLAS
+   Copyright (c) 2008-2009 The University of California Berkeley.  All rights reserved.
+
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 
 * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 
@@ -190,7 +176,7 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-         -------------------------------------------------------
+----------------------------------------------------------------
 9. Intel Open Source Technology Center Safe String Library: 
          strcat_s.c
    October 2008, Bo Berry
@@ -199,8 +185,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
    
    level-zero:
    Copyright (c) 2019 Intel Corporation
-       
-   MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -322,46 +306,32 @@ implied, including, without limitation, any warranties or conditions of TITLE, N
 THIS  SOFTWARE  IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,  INCLUDING,  BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE UNIVERSITY OR  CONTRIBUTORS  BE  LIABLE FOR ANY  DIRECT,  INDIRECT,  INCIDENTAL, SPECIAL,  EXEMPLARY,  OR  CONSEQUENTIAL DAMAGES  (INCLUDING,  BUT NOT
 LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS INTERRUPTION)  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,  STRICT LIABILITY,  OR TORT(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
 
-  --------------------------------------------------------------
+-------------------------------------------------------------
 12. Intel(R) oneAPI Threading Building Blocks: 
     Copyright 2005-2019 Intel Corporation.  All Rights Reserved.
 
-   Intel(R) Integrated Performance Primitives Library
-   Copyright 2020 Intel Corporation. All Rights Reserved.
+    Intel(R) Integrated Performance Primitives Library
+    Copyright 2020 Intel Corporation. All Rights Reserved.
 
-   Intel(R) OpenMP* Runtime:
-   Copyright 1985-2019 Intel Corporation.  All Rights Reserved.
-
-   The source code contained or described herein and all  documents related to the source code    ("Material") are owned by Intel Corporation or its suppliers or licensors.  Title to the    Material remains with Intel Corporation or its suppliers and licensors.  The Material is    protected by worldwide copyright laws and treaty provisions.  No part of the Material may be     used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or    disclosed in any way without Intel's prior express written permission.
-
-   No license under any patent, copyright, trade secret or other intellectual property right is    granted to or conferred upon you by disclosure or delivery of the Materials, either    expressly, by implication, inducement, estoppel or otherwise.  Any license under such    intellectual property rights must be express and approved by Intel in writing.
-
-   Portions of this software are protected under the following patents:
-        U.S. Patent 5,812,852
-        U.S. Patent 6,792,599
-        U.S. Patent 7,069,556
-        U.S. Patent 7,328,433
-        U.S. Patent 7,500,242
-
-  
+    Intel(R) OpenMP* Runtime:
+    Copyright 1985-2019 Intel Corporation.  All Rights Reserved.
 
 
-
-   Intel Simplified Software License (Version April 2018)
+Intel Simplified Software License (Version April 2018)
 
 Copyright (c) 2018 Intel Corporation.
 
-Use and Redistribution.  You may use and redistribute the software (the Software), without modification, provided the following conditions are met:
+Use and Redistribution.  You may use and redistribute the software (the “Software”), without modification, provided the following conditions are met:
 
 * Redistributions must reproduce the above copyright notice and the following terms of use in the Software and in the documentation and/or other materials provided with the distribution.
 * Neither the name of Intel nor the names of its suppliers may be used to endorse or promote products derived from this Software without specific prior written permission.
 * No reverse engineering, decompilation, or disassembly of this Software is permitted.
 
-Limited patent license.  Intel grants you a world-wide, royalty-free, non-exclusive license under patents it now or hereafter owns or controls to make, have made, use, import, offer to sell and sell (Utilize) this Software, but solely to the extent that any such patent is necessary to Utilize the Software alone. The patent license shall not apply to any combinations which include this software.  No hardware per se is licensed hereunder.
+Limited patent license.  Intel grants you a world-wide, royalty-free, non-exclusive license under patents it now or hereafter owns or controls to make, have made, use, import, offer to sell and sell (“Utilize”) this Software, but solely to the extent that any such patent is necessary to Utilize the Software alone. The patent license shall not apply to any combinations which include this software.  No hardware per se is licensed hereunder.
 
-Third party and other Intel programs.  Third Party Programs are the files listed in the third-party-programs.txt text file that is included with the Software and may include Intel programs under separate license terms. Third Party Programs, even if included with the distribution of the Materials, are governed by separate license terms and those license terms solely govern your use of those programs.  
+Third party and other Intel programs.  “Third Party Programs” are the files listed in the “third-party-programs.txt” text file that is included with the Software and may include Intel programs under separate license terms. Third Party Programs, even if included with the distribution of the Materials, are governed by separate license terms and those license terms solely govern your use of those programs.  
 
-DISCLAIMER.  THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. THIS SOFTWARE IS NOT INTENDED FOR USE IN SYSTEMS OR APPLICATIONS WHERE FAILURE OF THE SOFTWARE MAY CAUSE PERSONAL INJURY OR DEATH AND YOU AGREE THAT YOU ARE FULLY RESPONSIBLE FOR ANY CLAIMS, COSTS, DAMAGES, EXPENSES, AND ATTORNEYS FEES ARISING OUT OF ANY SUCH USE, EVEN IF ANY CLAIM ALLEGES THAT INTEL WAS NEGLIGENT REGARDING THE DESIGN OR MANUFACTURE OF THE MATERIALS.
+DISCLAIMER.  THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE DISCLAIMED. THIS SOFTWARE IS NOT INTENDED FOR USE IN SYSTEMS OR APPLICATIONS WHERE FAILURE OF THE SOFTWARE MAY CAUSE PERSONAL INJURY OR DEATH AND YOU AGREE THAT YOU ARE FULLY RESPONSIBLE FOR ANY CLAIMS, COSTS, DAMAGES, EXPENSES, AND ATTORNEYS’ FEES ARISING OUT OF ANY SUCH USE, EVEN IF ANY CLAIM ALLEGES THAT INTEL WAS NEGLIGENT REGARDING THE DESIGN OR MANUFACTURE OF THE MATERIALS.
 
 LIMITATION OF LIABILITY. IN NO EVENT WILL INTEL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. YOU AGREE TO INDEMNIFY AND HOLD INTEL HARMLESS AGAINST ANY CLAIMS AND EXPENSES RESULTING FROM YOUR USE OR UNAUTHORIZED USE OF THE SOFTWARE.
 
@@ -369,7 +339,7 @@ No support.  Intel may make changes to the Software, at any time without notice,
 
 Termination. Intel may terminate your right to use the Software in the event of your breach of this Agreement and you fail to cure the breach within a reasonable period of time.
 
-Feedback.  Should you provide Intel with comments, modifications, corrections, enhancements or other input (Feedback) related to the Software Intel will be free to use, disclose, reproduce, license or otherwise distribute or exploit the Feedback in its sole discretion without any obligations or restrictions of any kind, including without limitation, intellectual property rights or licensing obligations.
+Feedback.  Should you provide Intel with comments, modifications, corrections, enhancements or other input (“Feedback”) related to the Software Intel will be free to use, disclose, reproduce, license or otherwise distribute or exploit the Feedback in its sole discretion without any obligations or restrictions of any kind, including without limitation, intellectual property rights or licensing obligations.
 
 Compliance with laws.  You agree to comply with all relevant laws and regulations governing your use, transfer, import or export (or prohibition thereof) of the Software.
 
@@ -381,114 +351,72 @@ Governing law.  All disputes will be governed by the laws of the United States o
 ----------------------------------------------------------------
 
 13. Microsoft HPC Pack Software Development Kit (SDK)
+    Copyright Microsoft Corp.
 
-    Micrososft Software License 
-    
-    MICROSOFT SOFTWARE LICENSE TERMS
-MICROSOFT HPC PACK SOFTWARE DEVELOPMENT KIT (SDK) 
-Last updated: August 2018
-These license terms are an agreement between Microsoft Corporation (or based on where you live, one of its affiliates) and you. Please read them. They apply to the software named above, which includes the media on which you received it, if any. The terms also apply to any Microsoft
-updates,
-supplements,
-Internet-based services, and
-support services
-for this software, unless other terms accompany those items. If so, those terms apply.
-By using the software, you accept these terms. If you do not accept them, do not use the software.
-If you comply with these license terms, you have the perpetual rights below.
-INSTALLATION AND USE RIGHTS. You may install and use any number of copies of the software on your devices to design, develop and test your programs.  Subject to your compliance with the terms below, you are permitted to distribute the software, in object code form only, in programs you develop and you may permit distributors of your programs to copy and distribute the software as part of those programs.
-Distribution Requirements. For any software you distribute in your programs, you must
-add significant primary functionality to it in your programs;
-for any Distributable Code having a filename extension of .lib, distribute only the results of running such Distributable Code through a linker with your program;
-require distributors and external end users to agree to terms that protect it at least as much as this agreement; 
-display your valid copyright notice on your programs; and
-indemnify, defend, and hold harmless Microsoft from any claims, including attorneys fees, related to the distribution or use of your programs.
-ii.	Distribution Restrictions. You may not
-alter any copyright, trademark or patent notice in the software;
-use Microsofts trademarks in your programs names or in a way that suggests your programs come from or are endorsed by Microsoft;
-distribute software to run on a platform other than the Windows platform;
-include software in malicious, deceptive or unlawful programs; or
-modify or distribute the software so that any part of it becomes subject to an Excluded License. An Excluded License is one that requires, as a condition of use, modification or distribution, that
-the code be disclosed or distributed in source code form; or
-others have the right to modify it.
-2.	SCOPE OF LICENSE. The software is licensed, not sold. This agreement only gives you some rights to use the software. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you may use the software only as expressly permitted in this agreement. In doing so, you must comply with any technical limitations in the software that only allow you to use it in certain ways. You may not
-work around any technical limitations in the software;
-reverse engineer, decompile or disassemble the software, except and only to the extent that applicable law expressly permits, despite this limitation;
-publish the software for others to copy;
-rent, lease or lend the software;
-transfer the software or this agreement to any third party; or
-use the software for commercial software hosting services.
-3.	DOCUMENTATION. Any person that has valid access to your computer or internal network may copy and use the documentation for your internal, reference purposes.
-4.	EXPORT RESTRICTIONS. You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit http://aka.ms/exporting.
-5.	SUPPORT SERVICES. Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is as is, with all faults, and without warranty of any kind.
-6.	UPDATES. The software may periodically check for updates, and download and install them for you. You may obtain updates only from Microsoft or authorized sources. Microsoft may need to update your system to provide you with updates. You agree to receive these automatic updates without any additional notice. Updates may not include or support all existing software features, services, or peripheral devices.
-7.	BINDING ARBITRATION AND CLASS ACTION WAIVER. This Section applies if you live in (or, if a business, your principal place of business is in) the United States.  If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. If you and Microsoft cant, you and Microsoft agree to binding individual arbitration before the American Arbitration Association under the Federal Arbitration Act (FAA), and not to sue in court in front of a judge or jury. Instead, a neutral arbitrator will decide. Class action lawsuits, class-wide arbitrations, private attorney-general actions, and any other proceeding where someone acts in a representative capacity are not allowed; nor is combining individual proceedings without the consent of all parties. The complete Arbitration Agreement contains more terms and is at http://aka.ms/arb-agreement-1. You and Microsoft agree to these terms.
-8.	ENTIRE AGREEMENT. This agreement, and any other terms Microsoft may provide for supplements, updates, or third-party applications, is the entire agreement for the software.
-9.	APPLICABLE LAW AND PLACE TO RESOLVE DISPUTES. If you acquired the software in the United States or Canada, the laws of the state or province where you live (or, if a business, where your principal place of business is located) govern the interpretation of this agreement, claims for its breach, and all other claims (including consumer protection, unfair competition, and tort claims), regardless of conflict of laws principles, except that the FAA governs everything related to arbitration. If you acquired the software in any other country, its laws apply, except that the FAA governs everything related to arbitration. If U.S. federal jurisdiction exists, you and Microsoft consent to exclusive jurisdiction and venue in the federal court in King County, Washington for all disputes heard in court (excluding arbitration). If not, you and Microsoft consent to exclusive jurisdiction and venue in the Superior Court of King County, Washington for all disputes heard in court (excluding arbitration).
-10.	CONSUMER RIGHTS; REGIONAL VARIATIONS. This agreement describes certain legal rights. You may have other rights, including consumer rights, under the laws of your state or country. Separate and apart from your relationship with Microsoft, you may also have rights with respect to the party from which you acquired the software. This agreement does not change those other rights if the laws of your state or country do not permit it to do so. For example, if you acquired the software in one of the below regions, or mandatory country law applies, then the following provisions apply to you:
-Australia. You have statutory guarantees under the Australian Consumer Law and nothing in this agreement is intended to affect those rights.
-Canada. If you acquired this software in Canada, you may stop receiving updates by turning off the automatic update feature, disconnecting your device from the Internet (if and when you re-connect to the Internet, however, the software will resume checking for and installing updates), or uninstalling the software. The product documentation, if any, may also specify how to turn off updates for your specific device or software.
-Germany and Austria.
-Warranty. The properly licensed software will perform substantially as described in any Microsoft materials that accompany the software. However, Microsoft gives no contractual guarantee in relation to the licensed software.
-Limitation of Liability. In case of intentional conduct, gross negligence, claims based on the Product Liability Act, as well as, in case of death or personal or physical injury, Microsoft is liable according to the statutory law.
-Subject to the foregoing clause ii., Microsoft will only be liable for slight negligence if Microsoft is in breach of such material contractual obligations, the fulfillment of which facilitate the due performance of this agreement, the breach of which would endanger the purpose of this agreement and the compliance with which a party may constantly trust in (so-called "cardinal obligations"). In other cases of slight negligence, Microsoft will not be liable for slight negligence.
-11.	DISCLAIMER OF WARRANTY. THE SOFTWARE IS LICENSED AS IS. YOU BEAR THE RISK OF USING IT. MICROSOFT GIVES NO EXPRESS WARRANTIES, GUARANTEES, OR CONDITIONS. TO THE EXTENT PERMITTED UNDER APPLICABLE LAWS, MICROSOFT EXCLUDES ALL IMPLIED WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
-12.	LIMITATION ON AND EXCLUSION OF DAMAGES. IF YOU HAVE ANY BASIS FOR RECOVERING DAMAGES DESPITE THE PRECEDING DISCLAIMER OF WARRANTY, YOU CAN RECOVER FROM MICROSOFT AND ITS SUPPLIERS ONLY DIRECT DAMAGES UP TO U.S. $5.00. YOU CANNOT RECOVER ANY OTHER DAMAGES, INCLUDING CONSEQUENTIAL, LOST PROFITS, SPECIAL, INDIRECT, OR INCIDENTAL DAMAGES.
-This limitation applies to (a) anything related to the software, services, content (including code) on third party Internet sites, or third party applications; and (b) claims for breach of contract, warranty, guarantee, or condition; strict liability, negligence, or other tort; or any other claim; in each case to the extent permitted by applicable law.
-It also applies even if Microsoft knew or should have known about the possibility of the damages. The above limitation or exclusion may not apply to you because your state, province, or country may not allow the exclusion or limitation of incidental, consequential, or other damages.
-
-
-Please note: As this software is distributed in Canada, some of the clauses in this agreement are provided below in French.
-Remarque: Ce logiciel étant distribué au Canada, certaines des clauses dans ce contrat sont fournies ci-dessous en français.
-EXONÉRATION DE GARANTIE. Le logiciel visé par une licence est offert « tel quel ». Toute utilisation de ce logiciel est à votre seule risque et péril. Microsoft naccorde aucune autre garantie expresse. Vous pouvez bénéficier de droits additionnels en vertu du droit local sur la protection des consommateurs, que ce contrat ne peut modifier. La ou elles sont permises par le droit locale, les garanties implicites de qualité marchande, dadéquation à un usage particulier et dabsence de contrefaçon sont exclues.
-LIMITATION DES DOMMAGES-INTÉRÊTS ET EXCLUSION DE RESPONSABILITÉ POUR LES DOMMAGES. Vous pouvez obtenir de Microsoft et de ses fournisseurs une indemnisation en cas de dommages directs uniquement à hauteur de 5,00 $ US. Vous ne pouvez prétendre à aucune indemnisation pour les autres dommages, y compris les dommages spéciaux, indirects ou accessoires et pertes de bénéfices.
-Cette limitation concerne:
-	tout ce qui est relié au logiciel, aux services ou au contenu (y compris le code) figurant sur des sites Internet tiers ou dans des programmes tiers; et
-	les réclamations au titre de violation de contrat ou de garantie, ou au titre de responsabilité stricte, de négligence ou dune autre faute dans la limite autorisée par la loi en vigueur.
-Elle sapplique également, même si Microsoft connaissait ou devrait connaître léventualité dun tel dommage. Si votre pays nautorise pas lexclusion ou la limitation de responsabilité pour les dommages indirects, accessoires ou de quelque nature que ce soit, il se peut que la limitation ou lexclusion ci-dessus ne sappliquera pas à votre égard.
-EFFET JURIDIQUE. Le présent contrat décrit certains droits juridiques. Vous pourriez avoir dautres droits prévus par les lois de votre pays. Le présent contrat ne modifie pas les droits que vous confèrent les lois de votre pays si celles-ci ne le permettent pas.
-
-*Other names and brands may be claimed as the property of others.
+    Terms for Microsoft “Distributable Code."
+1.  License. This software package from Intel (the “Software Package”) contains code from Microsoft (the “Distributable Code”).  You are provided a non-transferable, non-exclusive, non-sublicensable, limited right and license only to use the Distributable Code as part of this Software Package.  You are not allowed to copy, modify, remove the Distributable Code from the Software Package or redistribute the Distributable Code.
+2.  Restrictions. The Distributable Code is licensed, not sold. You are only provided the above rights to use the Distributable Code.  Intel and Microsoft reserve all other rights. Unless applicable law gives you more rights, you may use the Distributable Code only as expressly permitted in these terms. In using the Distributable Code, you must comply with any technical limitations in the Distributable Code that only allow you to use it in certain ways. You may not:
+•   work around any technical limitations in the Distributable Code; 
+•   reverse engineer, decompile or disassemble the software, or otherwise attempt to derive the source code for the Distributable Code, except and to the extent required by third party licensing terms governing use of certain open source components that may be included in the Distributable Code; 
+•   remove, minimize, block or modify any notices of Intel, Microsoft or its suppliers in the Distributable Code; 
+•   use the Distributable Code in any way that is against the law; or
+•   share, publish, rent or lease the software, or provide the Distributable Code as a stand-alone offering for others to use. 
+3.  NO WARRANTY.  THE  DISTRIBUTABLE CODE IS PROVIDED “AS IS” WITHOUT ANY EXPRESS OR IMPLIED WARRANTY OF ANY KIND INCLUDING WARRANTIES OF MERCHANTABILITY, NONINFRINGEMENT, OR FITNESS FOR A PARTICULAR PURPOSE.  
+4.  LIMITATION ON AND EXCLUSION OF DAMAGES. YOU CAN RECOVER FROM INTEL, MICROSOFT OR THEIR SUPPLIERS ONLY DIRECT DAMAGES UP TO $5.00. YOU CANNOT RECOVER ANY OTHER DAMAGES, INCLUDING CONSEQUENTIAL, LOST PROFITS, SPECIAL, INDIRECT OR INCIDENTAL DAMAGES. 
+This limitation applies to (a) anything related to the Distributable Code; and (b) claims for breach of contract, breach of warranty, guarantee or condition, strict liability, negligence, or other tort to the extent permitted by applicable law.  It also applies even if Intel or Microsoft knew or should have known about the possibility of the damages. The above limitation or exclusion may not apply to you because your state or country may not allow the exclusion or limitation of incidental, consequential or other damages. 
+5.  Export Restrictions. You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit www.microsoft.com/exporting.
 
 ----------------------------------------------------------------
-14. Netlib XBLAS - Extra Precise Basic Linear Algebra Subroutines:
-    Copyright (c) 2008-2009 The University of California Berkeley.  All rights reserved.
+14. memkind
+    Copyright (C) 2014-2020 Intel Corporation
 
-$COPYRIGHT$
-
-Additional copyrights may follow
-
-$HEADER$
+Unless otherwise specified, files in the memkind source distribution are
+subject to the following license:
 
 Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
+modification, are permitted provided that the following conditions are met:
 
-- Redistributions of source code must retain the above copyright
-  notice, this list of conditions and the following disclaimer. 
-  
-- Redistributions in binary form must reproduce the above copyright
-  notice, this list of conditions and the following disclaimer listed
-  in this license in the documentation and/or other materials
-  provided with the distribution.
-  
-- Neither the name of the copyright holders nor the names of its
-  contributors may be used to endorse or promote products derived from
-  this software without specific prior written permission.
-  
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT  
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT 
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT  
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of Intel Corporation nor the names of its contributors
+      may be used to endorse or promote products derived from this software
+      without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ----------------------------------------------------------------
+15. spiralgen
+    Some or all of this work - Copyright (c) 1999 - 2005, Intel Corp. All rights reserved.
 
+3.3. Redistribution of Executable. Redistribution in executable form of any substantial portion of the Covered Code or modification must reproduce the above Copyright Notice, and the following Disclaimer and Export Compliance provision in the documentation and/or other materials provided with the distribution.
+
+3.4. Intel retains all right, title, and interest in and to the Original Intel Code.
+
+3.5. Neither the name Intel nor any other trademark owned or controlled by Intel shall be used in advertising or otherwise to promote the sale, use or other dealings in products derived from or relating to the Covered Code without prior written authorization from Intel.
+
+4. Disclaimer and Export Compliance
+
+
+4.1. INTEL MAKES NO WARRANTY OF ANY KIND REGARDING ANY SOFTWARE PROVIDED HERE. ANY SOFTWARE ORIGINATING FROM INTEL OR DERIVED FROM INTEL SOFTWARE IS PROVIDED "AS IS," AND INTEL WILL NOT PROVIDE ANY SUPPORT, ASSISTANCE, INSTALLATION, TRAINING OR OTHER SERVICES. INTEL WILL NOT PROVIDE ANY UPDATES, ENHANCEMENTS OR EXTENSIONS. INTEL SPECIFICALLY DISCLAIMS ANY IMPLIED WARRANTIES OF MERCHANTABILITY, NONINFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE.
+
+4.2. IN NO EVENT SHALL INTEL HAVE ANY LIABILITY TO LICENSEE, ITS LICENSEES OR ANY OTHER THIRD PARTY, FOR ANY LOST PROFITS, LOST DATA, LOSS OF USE OR COSTS OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR FOR ANY INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THIS AGREEMENT, UNDER ANY CAUSE OF ACTION OR THEORY OF LIABILITY, AND IRRESPECTIVE OF WHETHER INTEL HAS ADVANCE NOTICE OF THE POSSIBILITY OF SUCH DAMAGES. THESE LIMITATIONS SHALL APPLY NOTWITHSTANDING THE FAILURE OF THE ESSENTIAL PURPOSE OF ANY LIMITED REMEDY.
+
+4.3. Licensee shall not export, either directly or indirectly, any of this software or system incorporating such software without first obtaining any required license or other approval from the U. S. Department of Commerce or any other agency or department of the United States Government. In the event Licensee exports any such software from the United States or re-exports any such software from a foreign destination, Licensee shall ensure that the distribution and export/re-export of the software is in compliance with all laws, regulations, orders, or other restrictions of the U.S. Export Administration Regulations. Licensee agrees that neither it nor any of its subsidiaries will export/re-export any technical data, process, software, or service, directly or indirectly, to any country for which the United States government or any agency thereof requires an export license, other governmental approval, or letter of assurance, without first obtaining such license, approval or letter.
+
+
+----------------------------------------------------------------
 
 The following third party programs have their own third party program files. These additional third party program files are as follows:
 
@@ -502,8 +430,11 @@ The following third party programs have their own third party program files. The
 
 5. List of third party for Intel(R) Integrated Performance Primitives Library is available in the third-party-programs-ipp.txt file.
 
+----------------------------------------------------------------
+
 *Other names and brands may be claimed as the property of others.
     
+
 
 
 

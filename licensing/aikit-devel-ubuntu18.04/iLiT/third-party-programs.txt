@@ -13,6 +13,10 @@ Third party programs and their corresponding required notices and/or license
 terms are listed below.
 -------------------------------------------------------------
 1. Intel Low Precision Optimization Tool
+   Copyright 2016-2019 Intel Corporation
+   Copyright 2018 YANDEX LLC
+   
+   pymongo
    
    
                                 Apache License
@@ -191,19 +195,9 @@ terms are listed below.
       of your accepting any such warranty or additional liability.
 
    END OF TERMS AND CONDITIONS
-
-   APPENDIX: How to apply the Apache License to your work.
-
-      To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "[]"
-      replaced with your own identifying information. (Don't include
-      the brackets!)  The text should be enclosed in the appropriate
-      comment syntax for the file format. We also recommend that a
-      file or class name and description of purpose be included on the
-      same "printed page" as the copyright notice for easier
-      identification within third-party archives.
-
-   Copyright 2018 Intel Corporation
+   ============================================================================
+   Copyright 2016-2019 Intel Corporation
+   Copyright 2018 YANDEX LLC
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -217,9 +211,23 @@ terms are listed below.
    See the License for the specific language governing permissions and
    limitations under the License.
 
+   This distribution includes third party software ("third party programs").
+   This third party software, even if included with the distribution of
+   the Intel software, may be governed by separate license terms, including
+   without limitation, third party license terms, other Intel software license
+   terms, and open source software license terms. These separate license terms
+   govern your use of the third party programs as set forth in the
+   "THIRD-PARTY-PROGRAMS" file.
+
 -------------------------------------------------------------
 2.  Schema
     Copyright (c) 2012 Vladimir Keleshev, <vladimir@keleshev.com>
+	
+    py-cpuinfo
+    Copyright (c) 2014-2020 Matthew Brennan Jones <matthew.brennan.jones@gmail.com>
+	
+    future
+    Copyright (c) 2013-2019 Python Charmers Pty Ltd, Australia
 	
     The MIT License (MIT)
 
@@ -233,196 +241,255 @@ terms are listed below.
 3.   contextlib2
 
      A. HISTORY OF THE SOFTWARE
-     ==========================
+	==========================
 
-     contextlib2 is a derivative of the contextlib module distributed by the PSF
-     as part of the Python standard library. According, it is itself redistributed
-     under the PSF license (reproduced in full below). As the contextlib module
-     was added only in Python 2.5, the licenses for earlier Python versions are
-     not applicable and have not been included.
+	contextlib2 is a derivative of the contextlib module distributed by the PSF
+	as part of the Python standard library. According, it is itself redistributed
+	under the PSF license (reproduced in full below). As the contextlib module
+	was added only in Python 2.5, the licenses for earlier Python versions are
+	not applicable and have not been included.
 
-     Python was created in the early 1990s by Guido van Rossum at Stichting
-     Mathematisch Centrum (CWI, see http://www.cwi.nl) in the Netherlands
-     as a successor of a language called ABC.  Guido remains Python's
-     principal author, although it includes many contributions from others.
+	Python was created in the early 1990s by Guido van Rossum at Stichting
+	Mathematisch Centrum (CWI, see http://www.cwi.nl) in the Netherlands
+	as a successor of a language called ABC.  Guido remains Python's
+	principal author, although it includes many contributions from others.
 
-     In 1995, Guido continued his work on Python at the Corporation for
-     National Research Initiatives (CNRI, see http://www.cnri.reston.va.us)
-     in Reston, Virginia where he released several versions of the
-     software.
+	In 1995, Guido continued his work on Python at the Corporation for
+	National Research Initiatives (CNRI, see http://www.cnri.reston.va.us)
+	in Reston, Virginia where he released several versions of the
+	software.
 
-     In May 2000, Guido and the Python core development team moved to
-     BeOpen.com to form the BeOpen PythonLabs team.  In October of the same
-     year, the PythonLabs team moved to Digital Creations (now Zope
-     Corporation, see http://www.zope.com).  In 2001, the Python Software
-     Foundation (PSF, see http://www.python.org/psf/) was formed, a
-     non-profit organization created specifically to own Python-related
-     Intellectual Property.  Zope Corporation is a sponsoring member of
-     the PSF.
+	In May 2000, Guido and the Python core development team moved to
+	BeOpen.com to form the BeOpen PythonLabs team.  In October of the same
+	year, the PythonLabs team moved to Digital Creations (now Zope
+	Corporation, see http://www.zope.com).  In 2001, the Python Software
+	Foundation (PSF, see http://www.python.org/psf/) was formed, a
+	non-profit organization created specifically to own Python-related
+	Intellectual Property.  Zope Corporation is a sponsoring member of
+	the PSF.
 
-     All Python releases are Open Source (see http://www.opensource.org for
-     the Open Source Definition).  Historically, most, but not all, Python
-     releases have also been GPL-compatible; the table below summarizes
-     the various releases that included the contextlib module.
+	All Python releases are Open Source (see http://www.opensource.org for
+	the Open Source Definition).  Historically, most, but not all, Python
+	releases have also been GPL-compatible; the table below summarizes
+	the various releases that included the contextlib module.
 
-     Release         Derived     Year        Owner       GPL-
-                         from                                compatible? (1)
+		Release         Derived     Year        Owner       GPL-
+						from                                compatible? (1)
 
-     2.5             2.4         2006        PSF         yes
-     2.5.1           2.5         2007        PSF         yes
-     2.5.2           2.5.1       2008        PSF         yes
-     2.5.3           2.5.2       2008        PSF         yes
-     2.6             2.5         2008        PSF         yes
-     2.6.1           2.6         2008        PSF         yes
-     2.6.2           2.6.1       2009        PSF         yes
-     2.6.3           2.6.2       2009        PSF         yes
-     2.6.4           2.6.3       2009        PSF         yes
-     2.6.5           2.6.4       2010        PSF         yes
-     3.0             2.6         2008        PSF         yes
-     3.0.1           3.0         2009        PSF         yes
-     3.1             3.0.1       2009        PSF         yes
-     3.1.1           3.1         2009        PSF         yes
-     3.1.2           3.1.1       2010        PSF         yes
-     3.1.3           3.1.2       2010        PSF         yes
-     3.1.4           3.1.3       2011        PSF         yes
-     3.2             3.1         2011        PSF         yes
-     3.2.1           3.2         2011        PSF         yes
-     3.2.2           3.2.1       2011        PSF         yes
-     3.3             3.2         2012        PSF         yes
+		2.5             2.4         2006        PSF         yes
+		2.5.1           2.5         2007        PSF         yes
+		2.5.2           2.5.1       2008        PSF         yes
+		2.5.3           2.5.2       2008        PSF         yes
+		2.6             2.5         2008        PSF         yes
+		2.6.1           2.6         2008        PSF         yes
+		2.6.2           2.6.1       2009        PSF         yes
+		2.6.3           2.6.2       2009        PSF         yes
+		2.6.4           2.6.3       2009        PSF         yes
+		2.6.5           2.6.4       2010        PSF         yes
+		3.0             2.6         2008        PSF         yes
+		3.0.1           3.0         2009        PSF         yes
+		3.1             3.0.1       2009        PSF         yes
+		3.1.1           3.1         2009        PSF         yes
+		3.1.2           3.1.1       2010        PSF         yes
+		3.1.3           3.1.2       2010        PSF         yes
+		3.1.4           3.1.3       2011        PSF         yes
+		3.2             3.1         2011        PSF         yes
+		3.2.1           3.2         2011        PSF         yes
+		3.2.2           3.2.1       2011        PSF         yes
+		3.3             3.2         2012        PSF         yes
 
-     Footnotes:
+	Footnotes:
 
-     (1) GPL-compatible doesn't mean that we're distributing Python under
-     the GPL.  All Python licenses, unlike the GPL, let you distribute
-     a modified version without making your changes open source.  The
-     GPL-compatible licenses make it possible to combine Python with
-     other software that is released under the GPL; the others don't.
+	(1) GPL-compatible doesn't mean that we're distributing Python under
+		the GPL.  All Python licenses, unlike the GPL, let you distribute
+		a modified version without making your changes open source.  The
+		GPL-compatible licenses make it possible to combine Python with
+		other software that is released under the GPL; the others don't.
 
-     Thanks to the many outside volunteers who have worked under Guido's
-     direction to make these releases possible.
-
-
-     B. TERMS AND CONDITIONS FOR ACCESSING OR OTHERWISE USING PYTHON
-     ===============================================================
-
-     PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
-     --------------------------------------------
-
-     1. This LICENSE AGREEMENT is between the Python Software Foundation
-     ("PSF"), and the Individual or Organization ("Licensee") accessing and
-     otherwise using this software ("Python") in source or binary form and
-     its associated documentation.
-
-     2. Subject to the terms and conditions of this License Agreement, PSF hereby
-     grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce,
-     analyze, test, perform and/or display publicly, prepare derivative works,
-     distribute, and otherwise use Python alone or in any derivative version,
-     provided, however, that PSF's License Agreement and PSF's notice of copyright,
-     i.e., "Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
-     2011 Python Software Foundation; All Rights Reserved" are retained in Python
-     alone or in any derivative version prepared by Licensee.
-
-     3. In the event Licensee prepares a derivative work that is based on
-     or incorporates Python or any part thereof, and wants to make
-     the derivative work available to others as provided herein, then
-     Licensee hereby agrees to include in any such work a brief summary of
-     the changes made to Python.
-
-     4. PSF is making Python available to Licensee on an "AS IS"
-     basis.  PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR
-     IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND
-     DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS
-     FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON WILL NOT
-     INFRINGE ANY THIRD PARTY RIGHTS.
-
-     5. PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON
-     FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS
-     A RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON,
-     OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.
-
-     6. This License Agreement will automatically terminate upon a material
-     breach of its terms and conditions.
-
-     7. Nothing in this License Agreement shall be deemed to create any
-     relationship of agency, partnership, or joint venture between PSF and
-     Licensee.  This License Agreement does not grant permission to use PSF
-     trademarks or trade name in a trademark sense to endorse or promote
-     products or services of Licensee, or any third party.
-
-     8. By copying, installing or otherwise using Python, Licensee
-     agrees to be bound by the terms and conditions of this License
-     Agreement.
+	Thanks to the many outside volunteers who have worked under Guido's
+	direction to make these releases possible.
 
 
+	B. TERMS AND CONDITIONS FOR ACCESSING OR OTHERWISE USING PYTHON
+	===============================================================
 
-    =======================================================================================
-    Appendix
-    =======================================================================================
+	PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
+	--------------------------------------------
 
-    MIT License
+	1. This LICENSE AGREEMENT is between the Python Software Foundation
+	("PSF"), and the Individual or Organization ("Licensee") accessing and
+	otherwise using this software ("Python") in source or binary form and
+	its associated documentation.
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+	2. Subject to the terms and conditions of this License Agreement, PSF hereby
+	grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce,
+	analyze, test, perform and/or display publicly, prepare derivative works,
+	distribute, and otherwise use Python alone or in any derivative version,
+	provided, however, that PSF's License Agreement and PSF's notice of copyright,
+	i.e., "Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
+	2011 Python Software Foundation; All Rights Reserved" are retained in Python
+	alone or in any derivative version prepared by Licensee.
 
-    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+	3. In the event Licensee prepares a derivative work that is based on
+	or incorporates Python or any part thereof, and wants to make
+	the derivative work available to others as provided herein, then
+	Licensee hereby agrees to include in any such work a brief summary of
+	the changes made to Python.
 
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.   3-clause BSD
+	4. PSF is making Python available to Licensee on an "AS IS"
+	basis.  PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR
+	IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND
+	DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS
+	FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON WILL NOT
+	INFRINGE ANY THIRD PARTY RIGHTS.
 
-    =======================================================================================
+	5. PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON
+	FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS
+	A RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON,
+	OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.
 
-    PSF 2 Licence
+	6. This License Agreement will automatically terminate upon a material
+	breach of its terms and conditions.
 
-     PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
-     --------------------------------------------
+	7. Nothing in this License Agreement shall be deemed to create any
+	relationship of agency, partnership, or joint venture between PSF and
+	Licensee.  This License Agreement does not grant permission to use PSF
+	trademarks or trade name in a trademark sense to endorse or promote
+	products or services of Licensee, or any third party.
 
-     1. This LICENSE AGREEMENT is between the Python Software Foundation
-     ("PSF"), and the Individual or Organization ("Licensee") accessing and
-     otherwise using this software ("Python") in source or binary form and
-     its associated documentation.
+	8. By copying, installing or otherwise using Python, Licensee
+	agrees to be bound by the terms and conditions of this License
+	Agreement.
 
-     2. Subject to the terms and conditions of this License Agreement, PSF hereby
-     grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce,
-     analyze, test, perform and/or display publicly, prepare derivative works,
-     distribute, and otherwise use Python alone or in any derivative version,
-     provided, however, that PSF's License Agreement and PSF's notice of copyright,
-     i.e., "Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
-     2011 Python Software Foundation; All Rights Reserved" are retained in Python
-     alone or in any derivative version prepared by Licensee.
-
-     3. In the event Licensee prepares a derivative work that is based on
-     or incorporates Python or any part thereof, and wants to make
-     the derivative work available to others as provided herein, then
-     Licensee hereby agrees to include in any such work a brief summary of
-     the changes made to Python.
-
-     4. PSF is making Python available to Licensee on an "AS IS"
-     basis.  PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR
-     IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND
-     DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS
-     FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON WILL NOT
-     INFRINGE ANY THIRD PARTY RIGHTS.
-
-     5. PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON
-     FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS
-     A RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON,
-     OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.
-
-     6. This License Agreement will automatically terminate upon a material
-     breach of its terms and conditions.
-
-     7. Nothing in this License Agreement shall be deemed to create any
-     relationship of agency, partnership, or joint venture between PSF and
-     Licensee.  This License Agreement does not grant permission to use PSF
-     trademarks or trade name in a trademark sense to endorse or promote
-     products or services of Licensee, or any third party.
-
-     8. By copying, installing or otherwise using Python, Licensee
-     agrees to be bound by the terms and conditions of this License
-     Agreement.
-     
-    =======================================================================================
+-------------------------------------------------------------
+4.  hyperopt
+    Copyright (c) 2013, James Bergstra. All rights reserved.
 
 
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
 
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of hyperopt nor the names of its contributors may be
+      used to endorse or promote products derived from this software without
+      specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ''AS IS'' AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+-------------------------------------------------------------
+5.  cloudpickle
+    Copyright (c) 2015, Cloudpickle contributors.
+    Copyright (c) 2012, Regents of the University of California.
+    Copyright (c) 2009 PiCloud, Inc. http://www.picloud.com.
+    All rights reserved.
+
+This module was extracted from the `cloud` package, developed by
+PiCloud, Inc.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of the University of California, Berkeley nor the
+      names of its contributors may be used to endorse or promote
+      products derived from this software without specific prior written
+      permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-------------------------------------------------------------
+6.  networkx
+    Copyright (C) 2004-2020, NetworkX Developers
+    Aric Hagberg <hagberg@lanl.gov>
+    Dan Schult <dschult@colgate.edu>
+    Pieter Swart <swart@lanl.gov>
+    All rights reserved.
+	
+   Redistribution and use in source and binary forms, with or without
+   modification, are permitted provided that the following conditions are
+   met:
+
+     * Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer.
+
+     * Redistributions in binary form must reproduce the above
+       copyright notice, this list of conditions and the following
+       disclaimer in the documentation and/or other materials provided
+       with the distribution.
+
+     * Neither the name of the NetworkX Developers nor the names of its
+       contributors may be used to endorse or promote products derived
+       from this software without specific prior written permission.
+
+   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+   "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+   LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+   A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+   OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+   SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+   LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+   THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.	
+-------------------------------------------------------------
+5.  decorator
+    Copyright (c) 2005-2018, Michele Simionato. All rights reserved.
+	
+	BSD 2-Clause "Simplified" License
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions are
+	met:
+
+	  Redistributions of source code must retain the above copyright
+	  notice, this list of conditions and the following disclaimer.
+	  Redistributions in bytecode form must reproduce the above copyright
+	  notice, this list of conditions and the following disclaimer in
+	  the documentation and/or other materials provided with the
+	  distribution.
+
+	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+	"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+	LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+	A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+	HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+	INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+	BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+	OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+	ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+	TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+	USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+	DAMAGE.
+
+-------------------------------------------------------------
 The following third party programs have their own third party program files. These additional
 third party program files are as follows:
 
