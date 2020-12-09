@@ -21,15 +21,14 @@ By downloading and using this container and the included software, you agree to 
 
 # Intel<sup>®</sup> oneAPI Runtime Libraries
 
-Get started running or deploying applications built with oneAPI toolkits. [Runtime Details](https://software.intel.com/oneapi/runtime)
+Get started running or deploying applications built with oneAPI toolkits.
 
 ```sh
-image=intel/oneapi
+image=intel/oneapi-runtime
 docker pull "$image"
 docker run --device=/dev/dri -it "$image"
 ```
 
-* [oneAPI Runtime Containers Get Started Guide](https://software.intel.com/get-started-with-intel-oneapi-runtime-linux-using-containers)
 * [Runtime Libraries Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/runtime-ubuntu18.04/Dockerfile)
 
 
