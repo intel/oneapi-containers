@@ -42,7 +42,7 @@ docker pull "$image"
 docker run --device=/dev/dri -it "$image"
 ```
 
-* [oneAPI Base Toolkit Containers Get Started Guide](https://software.intel.com/get-started-with-intel-oneapi-base-linux-using-containers)
+* [oneAPI Base Toolkit Containers Get Started Guide](https://software.intel.com/content/www/us/en/develop/documentation/get-started-with-intel-oneapi-base-linux/top/using-containers.html)
 * [Base Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/basekit-devel-ubuntu18.04/Dockerfile)
 
 # Intel<sup>®</sup> oneAPI HPC Toolkit
@@ -55,7 +55,7 @@ docker pull "$image"
 docker run --device=/dev/dri -it "$image"
 ```
 
-* [oneAPI HPC Toolkit Containers Get Started Guide](https://software.intel.com/get-started-with-intel-oneapi-hpc-linux-using-containers)
+* [oneAPI HPC Toolkit Containers Get Started Guide](https://software.intel.com/content/www/us/en/develop/documentation/get-started-with-intel-oneapi-hpc-linux/top/using-containers.html)
 * [HPC Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/hpckit-devel-ubuntu18.04/Dockerfile)
 
 # Intel<sup>®</sup> oneAPI IoT Toolkit
@@ -68,7 +68,7 @@ docker pull "$image"
 docker run --device=/dev/dri -it "$image"
 ```
 
-* [oneAPI IoT Toolkit Containers Get Started Guide](https://software.intel.com/get-started-with-intel-oneapi-iot-linux-using-containers)
+* [oneAPI IoT Toolkit Containers Get Started Guide](https://software.intel.com/content/www/us/en/develop/documentation/get-started-with-intel-oneapi-iot-linux/top/using-containers.html)
 * [IoT Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/iotkit-devel-ubuntu18.04/Dockerfile)
 
 # Intel<sup>®</sup> oneAPI DL Framework Developer Toolkit
@@ -81,7 +81,7 @@ docker pull "$image"
 docker run --device=/dev/dri -it "$image"
 ```
 
-* [oneAPI DL Framework Developer Toolkit Containers Get Started Guide](https://software.intel.com/get-started-with-intel-oneapi-dlfd-linux-using-containers)
+* [oneAPI DL Framework Developer Toolkit Containers Get Started Guide](https://software.intel.com/content/www/us/en/develop/documentation/get-started-with-intel-oneapi-dlfd-linux/top/using-containers.html)
 * [DLFD Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/dlfdkit-devel-ubuntu18.04/Dockerfile)
 
 # Intel<sup>®</sup> AI Analytics Toolkit
@@ -94,7 +94,7 @@ docker pull "$image"
 docker run --device=/dev/dri -it "$image"
 ```
 
-* [Intel AI Analytics Containers Get Started Guide](https://software.intel.com/get-started-with-ai-linux-using-containers)
+* [Intel AI Analytics Containers Get Started Guide](https://software.intel.com/content/www/us/en/develop/documentation/get-started-with-ai-linux/top/using-containers.html)
 * [AI Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/aikit-devel-ubuntu18.04/Dockerfile)
 
 # Using containers behind a proxy
