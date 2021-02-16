@@ -9,11 +9,11 @@ Containers allow you to set up and configure environments for profiling and dist
 * You can prepare containers with different sets of languages and runtimes, analysis tools, or other tools, as needed.
 * You can use runtime containers to execute your applications built with oneAPI toolkits.
 
-[oneAPI Containers Get Started Guide](https://software.intel.com/get-started-with-intel-oneapi-base-linux-using-containers)
-
+[oneAPI Containers Get Started Guide](https://software.intel.com/content/www/us/en/develop/tools/containers/get-started.html)
+                                      
 [oneAPI Docker Hub](https://hub.docker.com/r/intel/oneapi)
 
-Explore more containers, models, and more on the [Intel<sup>®</sup> oneContainer Portal](https://software.intel.com/containers)
+Explore more containers, models, and more on the [Intel<sup>®</sup> oneContainer Portal](https://software.intel.com/content/www/us/en/develop/tools/containers.html)
 
 # License Agreement
 
