@@ -1,7 +1,5 @@
 Intel Simplified Software License (Version February 2020)
 
-Copyright (c) 2020 Intel Corporation.
-
 Use and Redistribution. You may use and redistribute the software (the 
 "Software"), without modification, provided the following conditions are met:
 

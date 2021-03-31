@@ -8,6 +8,16 @@ Third party programs and their corresponding required notices and/or license ter
 
 1. absl-py
 
+   Multidict
+
+   Yarl
+
+   aiohttp
+   Copyright 2013-2020 aio-libs collaboration.
+
+   async-timeout
+   Copyright 2016-2020 aio-libs collaboration.
+
    google-pasta
 
    grpcio
@@ -33,7 +43,7 @@ Third party programs and their corresponding required notices and/or license ter
    rsa
    Copyright 2011 Sybren A. Stüvel
 
-   import lib-metadata
+   importlib-metadata
    Copyright 2017-2019 Jason R. Coombs, Barry Warsaw
 	
 	Apache License 2.0
@@ -275,6 +285,9 @@ Third party programs and their corresponding required notices and/or license ter
 
    zipp
    Copyright Jason R. Coombs
+
+   attrs
+   Copyright (c) 2015 Hynek Schlawack
 
 	MIT License
 	
@@ -742,7 +755,7 @@ SOFTWARE.
 
 The following third party programs have their own third party program files. These additional third party program files are as follows:
 
-1. Intel Optimization for Tensorflow : /opt/intel/oneapi/tensorflow/2.2.0/licensing/third-party-programs-tf.txt
+1. Intel Optimization for Tensorflow : /opt/intel/oneapi/tensorflow/2.3.0/licensing/third-party-programs-tf.txt
  
 
 ----------------------------------------------------------------------------------  

@@ -34,7 +34,7 @@ enabled=1\n\
 gpgcheck=0' \
 > /etc/yum.repos.d/intel-graphics.repo
 
-RUN sed -i 's/^enabled=./enabled=1/' /etc/yum.repos.d/CentOS-PowerTools.repo
+RUN sed -i 's/^enabled=./enabled=1/' /etc/yum.repos.d/CentOS-Linux-PowerTools.repo
 
 RUN dnf install -y \
 intel-opencl \

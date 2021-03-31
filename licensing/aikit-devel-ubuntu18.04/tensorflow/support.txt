@@ -1,5 +1,4 @@
-Package ID: <package_id>
-This package contains: Intel® Optimization for TensorFlow* <product_version> for Linux*.
+This package contains: Intel® Optimization for TensorFlow* 2.3 for Linux*.
 Please use the above information when submitting customer support requests.
 -----------------
 Technical Support
