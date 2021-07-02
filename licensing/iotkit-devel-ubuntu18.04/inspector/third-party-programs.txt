@@ -1,6 +1,6 @@
 Intel(R) Inspector Third Party Programs File
 
-This text file is the “third-party-programs.txt” file specified in the associated
+This text file is the third-party-programs.txt file specified in the associated
 license agreement. The third party programs files and the corresponding third
 party licenses are listed below.  As specified in the associated license
 agreement, the listed third party programs files are subject to the corresponding
@@ -24,6 +24,10 @@ http://software.intel.com/en-us/articles/intel-sample-source-code-license-agreem
 
    Libunwind
    Copyright (c) 2002 Hewlett-Packard Co
+
+
+   Intel Compute Runtime
+   Copyright (c) 2018 Intel Corporation
 
 
 The MIT License:

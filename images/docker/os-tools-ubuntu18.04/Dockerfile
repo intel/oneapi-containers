@@ -20,6 +20,8 @@ RUN file=$(basename "$cmake_url") && \
     bash $file --prefix=/usr --skip-license && \
     rm $file
 
+COPY third-party-programs.txt /
+
 # add apt repo public key
 ARG url=https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2023.PUB
 ADD $url /

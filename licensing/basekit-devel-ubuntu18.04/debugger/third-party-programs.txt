@@ -729,7 +729,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 3. Ncurses: Provided under modified MIT License.
 
-Copyright (c) 1998-2018,2019 Free Software Foundation, Inc.
+Copyright 2018-2020,2021 Thomas E. Dickey
+Copyright 1998-2017,2018 Free Software Foundation, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the
@@ -3747,4 +3748,4 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -------------------------------------------------------------
 Other names and brands may be claimed as the property of others.
 
-# 99ee5104d67b31074ed218269de0e0c3e69dca57-7a05b8a7f04e5b357ceff25bd55d3afa6aefe410-426aa290d1dbd3b26fdc0d8da4a7abbeee360a6c-86a0b57b3fa9ec772c1c22d4e437d0ae49b58fd5-bf72cf5cb32cddde7e02514e0402253a5baadb0b
+# 50b84afd1-2c23eabd1-147cc7ee1-7f2a1a87b-afa6070ef

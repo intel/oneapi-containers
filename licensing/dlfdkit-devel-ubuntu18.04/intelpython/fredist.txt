@@ -9,7 +9,7 @@ the “third-party-programs.txt” or other similarly-named text file for more
 details.”
 
 ################################################################################
-###   Intel® Fortran Compiler (Beta) & Intel® Fortran Compiler Classic 2021.2.0
+###   Intel® Fortran Compiler (Beta) & Intel® Fortran Compiler Classic 2021.3.0
 ################################################################################
 
 <installdir>/lib/libiomp5.so
@@ -19,11 +19,6 @@ details.”
 <installdir>/lib/libomptarget.rtl.x86_64.so
 <installdir>/lib/libomptarget.rtl.opencl.so
 <installdir>/lib/libomptarget.rtl.level0.so
-<installdir>/lib/libomp-fallback-cassert.o
-<installdir>/lib/libomp-fallback-cmath-fp64.o
-<installdir>/lib/libomp-fallback-cmath.o
-<installdir>/lib/libomp-fallback-complex-fp64.o
-<installdir>/lib/libomp-fallback-complex.o
 <installdir>/lib/libiomp5.so
 <installdir>/lib/libiomp5_db.so
 <installdir>/lib/libiompstubs5.so

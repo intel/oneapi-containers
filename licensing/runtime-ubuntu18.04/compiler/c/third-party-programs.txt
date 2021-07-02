@@ -1,4 +1,4 @@
-Intel(R) 2021.2 oneAPI DPC++/C++/Fortran Compiler Third Party Programs File
+Intel(R) 2021.3 oneAPI DPC++/C++/Fortran Compiler Third Party Programs File
 
 This file is the "third-party-programs.txt" file specified in the associated Intel end user license agreement for the Intel software you are licensing. 
 
@@ -432,7 +432,7 @@ SOFTWARE.
 -----------------------------------------------------------------
 
 4. fpp - Fortran PreProcessor
-   Copyright (C) 2002-2021 Intel Corporation. All rights reserved.
+   Copyright (C) 2002-2020 Intel Corporation. All rights reserved.
 
 Portions Copyright (C) 1995 by Sun Microsystems, Inc.
 All rights reserved.
@@ -444,11 +444,11 @@ is preserved.
 
 -----------------------------------------------------------------
 
-5. Intel intel-graphics-compiler
-   Copyright 2012-2018 Intel Corporation.
-
-   Intel compute-runtime
+5. Intel compute-runtime
    Copyright 2019 Intel Corporation.
+	
+   Intel vc-intrinsics
+   Copyright 2021 Intel Corporation.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to deal 
@@ -503,83 +503,15 @@ standalone and requires a support library to be linked with it.  This
 support library is itself covered by the above license.
 -----------------------------------------------------------------
 
-7. KhronosGroup SPIRV-Headers
-   Copyright (c) 2014-2020 The Khronos Group Inc.
-
-Permission is hereby granted, free of charge, to any person obtaining a
-copy of this software and/or associated documentation files (the
-"Materials"), to deal in the Materials without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Materials, and to
-permit persons to whom the Materials are furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be included
-in all copies or substantial portions of the Materials.
-
-MODIFICATIONS TO THIS FILE MAY MEAN IT NO LONGER ACCURATELY REFLECTS
-KHRONOS STANDARDS. THE UNMODIFIED, NORMATIVE VERSIONS OF KHRONOS
-SPECIFICATIONS AND HEADER INFORMATION ARE LOCATED AT
-   https://www.khronos.org/registry/
-
-THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-MATERIALS OR THE USE OR OTHER DEALINGS IN THE MATERIALS.   
------------------------------------------------------------------
-
-8. Julian Seward valgrind.h
-   Copyright (C) 2000-2017 Julian Seward. All rights reserved.
-
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions
- are met:
-
- 1. Redistributions of source code must retain the above copyright
- notice, this list of conditions and the following disclaimer.
-
- 2. The origin of this software must not be misrepresented; you must
- not claim that you wrote the original software. If you use this
- software in a product, an acknowledgment in the product
- documentation would be appreciated but is not required.
-
- 3. Altered source versions must be plainly marked as such, and must
- not be misrepresented as being the original software.
-
- 4. The name of the author may not be used to endorse or promote
- products derived from this software without specific prior written
- permission.
-
- THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
- OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
- DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
- WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-Other names and brands may be claimed as the property of others. 
-
------------------------------------------------------------------
-
 The following third party programs have their own third party program files. 
 These additional third party program files can be found as follows:
 1. Threading Building Blocks: 
 <installdir>/compiler/latest/licensing/c/TBB_TPP.txt
 <installdir>/compiler/latest/licensing/fortran/TBB_TPP.txt
-2. Intel intel-graphics-compiler:
-<installdir>/compiler/<version>/licensing/c/intel-graphics-compiler_TPP.txt
-<installdir>/compiler/<version>/licensing/fortran/intel-graphics-compiler_TPP.txt
 
 -----------------------------------------------------------------
 
-Intel(R) 2021.2 C/C++/Fortran Compiler Classic Third Party Programs File
+Intel(R) 2021.3 C/C++/Fortran Compiler Classic Third Party Programs File
 
 This file is the "third-party-programs.txt" file specified in the associated Intel end user license agreement for the Intel software you are licensing. 
 

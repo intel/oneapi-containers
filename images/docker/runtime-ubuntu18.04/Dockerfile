@@ -45,3 +45,5 @@ intel-opencl \
 intel-level-zero-gpu \
 level-zero \
 level-zero-devel
+
+COPY third-party-programs.txt /

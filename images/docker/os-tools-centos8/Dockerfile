@@ -14,6 +14,8 @@ RUN file=$(basename "$cmake_url") && \
     bash $file --prefix=/usr --skip-license && \
     rm $file
 
+COPY third-party-programs.txt /
+
 # set environment variables
 ENV LANG=C.UTF-8
 

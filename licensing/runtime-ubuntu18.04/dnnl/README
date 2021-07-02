@@ -7,7 +7,7 @@ includes basic building blocks for neural networks optimized
 for Intel Architecture Processors, Intel Processor Graphics and 
 Xe architecture-based Graphics.
 
-This package contains oneDNN v2.2.0 (7489a2ea4c14c94f5bbe7d5fc774f722444cdd3f).
+This package contains oneDNN v2.3.0 (3420bb12ffea5f17e90f73bc2232ed09c79dad92).
 
 You can find information about the latest version and release notes
 at the oneDNN Github (https://github.com/oneapi-src/oneDNN/releases).
@@ -15,10 +15,10 @@ at the oneDNN Github (https://github.com/oneapi-src/oneDNN/releases).
 Documentation
 -------------
 
-* Developer guide (https://oneapi-src.github.io/oneDNN/v2.2)
+* Developer guide (https://oneapi-src.github.io/oneDNN/v2.3)
   explains the programming model, supported functionality, and implementation
   details, and includes annotated examples.
-* API reference (https://oneapi-src.github.io/oneDNN/v2.2/modules.html)
+* API reference (https://oneapi-src.github.io/oneDNN/v2.3/modules.html)
 provides a comprehensive reference of the library API.
 
 System Requirements
@@ -108,10 +108,6 @@ GitHub issues page (https://github.com/oneapi-src/oneDNN/issues/new/choose).
 
 You may reach out to project maintainers privately at
 dnnl.maintainers@intel.com.
-
-WARNING:
-This is pre-production software and functionality may change without prior
-notice.
 
 License
 -------

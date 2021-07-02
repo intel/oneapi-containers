@@ -1,6 +1,6 @@
 Intel(R) Advisor Third Party Programs File
 
-This text file is the “third-party-programs.txt” file specified in the
+This text file is the third-party-programs.txt file specified in the
 associated license agreement. The third party programs files and the
 corresponding third party licenses are listed below.  As specified in the
 associated license agreement, the listed third party programs files are subject
@@ -75,10 +75,16 @@ of http://software.intel.com/en-us/articles/intel-sample-source-code-license-agr
 
    vuejs/vuejs.org
    Copyright (c) 2013-present Yuxi Evan You
+ 
+   Intel Compute Runtime
+   Copyright (c) 2018 Intel Corporation  
 
-   Intel compute-runtime
-   Copyright (c) 2018 Intel Corporation
+   Gkovacs Lz-string-python
+
+   Mashiro Rabbit
+   Copyright (c) 2013-2014 mashiro
    
+
 The MIT License:
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -351,21 +357,7 @@ Apache License Version 2.0
 
 
 -------------------------------------------------------------------------------------
-4. Python 2
-   Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010
-   Python Software Foundation.
-   All rights reserved.
-
-   Copyright (c) 2000 BeOpen.com.
-   All rights reserved.
-
-   Copyright (c) 1995-2001 Corporation for National Research Initiatives.
-   All rights reserved.
-
-   Copyright (c) 1991-1995 Stichting Mathematisch Centrum.
-   All rights reserved.
-
-   Python 3
+4. Python 3
    Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
    2012, 2013, 2014, 2015, 2016 Python Software Foundation.  All rights reserved.
 
