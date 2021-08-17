@@ -102,7 +102,7 @@ Software.
    Intel(R) OSPRay
    Intel(R) Open Image Denoise
    Intel(R) Open Volume Kernel Library
-   Intel(R) Optimization for Tensorflow*
+   Intel(R) Optimization for TensorFlow*
    Model Zoo for Intel(R) Architecture
    Intel(R) Low Precision Optimization Tool
    Intel(R) OSPRay_Studio
@@ -1347,7 +1347,7 @@ Intel(R) oneAPI Base Toolkit (Base Kit):
  6.  Intel(R) oneAPI Collective Communications Library (oneCCL) <install_dir>/ccl/latest/licensing/third-party-programs.txt
  7.  Intel(R) oneAPI Deep Neural Network Library (oneDNN) <install_dir>/dnnl/latest/licensing/THIRD-PARTY-PROGRAMS
  8.  Intel(R) oneAPI Video Processing Library (oneVPL) <install_dir>/vpl/latest/licensing/third-party-programs.txt
- 9.  Intel(R) DPC++ Compatibility Tool <install_dir>/dpcpp-ct/latest/licensing/third-party-programs.txt
+ 9.  Intel(R) DPC++ Compatibility Tool <install_dir>/dpcpp-ct/latest/licensing/dpct/third-party-programs.txt
  10. Intel(R) Distribution for GDB* <install_dir>/debugger/latest/licensing/third-party-programs.txt
  11. Intel(R) Integrated Performance Primitives (Intel(R) IPP) <install_dir>/ipp/latest/licensing/third-party-programs.txt
  12. Intel(R) Integrated Performance Primitives Cryptography (Intel(R) IPP Cryptography) <install_dir>/ippcp/latest/licensing/third-party-programs.txt
@@ -1390,9 +1390,9 @@ Intel(R) oneAPI Rendering Toolkit (Render Kit):
 
 Intel(R) oneAPI AI Analytics Toolkit (AI Kit):
      Intel(R) Distribution for Python* <install_dir>/intelpython/latest/licensing/third-party-programs.txt
- 32. Intel(R) Optimization for Tensorflow* <install_dir>/tensorflow/latest/licensing/third-party-programs.txt
+ 32. Intel(R) Optimization for TensorFlow* <install_dir>/tensorflow/latest/licensing/third-party-programs.txt
  33. Intel(R) Optimization for PyTorch* <install_dir>/pytorch/latest/licensing/third-party-programs.txt
- 34. Intel(R) Low Precision Optimization Tool <install_dir>/iLiT/latest/licensing/third-party-programs.txt
+ 34. Intel(R) Low Precision Optimization Tool <install_dir>/LPOT/latest/licensing/third-party-programs.txt
      Intel(R) Dev Utilities <install_dir>/dev-utilities/latest/licensing/third-party-programs.txt
      PSET <install_dir>/installer/third-party-programs.txt
 

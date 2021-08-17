@@ -1,5 +1,5 @@
 Package ID: <package_id>
-This package contains: Intel® Low Precision Optimization Tool 1.0  <product_version> for Linux*.
+This package contains: Intel® Low Precision Optimization Tool 1.4.1  <product_version> for Linux*.
 Please use the above information when submitting customer support requests.
 -----------------
 Technical Support
