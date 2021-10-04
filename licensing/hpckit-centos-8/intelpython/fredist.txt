@@ -1,0 +1,40 @@
+This is the redist.txt file mentioned in the associated Intel End User License 
+Agreement for Developer Tools (Version October 2020) (“Agreement”).  All 
+capitalized terms used but not defined in this file have the same meaning as 
+specified in the Agreement. The Redistributables are listed below, and are 
+subject to all of the terms and conditions of the Agreement.
+
+Please note that Third Party Programs, if any, may also be redistributable. See 
+the “third-party-programs.txt” or other similarly-named text file for more 
+details.”
+
+################################################################################
+###   Intel® Fortran Compiler (Beta) & Intel® Fortran Compiler Classic 2021.4.0
+################################################################################
+
+<installdir>/lib/libiomp5.so
+<installdir>/lib/libiomp5_db.so
+<installdir>/lib/libiompstubs5.so
+<installdir>/lib/libomptarget.so
+<installdir>/lib/libomptarget.rtl.x86_64.so
+<installdir>/lib/libomptarget.rtl.opencl.so
+<installdir>/lib/libomptarget.rtl.level0.so
+<installdir>/lib/libomp-fallback-cstring.o
+<installdir>/lib/libomp-fallback-cstring.spv
+<installdir>/lib/libiomp5.so
+<installdir>/lib/libiomp5_db.so
+<installdir>/lib/libiompstubs5.so
+<installdir>/lib/libicaf.so
+<installdir>/lib/libifcore.so
+<installdir>/lib/libifcore.so.5
+<installdir>/lib/libifcoremt.so
+<installdir>/lib/libifcoremt.so.5
+<installdir>/lib/libifport.so
+<installdir>/lib/libifport.so.5
+<installdir>/lib/libicaf.so
+<installdir>/lib/libifcore.so
+<installdir>/lib/libifcore.so.5
+<installdir>/lib/libifcoremt.so
+<installdir>/lib/libifcoremt.so.5
+<installdir>/lib/libifport.so
+<installdir>/lib/libifport.so.5

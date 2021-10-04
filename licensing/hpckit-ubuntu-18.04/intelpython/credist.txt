@@ -1,0 +1,67 @@
+This is the redist.txt file mentioned in the associated Intel End User License 
+Agreement for Developer Tools (Version October 2020) (“Agreement”).  All 
+capitalized terms used but not defined in this file have the same meaning as 
+specified in the Agreement. The Redistributables are listed below, and are 
+subject to all of the terms and conditions of the Agreement.
+
+Please note that Third Party Programs, if any, may also be redistributable. See 
+the “third-party-programs.txt” or other similarly-named text file for more 
+details.”
+
+################################################################################
+###   Intel® oneAPI DPC++/C++ Compiler & Intel® C++ Compiler Classic 2021.4.0
+################################################################################
+
+<installdir>/lib/libiomp5.so
+<installdir>/lib/libiomp5_db.so
+<installdir>/lib/libiompstubs5.so
+<installdir>/lib/libomptarget.so
+<installdir>/lib/libomptarget.rtl.x86_64.so
+<installdir>/lib/libomptarget.rtl.opencl.so
+<installdir>/lib/libomptarget.rtl.level0.so
+<installdir>/lib/libomp-fallback-cstring.o
+<installdir>/lib/libomp-fallback-cstring.spv
+<installdir>/lib/libsycl.so.5
+<installdir>/lib/libsycl.so
+<installdir>/lib/libpi_level_zero.so
+<installdir>/lib/libsycl.so.5.3.0
+<installdir>/lib/libsycl.so.5.3.0-gdb.py
+<installdir>/lib/cl.cfg
+<installdir>/lib/clbltfnz1.rtl
+<installdir>/lib/cllibraryz1.o
+<installdir>/lib/libtask_executor.so
+<installdir>/lib/libOclCpuBackEnd.so
+<installdir>/lib/libintelocl.so-gdb.py
+<installdir>/lib/libintelocl.so
+<installdir>/lib/libcpu_device.so
+<installdir>/lib/libcommon_clang.so
+<installdir>/lib/libclang_compiler.so
+<installdir>/lib/libcl_logger.so
+<installdir>/lib/clbltfnz0.rtl
+<installdir>/lib/clbltfnl9.rtl
+<installdir>/lib/clbltfnh8.rtl
+<installdir>/lib/clbltfne9.rtl
+<installdir>/lib/__ocl_svml_z0.so
+<installdir>/lib/__ocl_svml_l9.so
+<installdir>/lib/__ocl_svml_h8.so
+<installdir>/lib/__ocl_svml_e9.so
+<installdir>/lib/cllibrary.rtl
+<installdir>/lib/cllibrarye9.o
+<installdir>/lib/cllibraryh8.o
+<installdir>/lib/cllibraryl9.o
+<installdir>/lib/cllibraryz0.o
+<installdir>/lib/clbltfnshared.rtl
+<installdir>/lib/libOclCpuBackEnd.so.2021.12.9.0
+<installdir>/lib/libcl_logger.so.2021.12.9.0
+<installdir>/lib/libclang_compiler.so.2021.12.9.0
+<installdir>/lib/libcommon_clang.so.2021.12.9.0
+<installdir>/lib/libcpu_device.so.2021.12.9.0
+<installdir>/lib/libintelocl.so.2021.12.9.0
+<installdir>/lib/libtask_executor.so.2021.12.9.0
+<installdir>/lib/libOpenCL.so.1.2
+<installdir>/lib/libOpenCL.so.1
+<installdir>/lib/libOpenCL.so
+<installdir>//licensing/opencl/EULA.txt
+<installdir>//licensing/opencl/TBB_TPP.txt
+<installdir>//licensing/opencl/redist.txt
+<installdir>//licensing/opencl/third-party-programs.txt
