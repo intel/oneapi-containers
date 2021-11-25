@@ -16,7 +16,7 @@ RUN cd /opt/build && \
 
 FROM ubuntu:18.04
 
-COPY --from=build /opt/dist /
+COPY --from=build /opt/dist/bin /bin
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=1
