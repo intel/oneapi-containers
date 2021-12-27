@@ -1,9 +1,8 @@
-# Copyright (c) 2019-2020 Intel Corporation.
+# Copyright (c) 2020-2021 Intel Corporation.
 # SPDX-License-Identifier: BSD-3-Clause
 FROM ubuntu:18.04 as build
 
 RUN mkdir -p /opt/build && mkdir -p /opt/dist
-
 RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     ca-certificates curl && \
@@ -11,53 +10,42 @@ RUN apt-get update && \
 
 # install cmake
 RUN cd /opt/build && \
-    curl -LO https://github.com/Kitware/CMake/releases/download/v3.20.2/cmake-3.20.2-linux-x86_64.sh && \
+    curl -LO https://github.com/Kitware/CMake/releases/download/v3.22.0/cmake-3.22.0-linux-x86_64.sh && \
     mkdir -p /opt/dist//usr/local && \
-    /bin/bash cmake-3.20.2-linux-x86_64.sh --prefix=/opt/dist//usr/local --skip-license
+    /bin/bash cmake-3.22.0-linux-x86_64.sh --prefix=/opt/dist//usr/local --skip-license
+
 
 # cleanup
 RUN rm -rf /opt/dist/usr/local/include && \
     rm -rf /opt/dist/usr/local/lib/pkgconfig && \
     find /opt/dist -name "*.a" -exec rm -f {} \; || echo ""
 RUN rm -rf /opt/dist/usr/local/share/doc
+RUN rm -rf /opt/dist/usr/local/share/man
 
 FROM ubuntu:18.04
+COPY third-party-programs.txt /
 RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     curl ca-certificates gpg-agent software-properties-common && \
   rm -rf /var/lib/apt/lists/*
-
-# repository to install Intel(R) oneAPI Runtime Libraries
+# repository to install Intel(R) oneAPI Libraries
 RUN curl -fsSL https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2023.PUB | apt-key add -
-RUN echo "deb https://apt.repos.intel.com/oneapi all main" > /etc/apt/sources.list.d/oneAPI.list
+RUN echo "deb [trusted=yes] https://apt.repos.intel.com/oneapi all main " > /etc/apt/sources.list.d/oneAPI.list
 
+RUN apt-get update && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    curl ca-certificates gpg-agent software-properties-common && \
+  rm -rf /var/lib/apt/lists/*
 # repository to install Intel(R) GPU drivers
 RUN curl -fsSL https://repositories.intel.com/graphics/intel-graphics.key | apt-key add -
 RUN echo "deb [trusted=yes arch=amd64] https://repositories.intel.com/graphics/ubuntu bionic main" > /etc/apt/sources.list.d/intel-graphics.list
 
 RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    # os-tools \
-    ca-certificates build-essential pkg-config gnupg libarchive13 \
-    # Intel(R) oneAPI \
-    intel-oneapi-runtime-ccl intel-oneapi-runtime-compilers \
-    intel-oneapi-runtime-dal intel-oneapi-runtime-dnnl \
-    intel-oneapi-runtime-dpcpp-cpp intel-oneapi-runtime-dpcpp-library \
-    intel-oneapi-runtime-fortran intel-oneapi-runtime-ipp \
-    intel-oneapi-runtime-ipp-crypto intel-oneapi-runtime-libs \
-    intel-oneapi-runtime-mkl intel-oneapi-runtime-mpi \
-    intel-oneapi-runtime-opencl intel-oneapi-runtime-openmp \
-    intel-oneapi-runtime-tbb intel-oneapi-runtime-vpl \
-    # Intel(R) GPU \
-    intel-opencl \
-    intel-level-zero-gpu \
-    level-zero \
-    level-zero-devel && \
+    ca-certificates build-essential pkg-config gnupg libarchive13 intel-oneapi-runtime-ccl intel-oneapi-runtime-compilers intel-oneapi-runtime-dal intel-oneapi-runtime-dnnl intel-oneapi-runtime-dpcpp-cpp intel-oneapi-runtime-dpcpp-library intel-oneapi-runtime-fortran intel-oneapi-runtime-ipp intel-oneapi-runtime-ipp-crypto intel-oneapi-runtime-libs intel-oneapi-runtime-mkl intel-oneapi-runtime-mpi intel-oneapi-runtime-opencl intel-oneapi-runtime-openmp intel-oneapi-runtime-tbb intel-oneapi-runtime-vpl intel-opencl intel-level-zero-gpu level-zero level-zero-devel  && \
   rm -rf /var/lib/apt/lists/*
 
 COPY --from=build /opt/dist /
 
 ENV LANG=C.UTF-8
 ENV LD_LIBRARY_PATH=/opt/intel/oneapi/lib
-
-COPY third-party-programs.txt /

@@ -15,6 +15,10 @@ Containers allow you to set up and configure environments for profiling and dist
 
 Explore more containers, models, and more on the [Intel<sup>®</sup> oneContainer Portal](https://software.intel.com/content/www/us/en/develop/tools/containers.html)
 
+# Note
+**Note:** CentOS* 8 - based containers are deprecated and no longer supported. [Details](https://www.centos.org/centos-linux-eol/). <br />
+You may still find the CentOS Dockerfile, but it is no longer being updated.
+
 # License Agreement
 
 By downloading and using this container and the included software, you agree to the terms and conditions of the [software license agreements](https://github.com/intel/oneapi-containers/tree/master/licensing).

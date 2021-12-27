@@ -2,6 +2,10 @@
 
 Singularity containers are supported by Intel oneAPI.
 
+# Note
+**Note:** CentOS* 8 - based containers are deprecated and no longer supported. [Details](https://www.centos.org/centos-linux-eol/). <br />
+You may still find the CentOS Dockerfile, but it is no longer being updated.
+
 Here is an example to run the Mandelbrot sample in a Singularity container:
 
 ```sh
