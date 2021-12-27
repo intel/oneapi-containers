@@ -1,5 +1,5 @@
-# Copyright (c) 2020 Intel Corporation.
+# Copyright (c) 2020-2021 Intel Corporation.
 # SPDX-License-Identifier: BSD-3-Clause
 
-Bootstrap: docker
-From: intel/oneapi-basekit:devel-centos8
+# Note: CentOS* 8 - based containers are deprecated and no longer supported. Details -> https://www.centos.org/centos-linux-eol/
+# You may still find the CentOS Dockerfile, but it is no longer being updated.
