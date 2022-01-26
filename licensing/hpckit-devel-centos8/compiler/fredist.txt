@@ -1,0 +1,42 @@
+This is the redist.txt file mentioned in the associated Intel End User License 
+Agreement for Developer Tools (Version October 2020) (“Agreement”).  All 
+capitalized terms used but not defined in this file have the same meaning as 
+specified in the Agreement. The Redistributables are listed below, and are 
+subject to all of the terms and conditions of the Agreement.
+
+Please note that Third Party Programs, if any, may also be redistributable. See 
+the “third-party-programs.txt” or other similarly-named text file for more 
+details.”
+
+################################################################################
+###   Intel® Fortran Compiler (Beta) & Intel® Fortran Compiler Classic 2021.3.0
+################################################################################
+
+<installdir>/compiler/2021.3.0/linux/compiler/lib/ia32_lin/libiomp5.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/ia32_lin/libiomp5_db.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/ia32_lin/libiompstubs5.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/intel64_lin/libiomp5.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/intel64_lin/libiomp5_db.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/intel64_lin/libiompstubs5.so
+<installdir>/compiler/2021.3.0/linux/lib/libomptarget.so
+<installdir>/compiler/2021.3.0/linux/lib/libomptarget.rtl.x86_64.so
+<installdir>/compiler/2021.3.0/linux/lib/libomptarget.rtl.opencl.so
+<installdir>/compiler/2021.3.0/linux/lib/libomptarget.rtl.level0.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/ia32_lin/libcilkrts.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/ia32_lin/libcilkrts.so.5
+<installdir>/compiler/2021.3.0/linux/compiler/lib/intel64_lin/libcilkrts.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+<installdir>/compiler/2021.3.0/linux/compiler/lib/ia32_lin/libicaf.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/ia32_lin/libifcore.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/ia32_lin/libifcore.so.5
+<installdir>/compiler/2021.3.0/linux/compiler/lib/ia32_lin/libifcoremt.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/ia32_lin/libifcoremt.so.5
+<installdir>/compiler/2021.3.0/linux/compiler/lib/ia32_lin/libifport.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/ia32_lin/libifport.so.5
+<installdir>/compiler/2021.3.0/linux/compiler/lib/intel64_lin/libicaf.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/intel64_lin/libifcore.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/intel64_lin/libifcore.so.5
+<installdir>/compiler/2021.3.0/linux/compiler/lib/intel64_lin/libifcoremt.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+<installdir>/compiler/2021.3.0/linux/compiler/lib/intel64_lin/libifport.so
+<installdir>/compiler/2021.3.0/linux/compiler/lib/intel64_lin/libifport.so.5
