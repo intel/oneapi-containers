@@ -10,7 +10,7 @@ Deep learning frameworks offer optimized building blocks to streamline designing
 
 [DLFD Kit Details](https://software.intel.com/oneapi/dlfd-kit)
 
-**Intel oneAPI DL Framework Developer Toolkit for Linux 2022.1.1** has been updated to use Log4j version 2.16 and may not include the latest functional and security updates. **Intel oneAPI DL Framework Developer Toolkit for Linux 2022.1.2** is targeted to be released in **January 2022** and will include additional functional and/or security updates. Customers should update to the latest version as it becomes available.
+**Intel® oneAPI DL Framework Developer Toolkit version 2022.1.2** has been updated to include Apache Log4j* version 2.17.1. Users should update to the latest version as it becomes available.
 
 # Note
 **Note:** CentOS* 8 - based containers are deprecated and no longer supported. [Details](https://www.centos.org/centos-linux-eol/). <br />
