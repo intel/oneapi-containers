@@ -1,7 +1,7 @@
 # Copyright (c) 2020-2021 Intel Corporation.
 # SPDX-License-Identifier: BSD-3-Clause
 
-FROM ubuntu:18.04 as build
+FROM ubuntu:20.04 as build
 
 RUN mkdir -p /opt/build && mkdir -p /opt/dist
 RUN apt-get update && \
@@ -27,7 +27,7 @@ RUN rm -rf /opt/dist/usr/local/include && \
 RUN rm -rf /opt/dist/usr/local/share/doc
 RUN rm -rf /opt/dist/usr/local/share/man
 
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 COPY third-party-programs.txt /
 RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
@@ -43,11 +43,11 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
 # repository to install Intel(R) GPU drivers
 RUN curl -fsSL https://repositories.intel.com/graphics/intel-graphics.key | apt-key add -
-RUN echo "deb [trusted=yes arch=amd64] https://repositories.intel.com/graphics/ubuntu bionic main" > /etc/apt/sources.list.d/intel-graphics.list
+RUN echo "deb [trusted=yes arch=amd64] https://repositories.intel.com/graphics/ubuntu focal main" > /etc/apt/sources.list.d/intel-graphics.list
 
 RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client vim wget net-tools git intel-basekit-getting-started intel-oneapi-advisor intel-oneapi-ccl-devel intel-oneapi-common-licensing intel-oneapi-common-vars intel-oneapi-compiler-dpcpp-cpp intel-oneapi-dal-devel intel-oneapi-dev-utilities intel-oneapi-dnnl-devel intel-oneapi-dpcpp-debugger intel-oneapi-ipp-devel intel-oneapi-ippcp-devel intel-oneapi-libdpstd-devel intel-oneapi-mkl-devel intel-oneapi-onevpl-devel intel-oneapi-python intel-oneapi-tbb-devel intel-oneapi-vtune intel-opencl intel-level-zero-gpu level-zero level-zero-devel intel-dlfdkit-getting-started  && \
+    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client vim wget net-tools git intel-basekit-getting-started intel-oneapi-advisor intel-oneapi-ccl-devel intel-oneapi-common-licensing intel-oneapi-common-vars intel-oneapi-compiler-dpcpp-cpp intel-oneapi-dal-devel intel-oneapi-dev-utilities intel-oneapi-dnnl-devel intel-oneapi-dpcpp-debugger intel-oneapi-ipp-devel intel-oneapi-ippcp-devel intel-oneapi-libdpstd-devel intel-oneapi-mkl-devel intel-oneapi-onevpl-devel intel-oneapi-python intel-oneapi-tbb-devel intel-oneapi-vtune intel-opencl-icd intel-level-zero-gpu level-zero level-zero-dev intel-aikit-getting-started intel-oneapi-model-zoo intel-oneapi-pytorch intel-oneapi-tensorflow  && \
   rm -rf /var/lib/apt/lists/*
 
 COPY --from=build /opt/dist /
@@ -91,6 +91,7 @@ ENV LD_LIBRARY_PATH='/opt/intel/oneapi/vpl/2022.1.0/lib:/opt/intel/oneapi/tbb/20
 ENV LIBRARY_PATH='/opt/intel/oneapi/vpl/2022.1.0/lib:/opt/intel/oneapi/tbb/2021.6.0/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.6.0//libfabric/lib:/opt/intel/oneapi/mpi/2021.6.0//lib/release:/opt/intel/oneapi/mpi/2021.6.0//lib:/opt/intel/oneapi/mkl/2022.1.0/lib/intel64:/opt/intel/oneapi/ippcp/2021.6.0/lib/intel64:/opt/intel/oneapi/ipp/2021.6.0/lib/intel64:/opt/intel/oneapi/dnnl/2022.1.0/cpu_dpcpp_gpu_dpcpp/lib:/opt/intel/oneapi/dal/2021.6.0/lib/intel64:/opt/intel/oneapi/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/opt/intel/oneapi/compiler/2022.1.0/linux/lib:/opt/intel/oneapi/ccl/2021.6.0/lib/cpu_gpu_dpcpp'
 ENV MANPATH='/opt/intel/oneapi/mpi/2021.6.0/man:/opt/intel/oneapi/debugger/2021.6.0/documentation/man:/opt/intel/oneapi/compiler/2022.1.0/documentation/en/man/common::'
 ENV MKLROOT='/opt/intel/oneapi/mkl/2022.1.0'
+ENV MODEL_ZOO_VERSION='2.6.2'
 ENV NLSPATH='/opt/intel/oneapi/mkl/2022.1.0/lib/intel64/locale/%l_%t/%N:/opt/intel/oneapi/compiler/2022.1.0/linux/compiler/lib/intel64_lin/locale/%l_%t/%N'
 ENV OCL_ICD_FILENAMES='libintelocl_emu.so:libalteracl.so:/opt/intel/oneapi/compiler/2022.1.0/linux/lib/x64/libintelocl.so'
 ENV ONEAPI_ROOT='/opt/intel/oneapi'

@@ -1,7 +1,7 @@
 # Copyright (c) 2020-2021 Intel Corporation.
 # SPDX-License-Identifier: BSD-3-Clause
 
-FROM ubuntu:18.04 as build
+FROM ubuntu:20.04 as build
 
 RUN mkdir -p /opt/build && mkdir -p /opt/dist
 RUN apt-get update && \
@@ -27,7 +27,7 @@ RUN rm -rf /opt/dist/usr/local/include && \
 RUN rm -rf /opt/dist/usr/local/share/doc
 RUN rm -rf /opt/dist/usr/local/share/man
 
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 COPY third-party-programs.txt /
 RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
@@ -43,11 +43,11 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
 # repository to install Intel(R) GPU drivers
 RUN curl -fsSL https://repositories.intel.com/graphics/intel-graphics.key | apt-key add -
-RUN echo "deb [trusted=yes arch=amd64] https://repositories.intel.com/graphics/ubuntu bionic main" > /etc/apt/sources.list.d/intel-graphics.list
+RUN echo "deb [trusted=yes arch=amd64] https://repositories.intel.com/graphics/ubuntu focal main" > /etc/apt/sources.list.d/intel-graphics.list
 
 RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client vim wget net-tools git intel-basekit-getting-started intel-oneapi-advisor intel-oneapi-ccl-devel intel-oneapi-common-licensing intel-oneapi-common-vars intel-oneapi-compiler-dpcpp-cpp intel-oneapi-dal-devel intel-oneapi-dev-utilities intel-oneapi-dnnl-devel intel-oneapi-dpcpp-debugger intel-oneapi-ipp-devel intel-oneapi-ippcp-devel intel-oneapi-libdpstd-devel intel-oneapi-mkl-devel intel-oneapi-onevpl-devel intel-oneapi-python intel-oneapi-tbb-devel intel-oneapi-vtune intel-opencl intel-level-zero-gpu level-zero level-zero-devel intel-dlfdkit-getting-started  && \
+    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client vim wget net-tools git intel-basekit-getting-started intel-oneapi-advisor intel-oneapi-ccl-devel intel-oneapi-common-licensing intel-oneapi-common-vars intel-oneapi-compiler-dpcpp-cpp intel-oneapi-dal-devel intel-oneapi-dev-utilities intel-oneapi-dnnl-devel intel-oneapi-dpcpp-debugger intel-oneapi-ipp-devel intel-oneapi-ippcp-devel intel-oneapi-libdpstd-devel intel-oneapi-mkl-devel intel-oneapi-onevpl-devel intel-oneapi-python intel-oneapi-tbb-devel intel-oneapi-vtune intel-opencl-icd intel-level-zero-gpu level-zero level-zero-dev intel-iotkit-getting-started intel-oneapi-compiler-dpcpp-cpp-and-cpp-classic intel-oneapi-inspector  && \
   rm -rf /var/lib/apt/lists/*
 
 COPY --from=build /opt/dist /
@@ -80,6 +80,7 @@ ENV FPGA_VARS_ARGS=''
 ENV FPGA_VARS_DIR='/opt/intel/oneapi/compiler/2022.1.0/linux/lib/oclfpga'
 ENV GDB_INFO='/opt/intel/oneapi/debugger/2021.6.0/documentation/info/'
 ENV INFOPATH='/opt/intel/oneapi/debugger/2021.6.0/gdb/intel64/lib'
+ENV INSPECTOR_2022_DIR='/opt/intel/oneapi/inspector/2022.1.0'
 ENV INTELFPGAOCLSDKROOT='/opt/intel/oneapi/compiler/2022.1.0/linux/lib/oclfpga'
 ENV INTEL_PYTHONHOME='/opt/intel/oneapi/debugger/2021.6.0/dep'
 ENV IPPCP_TARGET_ARCH='intel64'
@@ -94,8 +95,8 @@ ENV MKLROOT='/opt/intel/oneapi/mkl/2022.1.0'
 ENV NLSPATH='/opt/intel/oneapi/mkl/2022.1.0/lib/intel64/locale/%l_%t/%N:/opt/intel/oneapi/compiler/2022.1.0/linux/compiler/lib/intel64_lin/locale/%l_%t/%N'
 ENV OCL_ICD_FILENAMES='libintelocl_emu.so:libalteracl.so:/opt/intel/oneapi/compiler/2022.1.0/linux/lib/x64/libintelocl.so'
 ENV ONEAPI_ROOT='/opt/intel/oneapi'
-ENV PATH='/opt/intel/oneapi/vtune/2022.2.0/bin64:/opt/intel/oneapi/vpl/2022.1.0/bin:/opt/intel/oneapi/mpi/2021.6.0//libfabric/bin:/opt/intel/oneapi/mpi/2021.6.0//bin:/opt/intel/oneapi/mkl/2022.1.0/bin/intel64:/opt/intel/oneapi/intelpython/latest/bin:/opt/intel/oneapi/intelpython/latest/condabin:/opt/intel/oneapi/dev-utilities/2021.6.0/bin:/opt/intel/oneapi/debugger/2021.6.0/gdb/intel64/bin:/opt/intel/oneapi/compiler/2022.1.0/linux/lib/oclfpga/bin:/opt/intel/oneapi/compiler/2022.1.0/linux/bin/intel64:/opt/intel/oneapi/compiler/2022.1.0/linux/bin:/opt/intel/oneapi/advisor/2022.1.0/bin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-ENV PKG_CONFIG_PATH='/opt/intel/oneapi/vtune/2022.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/vpl/2022.1.0/lib/pkgconfig:/opt/intel/oneapi/tbb/2021.6.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.6.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2022.1.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.6.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2021.7.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2022.1.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2021.6.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2022.1.0/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.6.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2022.1.0/include/pkgconfig/lib64:'
+ENV PATH='/opt/intel/oneapi/vtune/2022.2.0/bin64:/opt/intel/oneapi/vpl/2022.1.0/bin:/opt/intel/oneapi/mpi/2021.6.0//libfabric/bin:/opt/intel/oneapi/mpi/2021.6.0//bin:/opt/intel/oneapi/mkl/2022.1.0/bin/intel64:/opt/intel/oneapi/intelpython/latest/bin:/opt/intel/oneapi/intelpython/latest/condabin:/opt/intel/oneapi/inspector/2022.1.0/bin64:/opt/intel/oneapi/dev-utilities/2021.6.0/bin:/opt/intel/oneapi/debugger/2021.6.0/gdb/intel64/bin:/opt/intel/oneapi/compiler/2022.1.0/linux/lib/oclfpga/bin:/opt/intel/oneapi/compiler/2022.1.0/linux/bin/intel64:/opt/intel/oneapi/compiler/2022.1.0/linux/bin:/opt/intel/oneapi/advisor/2022.1.0/bin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+ENV PKG_CONFIG_PATH='/opt/intel/oneapi/vtune/2022.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/vpl/2022.1.0/lib/pkgconfig:/opt/intel/oneapi/tbb/2021.6.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.6.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2022.1.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.6.0/lib/pkgconfig:/opt/intel/oneapi/inspector/2022.1.0/include/pkgconfig/lib64:/opt/intel/oneapi/dpl/2021.7.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2022.1.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2021.6.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2022.1.0/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.6.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2022.1.0/include/pkgconfig/lib64:'
 ENV PYTHONPATH='/opt/intel/oneapi/advisor/2022.1.0/pythonapi'
 ENV SETVARS_COMPLETED='1'
 ENV TBBROOT='/opt/intel/oneapi/tbb/2021.6.0/env/..'

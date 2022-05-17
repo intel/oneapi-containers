@@ -1,0 +1,30 @@
+# Copyright (c) 2020-2021 Intel Corporation.
+# SPDX-License-Identifier: BSD-3-Clause
+
+FROM ubuntu:20.04
+COPY third-party-programs.txt /
+RUN apt-get update && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    curl ca-certificates gpg-agent software-properties-common && \
+  rm -rf /var/lib/apt/lists/*
+# repository to install Intel(R) oneAPI Libraries
+RUN curl -fsSL https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2023.PUB | apt-key add -
+RUN echo "deb [trusted=yes] https://apt.repos.intel.com/oneapi all main " > /etc/apt/sources.list.d/oneAPI.list
+
+RUN mkdir -p /opt/workdir
+RUN apt-get update && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client vim wget net-tools git intel-oneapi-vtune  && \
+  rm -rf /var/lib/apt/lists/*
+
+
+
+ENV LANG=C.UTF-8
+
+ENV DIAGUTIL_PATH='/opt/intel/oneapi/vtune/2022.2.0/sys_check/vtune_sys_check.py:'
+ENV ONEAPI_ROOT='/opt/intel/oneapi'
+ENV PATH='/opt/intel/oneapi/vtune/2022.2.0/bin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+ENV PKG_CONFIG_PATH='/opt/intel/oneapi/vtune/2022.2.0/include/pkgconfig/lib64:'
+ENV SETVARS_COMPLETED='1'
+ENV VTUNE_PROFILER_2022_DIR='/opt/intel/oneapi/vtune/2022.2.0'
+ENV VTUNE_PROFILER_DIR='/opt/intel/oneapi/vtune/2022.2.0'
