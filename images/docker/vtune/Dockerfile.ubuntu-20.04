@@ -21,10 +21,10 @@ RUN apt-get update && apt-get upgrade -y && \
 
 ENV LANG=C.UTF-8
 
-ENV DIAGUTIL_PATH='/opt/intel/oneapi/vtune/2022.4.0/sys_check/vtune_sys_check.py:'
+ENV DIAGUTIL_PATH='/opt/intel/oneapi/vtune/2022.4.1/sys_check/vtune_sys_check.py:'
 ENV ONEAPI_ROOT='/opt/intel/oneapi'
-ENV PATH='/opt/intel/oneapi/vtune/2022.4.0/bin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-ENV PKG_CONFIG_PATH='/opt/intel/oneapi/vtune/2022.4.0/include/pkgconfig/lib64:'
+ENV PATH='/opt/intel/oneapi/vtune/2022.4.1/bin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+ENV PKG_CONFIG_PATH='/opt/intel/oneapi/vtune/2022.4.1/include/pkgconfig/lib64:'
 ENV SETVARS_COMPLETED='1'
-ENV VTUNE_PROFILER_2022_DIR='/opt/intel/oneapi/vtune/2022.4.0'
-ENV VTUNE_PROFILER_DIR='/opt/intel/oneapi/vtune/2022.4.0'
+ENV VTUNE_PROFILER_2022_DIR='/opt/intel/oneapi/vtune/2022.4.1'
+ENV VTUNE_PROFILER_DIR='/opt/intel/oneapi/vtune/2022.4.1'
