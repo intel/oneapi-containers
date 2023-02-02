@@ -11,9 +11,9 @@ RUN apt-get update && apt-get upgrade -y && \
 
 # install cmake
 RUN cd /opt/build && \
-    curl -LO https://github.com/Kitware/CMake/releases/download/v3.25.1/cmake-3.25.1-linux-x86_64.sh && \
+    curl -LO https://github.com/Kitware/CMake/releases/download/v3.25.2/cmake-3.25.2-linux-x86_64.sh && \
     mkdir -p /opt/dist//usr/local && \
-    /bin/bash cmake-3.25.1-linux-x86_64.sh --prefix=/opt/dist//usr/local --skip-license
+    /bin/bash cmake-3.25.2-linux-x86_64.sh --prefix=/opt/dist//usr/local --skip-license
 
 
 
@@ -47,7 +47,7 @@ RUN echo "deb [trusted=yes arch=amd64] https://repositories.intel.com/graphics/u
 
 RUN apt-get update && apt-get upgrade -y && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client wget net-tools git intel-basekit-getting-started intel-oneapi-advisor intel-oneapi-ccl-devel intel-oneapi-common-licensing intel-oneapi-common-vars intel-oneapi-compiler-dpcpp-cpp intel-oneapi-dal-devel intel-oneapi-dev-utilities intel-oneapi-dnnl-devel intel-oneapi-dpcpp-debugger intel-oneapi-ipp-devel intel-oneapi-ippcp-devel intel-oneapi-libdpstd-devel intel-oneapi-mkl-devel intel-oneapi-onevpl-devel intel-oneapi-tbb-devel intel-oneapi-vtune intel-opencl-icd intel-level-zero-gpu level-zero level-zero-dev intel-aikit-getting-started intel-oneapi-model-zoo intel-oneapi-python intel-oneapi-pytorch intel-oneapi-tensorflow  && \
+    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client wget net-tools git intel-basekit-getting-started intel-oneapi-advisor intel-oneapi-ccl-devel intel-oneapi-common-licensing intel-oneapi-common-vars intel-oneapi-compiler-dpcpp-cpp intel-oneapi-dal-devel intel-oneapi-dev-utilities intel-oneapi-dnnl-devel intel-oneapi-dpcpp-debugger intel-oneapi-ipp-devel intel-oneapi-ippcp-devel intel-oneapi-libdpstd-devel intel-oneapi-mkl-devel intel-oneapi-onevpl-devel intel-oneapi-tbb-devel intel-oneapi-vtune intel-opencl-icd intel-level-zero-gpu level-zero level-zero-dev intel-aikit-getting-started intel-oneapi-model-zoo intel-oneapi-python intel-oneapi-pytorch intel-oneapi-tensorflow intel-oneapi-modin intel-oneapi-neural-compressor  && \
   rm -rf /var/lib/apt/lists/*
 
 COPY --from=build /opt/dist /
