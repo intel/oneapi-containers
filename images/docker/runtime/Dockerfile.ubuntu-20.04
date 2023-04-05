@@ -11,9 +11,9 @@ RUN apt-get update && apt-get upgrade -y && \
 
 # install cmake
 RUN cd /opt/build && \
-    curl -LO https://github.com/Kitware/CMake/releases/download/v3.25.1/cmake-3.25.1-linux-x86_64.sh && \
+    curl -LO https://github.com/Kitware/CMake/releases/download/v3.26.2/cmake-3.26.2-linux-x86_64.sh && \
     mkdir -p /opt/dist//usr/local && \
-    /bin/bash cmake-3.25.1-linux-x86_64.sh --prefix=/opt/dist//usr/local --skip-license
+    /bin/bash cmake-3.26.2-linux-x86_64.sh --prefix=/opt/dist//usr/local --skip-license
 
 
 
