@@ -1,5 +1,8 @@
 # Intel<sup><font size=2>®</font></sup> oneAPI DL Framework Developer Toolkit
 
+# Note
+**Note:** The dockerfiles on this directory are no longer supported, you can still use [basekit images](https://hub.docker.com/r/intel/oneapi-basekit).
+
 **Develop New or Customize Existing Frameworks Using Common APIs**
 
 Deep learning frameworks offer optimized building blocks to streamline designing, training, and validating deep neural networks through a high-level programming interface.
