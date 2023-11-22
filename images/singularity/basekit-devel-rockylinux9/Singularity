@@ -2,4 +2,4 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 Bootstrap: docker
-From: intel/oneapi-basekit:devel-ubuntu18.04
+From: intel/oneapi-basekit:devel-rockylinux9
