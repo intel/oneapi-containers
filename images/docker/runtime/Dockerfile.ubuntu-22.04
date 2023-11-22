@@ -21,7 +21,7 @@ RUN echo "deb [signed-by=/usr/share/keyrings/intel-graphics-archive-keyring.gpg 
 
 RUN apt-get update && apt-get upgrade -y && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client wget net-tools git intel-oneapi-runtime-ccl intel-oneapi-runtime-compilers intel-oneapi-runtime-dal intel-oneapi-runtime-dnnl intel-oneapi-runtime-dpcpp-cpp intel-oneapi-runtime-dpcpp-library intel-oneapi-runtime-fortran intel-oneapi-runtime-ipp intel-oneapi-runtime-ipp-crypto intel-oneapi-runtime-libs intel-oneapi-runtime-mkl intel-oneapi-runtime-mpi intel-oneapi-runtime-opencl intel-oneapi-runtime-openmp intel-oneapi-runtime-tbb intel-oneapi-runtime-vpl intel-level-zero-gpu level-zero  && \
+    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client wget net-tools git intel-oneapi-runtime-ccl intel-oneapi-runtime-compilers-2024 intel-oneapi-runtime-dal intel-oneapi-runtime-dnnl intel-oneapi-runtime-dpcpp-cpp intel-oneapi-runtime-dpcpp-library intel-oneapi-runtime-fortran intel-oneapi-runtime-ipp intel-oneapi-runtime-ipp-crypto intel-oneapi-runtime-libs intel-oneapi-runtime-mkl intel-oneapi-runtime-mpi intel-oneapi-runtime-opencl-2024 intel-oneapi-runtime-openmp intel-oneapi-runtime-tbb intel-oneapi-tcm-1.0 intel-level-zero-gpu level-zero  && \
   rm -rf /var/lib/apt/lists/*
 
 
@@ -29,3 +29,5 @@ RUN apt-get update && apt-get upgrade -y && \
 
 ENV LANG=C.UTF-8
 ENV LD_LIBRARY_PATH=/opt/intel/oneapi/lib
+ENV ONEAPI_ROOT='/opt/intel/oneapi'
+ENV SETVARS_COMPLETED='1'
