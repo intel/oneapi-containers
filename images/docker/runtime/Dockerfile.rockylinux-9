@@ -1,0 +1,36 @@
+# Copyright (c) 2020-2021 Intel Corporation.
+# SPDX-License-Identifier: BSD-3-Clause
+
+FROM rockylinux:9
+COPY third-party-programs.txt /
+# repository to install Intel(R) oneAPI Libraries
+RUN echo $'\
+[oneAPI]\n\
+name=Intel(R) oneAPI repository\n\
+baseurl=https://yum.repos.intel.com/oneapi\n\
+enabled=1\n\
+gpgcheck=1\n\
+repo_gpgcheck=1\n\
+gpgkey=https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2023.PUB' \
+> /etc/yum.repos.d/oneAPI.repo
+
+
+# repository to install Intel(R) GPU drivers
+RUN echo $'\
+[intel-graphics]\n\
+name=Intel Graphics Drivers Repository\n\
+baseurl=https://repositories.intel.com/graphics/rhel/8.4/\n\
+enabled=1\n\
+gpgcheck=0' \
+> /etc/yum.repos.d/intel-graphics.repo
+
+
+RUN yum update -y && yum install -y cmake procps make gcc gcc-c++ kernel-devel pkgconfig which bzip2 openssh-server openssh-clients wget net-tools git diffutils intel-oneapi-runtime-ccl intel-oneapi-runtime-compilers-2024 intel-oneapi-runtime-dal intel-oneapi-runtime-dnnl intel-oneapi-runtime-dpcpp-cpp intel-oneapi-runtime-dpcpp-library intel-oneapi-runtime-fortran intel-oneapi-runtime-ipp intel-oneapi-runtime-ipp-crypto intel-oneapi-runtime-libs intel-oneapi-runtime-mkl intel-oneapi-runtime-mpi intel-oneapi-runtime-opencl-2024 intel-oneapi-runtime-openmp intel-oneapi-runtime-tbb intel-oneapi-tcm-1.0 intel-opencl intel-level-zero-gpu level-zero level-zero-devel 
+
+
+
+
+ENV LANG=C.UTF-8
+ENV LD_LIBRARY_PATH=/opt/intel/oneapi/lib
+ENV ONEAPI_ROOT='/opt/intel/oneapi'
+ENV SETVARS_COMPLETED='1'
