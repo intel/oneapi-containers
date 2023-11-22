@@ -1,5 +1,9 @@
 # Intel<sup><font size=2>®</font></sup> oneAPI IoT Toolkit
 
+# Note
+**Note:** The dockerfiles on this directory are no longer supported, you can still use [basekit images](https://hub.docker.com/r/intel/oneapi-basekit).
+
+
 **Solutions that Run at the Network’s Edge**
 
 The Intel<sup><font size=2>®</font></sup> oneAPI IoT Toolkit is tailored for developers who are bringing the power of big data technology to global innovations—healthcare, smart homes, aerospace, security, and more. Its build and analysis tools and libraries are enhanced to help with system design, development, and deployment across CPU, GPU, FPGA, and other accelerator architectures. [IoT Kit Details](https://software.intel.com/oneapi/iot-kit)

@@ -1,5 +1,8 @@
 # Intel<sup><font size=2>®</font></sup> AI Analytics Toolkit
 
+# Note
+**Note:** The dockerfiles on this directory are no longer supported the tools on this container can be obtained on [AI tools selector](https://www.intel.com/content/www/us/en/developer/tools/oneapi/ai-tools-selector.html).
+
 **Accelerate the Entire AI Application Pipeline**
 
 The Intel<sup><font size=2>®</font></sup> AI Analytics Toolkit gives developers, researchers, and data scientists tools to accelerate each step in the pipeline—training deep neural networks, integrating trained models into applications for inference, and executing functions for data science and analytics. [AI Kit Details](https://software.intel.com/oneapi/ai-kit)
