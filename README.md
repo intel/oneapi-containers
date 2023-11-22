@@ -15,9 +15,6 @@ Containers allow you to set up and configure environments for profiling and dist
 
 Explore more containers, models, and more on the [Intel<sup>®</sup> oneContainer Portal](https://software.intel.com/content/www/us/en/develop/tools/containers.html)
 
-# Note
-**Note:** CentOS* 8 - based containers are deprecated and no longer supported. [Details](https://www.centos.org/centos-linux-eol/). <br />
-You may still find the CentOS Dockerfile, but it is no longer being updated.
 
 # License Agreement
 
@@ -62,44 +59,6 @@ docker run --device=/dev/dri -it "$image"
 * [oneAPI HPC Toolkit Containers Get Started Guide](https://software.intel.com/content/www/us/en/develop/documentation/get-started-with-intel-oneapi-hpc-linux/top/using-containers.html)
 * [HPC Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/hpckit/)
 
-# Intel<sup>®</sup> oneAPI IoT Toolkit
-
-Build high-performing, efficient, reliable solutions that run at the network’s edge. [IoT Kit Details](https://software.intel.com/oneapi/iot-kit)
-
-```sh
-image=intel/oneapi-iotkit
-docker pull "$image"
-docker run --device=/dev/dri -it "$image"
-```
-
-* [oneAPI IoT Toolkit Containers Get Started Guide](https://software.intel.com/content/www/us/en/develop/documentation/get-started-with-intel-oneapi-iot-linux/top/using-containers.html)
-* [IoT Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/iotkit/)
-
-# Intel<sup>®</sup> oneAPI DL Framework Developer Toolkit
-
-Build deep learning frameworks or customize existing ones. [DLFD Kit Details](https://software.intel.com/oneapi/dlfd-kit)
-
-```sh
-image=intel/oneapi-dlfdkit
-docker pull "$image"
-docker run --device=/dev/dri -it "$image"
-```
-
-* [oneAPI DL Framework Developer Toolkit Containers Get Started Guide](https://software.intel.com/content/www/us/en/develop/documentation/get-started-with-intel-oneapi-dlfd-linux/top/using-containers.html)
-* [DLFD Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/dlfdkit/)
-
-# Intel<sup>®</sup> AI Analytics Toolkit
-
-Speed AI development with tools for DL training, inference, and data analytics. [AI Kit Details](https://software.intel.com/oneapi/ai-kit)
-
-```sh
-image=intel/oneapi-aikit
-docker pull "$image"
-docker run --device=/dev/dri -it "$image"
-```
-
-* [Intel AI Analytics Containers Get Started Guide](https://software.intel.com/content/www/us/en/develop/documentation/get-started-with-ai-linux/top/using-containers.html)
-* [AI Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/aikit/)
 
 # Using containers behind a proxy
 
