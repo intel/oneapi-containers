@@ -17,11 +17,12 @@ gpgkey=https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-
 
 # repository to install Intel(R) GPU drivers
 RUN echo $'\
-[intel-graphics]\n\
-name=Intel Graphics Drivers Repository\n\
-baseurl=https://repositories.intel.com/graphics/rhel/8.4/\n\
+[intel-graphics-9.2-unified]\n\
+name=Intel graphics 9.2 unified\n\
 enabled=1\n\
-gpgcheck=0' \
+gpgcheck=1\n\
+baseurl=https://repositories.intel.com/gpu/rhel/9.2/unified/\n\
+gpgkey=https://repositories.intel.com/gpu/intel-graphics.key' \
 > /etc/yum.repos.d/intel-graphics.repo
 
 
