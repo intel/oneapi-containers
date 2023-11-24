@@ -1,7 +1,7 @@
 # Intel<sup><font size=2>®</font></sup> oneAPI IoT Toolkit
 
-# Note
-**Note:** The dockerfiles on this directory are no longer supported, you can still use [basekit images](https://hub.docker.com/r/intel/oneapi-basekit).
+# IoTkit no longer supported
+**Note:** The dockerfiles on this directory are no longer supported, you can still use [hpckit images](https://hub.docker.com/r/intel/hpckit).
 
 
 **Solutions that Run at the Network’s Edge**
