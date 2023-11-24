@@ -46,12 +46,12 @@ docker run --device=/dev/dri -it "$image"
 * [oneAPI Base Toolkit Containers Get Started Guide](https://software.intel.com/content/www/us/en/develop/documentation/get-started-with-intel-oneapi-base-linux/top/using-containers.html)
 * [Base Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/basekit/)
 
-# Intel<sup>®</sup> oneAPI HPC Toolkit
+# Intel<sup>®</sup> HPC Toolkit
 
 Deliver fast C++, Fortran, OpenMP, and MPI applications that scale. [HPC Kit Details](https://software.intel.com/oneapi/hpc-kit)
 
 ```sh
-image=intel/oneapi-hpckit
+image=intel/hpckit
 docker pull "$image"
 docker run --device=/dev/dri -it "$image"
 ```
