@@ -17,16 +17,16 @@ gpgkey=https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-
 
 # repository to install Intel(R) GPU drivers
 RUN echo $'\
-[intel-graphics-9.2-unified]\n\
-name=Intel graphics 9.2 unified\n\
+[intel-graphics-9.3-unified]\n\
+name=Intel graphics 9.3 unified\n\
 enabled=1\n\
 gpgcheck=1\n\
-baseurl=https://repositories.intel.com/gpu/rhel/9.2/unified/\n\
+baseurl=https://repositories.intel.com/gpu/rhel/9.3/lts/2350/unified/\n\
 gpgkey=https://repositories.intel.com/gpu/intel-graphics.key' \
 > /etc/yum.repos.d/intel-graphics.repo
 
 
-RUN yum update -y && yum install -y cmake procps make gcc gcc-c++ kernel-devel pkgconfig which bzip2 openssh-server openssh-clients wget net-tools git diffutils intel-oneapi-runtime-ccl intel-oneapi-runtime-compilers-2024 intel-oneapi-runtime-dal intel-oneapi-runtime-dnnl intel-oneapi-runtime-dpcpp-cpp intel-oneapi-runtime-dpcpp-library intel-oneapi-runtime-fortran intel-oneapi-runtime-ipp intel-oneapi-runtime-ipp-crypto intel-oneapi-runtime-libs intel-oneapi-runtime-mkl intel-oneapi-runtime-mpi intel-oneapi-runtime-opencl-2024 intel-oneapi-runtime-openmp intel-oneapi-runtime-tbb intel-oneapi-tcm-1.0 intel-opencl intel-level-zero-gpu level-zero level-zero-devel 
+RUN yum update -y && yum install -y cmake procps make gcc gcc-c++ kernel-devel pkgconfig which bzip2 openssh-server openssh-clients wget net-tools git diffutils cmake intel-oneapi-runtime-ccl intel-oneapi-runtime-compilers-2024 intel-oneapi-runtime-dal intel-oneapi-runtime-dnnl intel-oneapi-runtime-dpcpp-cpp intel-oneapi-runtime-dpcpp-library intel-oneapi-runtime-fortran intel-oneapi-runtime-ipp intel-oneapi-runtime-ipp-crypto intel-oneapi-runtime-libs intel-oneapi-runtime-mkl intel-oneapi-runtime-mpi intel-oneapi-runtime-opencl-2024 intel-oneapi-runtime-openmp intel-oneapi-runtime-tbb intel-oneapi-tcm-1.0 intel-opencl intel-level-zero-gpu level-zero level-zero-devel 
 
 
 
