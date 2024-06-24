@@ -33,5 +33,11 @@ RUN yum update -y && yum install -y cmake procps make gcc gcc-c++ kernel-devel p
 
 ENV LANG=C.UTF-8
 ENV LD_LIBRARY_PATH=/opt/intel/oneapi/lib
+ENV CMAKE_PREFIX_PATH='/opt/intel/oneapi/tbb/2021.13/env/..'
+ENV CPATH='/opt/intel/oneapi/tbb/2021.13/env/../include'
+ENV LD_LIBRARY_PATH='/opt/intel/oneapi/tbb/2021.13/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/lib'
+ENV LIBRARY_PATH='/opt/intel/oneapi/tbb/2021.13/env/../lib/intel64/gcc4.8'
 ENV ONEAPI_ROOT='/opt/intel/oneapi'
+ENV PKG_CONFIG_PATH='/opt/intel/oneapi/tbb/2021.13/env/../lib/pkgconfig'
 ENV SETVARS_COMPLETED='1'
+ENV TBBROOT='/opt/intel/oneapi/tbb/2021.13/env/..'
