@@ -1,0 +1,57 @@
+# Copyright (c) 2020-2021 Intel Corporation.
+# SPDX-License-Identifier: BSD-3-Clause
+
+FROM rockylinux:9
+COPY third-party-programs.txt /
+# repository to install Intel(R) oneAPI Libraries
+RUN echo $'\
+[oneAPI]\n\
+name=Intel(R) oneAPI repository\n\
+baseurl=https://yum.repos.intel.com/oneapi\n\
+enabled=1\n\
+gpgcheck=1\n\
+repo_gpgcheck=1\n\
+gpgkey=https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2023.PUB' \
+> /etc/yum.repos.d/oneAPI.repo
+
+
+# repository to install Intel(R) GPU drivers
+RUN echo $'\
+[intel-graphics-9.4-unified]\n\
+name=Intel graphics 9.4 unified\n\
+enabled=1\n\
+gpgcheck=1\n\
+baseurl=https://repositories.intel.com/gpu/rhel/9.4/unified/\n\
+gpgkey=https://repositories.intel.com/gpu/intel-graphics.key' \
+> /etc/yum.repos.d/intel-graphics.repo
+
+
+RUN yum update -y && yum install -y cmake procps make gcc gcc-c++ kernel-devel pkgconfig which bzip2 openssh-server openssh-clients wget net-tools git diffutils cmake intel-fortran-essentials intel-opencl intel-level-zero-gpu level-zero level-zero-devel 
+
+
+
+
+ENV LANG=C.UTF-8
+ENV CLASSPATH='/opt/intel/oneapi/mpi/2021.14/share/java/mpi.jar'
+ENV CMAKE_PREFIX_PATH='/opt/intel/oneapi/tbb/2022.0/env/..:/opt/intel/oneapi/mkl/2025.0/lib/cmake:/opt/intel/oneapi/compiler/2025.0'
+ENV CMPLR_ROOT='/opt/intel/oneapi/compiler/2025.0'
+ENV CPATH='/opt/intel/oneapi/umf/0.9/include:/opt/intel/oneapi/tbb/2022.0/env/../include:/opt/intel/oneapi/mpi/2021.14/include:/opt/intel/oneapi/mkl/2025.0/include:/opt/intel/oneapi/dev-utilities/2025.0/include'
+ENV DIAGUTIL_PATH='/opt/intel/oneapi/compiler/2025.0/etc/compiler/sys_check/sys_check.sh'
+ENV FI_PROVIDER_PATH='/opt/intel/oneapi/mpi/2021.14/opt/mpi/libfabric/lib/prov:/usr/lib64/libfabric'
+ENV GDB_INFO='/opt/intel/oneapi/debugger/2025.0/share/info/'
+ENV INFOPATH='/opt/intel/oneapi/debugger/2025.0/share/info'
+ENV INTEL_PYTHONHOME='/opt/intel/oneapi/debugger/2025.0/opt/debugger'
+ENV I_MPI_ROOT='/opt/intel/oneapi/mpi/2021.14'
+ENV LD_LIBRARY_PATH='/opt/intel/oneapi/tcm/1.2/lib:/opt/intel/oneapi/umf/0.9/lib:/opt/intel/oneapi/tbb/2022.0/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.14/opt/mpi/libfabric/lib:/opt/intel/oneapi/mpi/2021.14/lib:/opt/intel/oneapi/mkl/2025.0/lib:/opt/intel/oneapi/debugger/2025.0/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.0/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.0/lib'
+ENV LIBRARY_PATH='/opt/intel/oneapi/tcm/1.2/lib:/opt/intel/oneapi/umf/0.9/lib:/opt/intel/oneapi/tbb/2022.0/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.14/lib:/opt/intel/oneapi/mkl/2025.0/lib:/opt/intel/oneapi/compiler/2025.0/lib'
+ENV MANPATH='/opt/intel/oneapi/mpi/2021.14/share/man:/opt/intel/oneapi/debugger/2025.0/share/man:/opt/intel/oneapi/compiler/2025.0/share/man:'
+ENV MKLROOT='/opt/intel/oneapi/mkl/2025.0'
+ENV NLSPATH='/opt/intel/oneapi/compiler/2025.0/lib/compiler/locale/%l_%t/%N'
+ENV OCL_ICD_FILENAMES='/opt/intel/oneapi/compiler/2025.0/lib/libintelocl.so'
+ENV ONEAPI_ROOT='/opt/intel/oneapi'
+ENV PATH='/opt/intel/oneapi/mpi/2021.14/bin:/opt/intel/oneapi/mkl/2025.0/bin:/opt/intel/oneapi/dev-utilities/2025.0/bin:/opt/intel/oneapi/debugger/2025.0/opt/debugger/bin:/opt/intel/oneapi/compiler/2025.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+ENV PKG_CONFIG_PATH='/opt/intel/oneapi/tbb/2022.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.14/lib/pkgconfig:/opt/intel/oneapi/mkl/2025.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2025.0/lib/pkgconfig'
+ENV SETVARS_COMPLETED='1'
+ENV TBBROOT='/opt/intel/oneapi/tbb/2022.0/env/..'
+ENV TCM_ROOT='/opt/intel/oneapi/tcm/1.2'
+ENV UMF_ROOT='/opt/intel/oneapi/umf/0.9'
