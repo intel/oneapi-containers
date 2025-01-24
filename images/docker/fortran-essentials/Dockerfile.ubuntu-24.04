@@ -21,7 +21,7 @@ RUN echo "deb [signed-by=/usr/share/keyrings/intel-graphics-archive-keyring.gpg 
 
 RUN apt-get update && apt-get upgrade -y && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client wget net-tools git cmake intel-fortran-essentials intel-opencl-icd intel-level-zero-gpu level-zero level-zero-dev  && \
+    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client wget net-tools git cmake intel-fortran-essentials intel-opencl-icd libze-intel-gpu1 libze1 libze-dev  && \
   rm -rf /var/lib/apt/lists/*
 
 
