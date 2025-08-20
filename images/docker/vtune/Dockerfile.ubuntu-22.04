@@ -23,8 +23,8 @@ RUN apt-get update && apt-get upgrade -y && \
 ENV LANG=C.UTF-8
 
 ENV ONEAPI_ROOT='/opt/intel/oneapi'
-ENV PATH='/opt/intel/oneapi/vtune/2025.4/bin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-ENV PKG_CONFIG_PATH='/opt/intel/oneapi/vtune/2025.4/include/pkgconfig/lib64:'
+ENV PATH='/opt/intel/oneapi/vtune/2025.5/bin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+ENV PKG_CONFIG_PATH='/opt/intel/oneapi/vtune/2025.5/include/pkgconfig/lib64:'
 ENV SETVARS_COMPLETED='1'
-ENV VTUNE_PROFILER_2025_DIR='/opt/intel/oneapi/vtune/2025.4'
-ENV VTUNE_PROFILER_DIR='/opt/intel/oneapi/vtune/2025.4'
+ENV VTUNE_PROFILER_2025_DIR='/opt/intel/oneapi/vtune/2025.5'
+ENV VTUNE_PROFILER_DIR='/opt/intel/oneapi/vtune/2025.5'
