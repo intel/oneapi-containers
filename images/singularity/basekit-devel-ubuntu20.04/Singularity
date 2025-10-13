@@ -1,5 +1,0 @@
-# Copyright (c) 2019-2022 Intel Corporation.
-# SPDX-License-Identifier: BSD-3-Clause
-
-Bootstrap: docker
-From: intel/oneapi-basekit:devel-ubuntu20.04
