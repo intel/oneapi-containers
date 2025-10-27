@@ -2,7 +2,6 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 FROM ubuntu:22.04
-COPY third-party-programs.txt /
 RUN apt-get update && apt-get upgrade -y && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     curl ca-certificates gpg-agent software-properties-common && \
@@ -23,8 +22,8 @@ RUN apt-get update && apt-get upgrade -y && \
 ENV LANG=C.UTF-8
 
 ENV ONEAPI_ROOT='/opt/intel/oneapi'
-ENV PATH='/opt/intel/oneapi/vtune/2025.6/bin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-ENV PKG_CONFIG_PATH='/opt/intel/oneapi/vtune/2025.6/include/pkgconfig/lib64:'
+ENV PATH='/opt/intel/oneapi/vtune/2025.7/bin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+ENV PKG_CONFIG_PATH='/opt/intel/oneapi/vtune/2025.7/include/pkgconfig/lib64:'
 ENV SETVARS_COMPLETED='1'
-ENV VTUNE_PROFILER_2025_DIR='/opt/intel/oneapi/vtune/2025.6'
-ENV VTUNE_PROFILER_DIR='/opt/intel/oneapi/vtune/2025.6'
+ENV VTUNE_PROFILER_2025_DIR='/opt/intel/oneapi/vtune/2025.7'
+ENV VTUNE_PROFILER_DIR='/opt/intel/oneapi/vtune/2025.7'
