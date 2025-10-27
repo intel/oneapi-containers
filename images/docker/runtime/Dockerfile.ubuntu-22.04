@@ -1,14 +1,13 @@
-# Copyright (c) 2020-2021 Intel Corporation.
+# Copyright (c) 2020-2025 Intel Corporation.
 # SPDX-License-Identifier: BSD-3-Clause
 
 FROM ubuntu:22.04
-COPY third-party-programs.txt /
 RUN apt-get update && apt-get upgrade -y && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     curl ca-certificates gpg-agent software-properties-common && \
   rm -rf /var/lib/apt/lists/*
 # repository to install Intel(R) oneAPI Libraries
-RUN curl -fsSL https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2023.PUB | gpg --dearmor | tee /usr/share/keyrings/intel-oneapi-archive-keyring.gpg
+RUN curl -fsSL https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB | gpg --dearmor | tee /usr/share/keyrings/intel-oneapi-archive-keyring.gpg
 RUN echo "deb [signed-by=/usr/share/keyrings/intel-oneapi-archive-keyring.gpg] https://apt.repos.intel.com/oneapi all main " > /etc/apt/sources.list.d/oneAPI.list
 
 RUN apt-get update && apt-get upgrade -y && \
@@ -21,7 +20,7 @@ RUN echo "deb [signed-by=/usr/share/keyrings/intel-graphics-archive-keyring.gpg 
 
 RUN apt-get update && apt-get upgrade -y && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client wget net-tools git cmake intel-oneapi-runtime-libs intel-opencl-icd libze-intel-gpu1 libze1 libze-dev  && \
+    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client wget net-tools git file cmake intel-oneapi-runtime-libs intel-opencl-icd libze-intel-gpu1 libze1 libze-dev  && \
   rm -rf /var/lib/apt/lists/*
 
 
