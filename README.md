@@ -47,12 +47,12 @@ docker run --device=/dev/dri -it "$image"
 * [oneAPI Base Toolkit Containers Get Started Guide](https://software.intel.com/content/www/us/en/develop/documentation/get-started-with-intel-oneapi-base-linux/top/using-containers.html)
 * [Base Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/basekit/)
 
-# Intel<sup>®</sup> HPC Toolkit
+# Intel<sup>®</sup> oneAPI HPC Toolkit
 
 Deliver fast C++, Fortran, OpenMP, and MPI applications that scale. [HPC Kit Details](https://software.intel.com/oneapi/hpc-kit)
 
 ```sh
-image=intel/hpckit
+image=intel/oneapi-hpckit
 docker pull "$image"
 docker run --device=/dev/dri -it "$image"
 ```
@@ -71,7 +71,7 @@ For example:
 docker run --device=/dev/dri -e http_proxy="$http_proxy" -e https_proxy="$https_proxy" -it "$image"
 ```
 
-# Using Intel Advisor/Inspector/vTune with containers
+# Using Intel<sup>®</sup> Advisor and Intel<sup>®</sup> VTune<sup>TM</sup> Profiler within containers
 
 When using these tools, extra capabilites have to be provided to the container: `--cap-add=SYS_ADMIN --cap-add=SYS_PTRACE`
 
