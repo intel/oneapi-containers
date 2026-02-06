@@ -1,6 +1,6 @@
-# Intel<sup>®</sup> oneAPI Containers
+# Intel® oneAPI Containers
 
-Intel<sup>®</sup> oneAPI products will deliver the tools needed to deploy applications and solutions across scalar, vector, matrix, and spatial (SVMS) architectures. Its set of complementary toolkits—a base kit and specialty add-ons—simplify programming and help developers improve efficiency and innovation. [oneAPI Details](https://software.intel.com/oneapi)
+Intel® oneAPI products will deliver the tools needed to deploy applications and solutions across scalar, vector, matrix, and spatial (SVMS) architectures. Its set of complementary toolkits — a base kit and specialty add-ons — simplify programming and help developers improve efficiency and innovation. [oneAPI Details](https://software.intel.com/oneapi)
 
 Containers allow you to set up and configure environments for profiling and distribute them using images:
 
@@ -21,7 +21,7 @@ Containers allow you to set up and configure environments for profiling and dist
 
 By downloading and using this container and the included software, you agree to the terms and conditions of the [software license agreements](https://github.com/intel/oneapi-containers/tree/master/licensing).
 
-# Intel<sup>®</sup> oneAPI Runtime Libraries
+# Intel® oneAPI Runtime Libraries
 
 Get started running or deploying applications built with oneAPI toolkits.
 
@@ -34,7 +34,7 @@ docker run --device=/dev/dri -it "$image"
 * [Runtime Libraries Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/runtime/)
 
 
-# Intel<sup>®</sup> oneAPI Base Toolkit
+# Intel® oneAPI Base Toolkit
 
 Get started with this foundational kit that enables developers of all types to build, test, and deploy performance-driven, data-centric applications across diverse architectures. [Base Kit Details](https://software.intel.com/oneapi/base-kit)
 
@@ -47,7 +47,7 @@ docker run --device=/dev/dri -it "$image"
 * [oneAPI Base Toolkit Containers Get Started Guide](https://www.intel.com/content/www/us/en/docs/oneapi-base-toolkit/get-started-guide-linux/2025-2/using-containers.html)
 * [Base Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/basekit/)
 
-# Intel<sup>®</sup> oneAPI HPC Toolkit
+# Intel® oneAPI HPC Toolkit
 
 Deliver fast C++, Fortran, OpenMP, and MPI applications that scale. [HPC Kit Details](https://software.intel.com/oneapi/hpc-kit)
 
@@ -60,7 +60,7 @@ docker run --device=/dev/dri -it "$image"
 * [oneAPI HPC Toolkit Containers Get Started Guide](https://www.intel.com/content/www/us/en/docs/oneapi-hpc-toolkit/get-started-guide-linux/2025-2/using-containers.html)
 * [HPC Kit Dockerfile](https://github.com/intel/oneapi-containers/blob/master/images/docker/hpckit/)
 
-# Intel<sup>®</sup> VTune<sup>TM</sup> Profiler
+# Intel® VTune™ Profiler
 
 Optimize application performance, system performance, and system configuration for AI, HPC, cloud, IoT, media, storage, and more. [Details](https://www.intel.com/content/www/us/en/developer/tools/oneapi/vtune-profiler.html)
 
@@ -73,7 +73,7 @@ docker run --cap-add=SYS_ADMIN --cap-add=SYS_PTRACE --device=/dev/dri -it "$imag
 * [VTune Profiler Dockerfile](https://github.com/intel/oneapi-containers/tree/master/images/docker/vtune/)
 
 # Smaller Bundles for Specific Use Cases
-## Intel<sup>®</sup> Deep Learning Essentials
+## Intel® Deep Learning Essentials
 
 Develop, compile, test, and optimize deep learning frameworks and libraries, such as PyTorch* and TensorFlow*, for Intel CPU and GPUs.
 
@@ -85,7 +85,7 @@ docker run --device=/dev/dri -it "$image"
 
 * [Deep Learning Essentials Dockerfile](https://github.com/intel/oneapi-containers/tree/master/images/docker/deep-learning-essentials)
 
-## Intel<sup>®</sup> C++ Essentials
+## Intel® C++ Essentials
 
 Сompile, debug C++ and SYCL applications and use the most popular performance libraries from the Base Kit for Intel CPUs and GPUs.
 
@@ -97,7 +97,7 @@ docker run --device=/dev/dri -it "$image"
 
 * [C++ Essentials Dockerfile](https://github.com/intel/oneapi-containers/tree/master/images/docker/cpp-essentials)
 
-## Intel<sup>®</sup> Fortran Essentials
+## Intel® Fortran Essentials
 
 Сompile, debug Fortran applications and use the most popular performance libraries from the HPC Kit for Intel CPUs and GPUs.
 
@@ -119,7 +119,7 @@ For example:
 docker run --device=/dev/dri -e http_proxy="$http_proxy" -e https_proxy="$https_proxy" -it "$image"
 ```
 
-# Using Intel<sup>®</sup> Advisor and Intel<sup>®</sup> VTune<sup>TM</sup> Profiler within containers
+# Using Intel® Advisor and Intel® VTune™ Profiler within containers
 
 When using these tools, extra capabilites have to be provided to the container: `--cap-add=SYS_ADMIN --cap-add=SYS_PTRACE`
 
