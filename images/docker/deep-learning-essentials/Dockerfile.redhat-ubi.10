@@ -23,11 +23,6 @@ metadata_timer_sync=0
 proxy=${https_proxy_env}
 EOF
 
-RUN dnf install epel-release -y && \
-    dnf config-manager --enable crb && \
-    dnf install https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm -y && \
-    dnf repolist; dnf makecache -y
-
 # repository to install Intel(R) GPU drivers
 RUN VERSION_ID=$(. /etc/os-release ; echo -n $VERSION_ID) && echo VERSION_ID=${VERSION_ID}; echo '' && \
     https_proxy=${https_proxy_env} rpm --import https://repositories.intel.com/gpu/intel-graphics.key && \
