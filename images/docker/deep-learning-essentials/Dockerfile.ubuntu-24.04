@@ -10,17 +10,18 @@ RUN apt-get update && apt-get upgrade -y && \
 RUN curl -fsSL https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB | gpg --dearmor | tee /usr/share/keyrings/intel-oneapi-archive-keyring.gpg
 RUN echo "deb [signed-by=/usr/share/keyrings/intel-oneapi-archive-keyring.gpg] https://apt.repos.intel.com/oneapi all main " > /etc/apt/sources.list.d/oneAPI.list
 
-RUN apt-get update && apt-get upgrade -y && \
-  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    curl ca-certificates gpg-agent software-properties-common && \
-  rm -rf /var/lib/apt/lists/*
-# repository to install Intel(R) GPU drivers
-RUN curl -fsSL https://repositories.intel.com/gpu/intel-graphics.key | gpg --dearmor | tee /usr/share/keyrings/intel-graphics-archive-keyring.gpg
-RUN echo "deb [signed-by=/usr/share/keyrings/intel-graphics-archive-keyring.gpg arch=amd64] https://repositories.intel.com/gpu/ubuntu noble unified" > /etc/apt/sources.list.d/intel-graphics.list
+# Repository to install Intel® Graphics Driver
+ARG REPOSITORY="ppa:kobuk-team/intel-graphics"
+RUN add-apt-repository -y ${REPOSITORY} && \
+    apt-get update && \
+    apt-get install -y --no-install-recommends \
+        libze-dev libze-intel-gpu1 libze-intel-gpu-raytracing libze1 \
+        intel-metrics-discovery intel-opencl-icd clinfo intel-gsc intel-ocloc && \
+    rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update && apt-get upgrade -y && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client wget net-tools git file cmake intel-deep-learning-essentials intel-opencl-icd libze-intel-gpu1 libze1 libze-dev  && \
+    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client wget net-tools git file cmake intel-deep-learning-essentials  && \
   rm -rf /var/lib/apt/lists/*
 
 
