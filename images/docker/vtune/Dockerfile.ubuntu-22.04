@@ -2,24 +2,27 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 FROM ubuntu:22.04
+
+ARG ONEAPI_VTUNE_VERSION="2025.10.1-14"
+
 RUN apt-get update && apt-get upgrade -y && \
-  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    curl ca-certificates gpg-agent software-properties-common && \
-  rm -rf /var/lib/apt/lists/*
-# repository to install Intel(R) oneAPI Libraries
-RUN curl -fsSL https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB | gpg --dearmor | tee /usr/share/keyrings/intel-oneapi-archive-keyring.gpg
-RUN echo "deb [signed-by=/usr/share/keyrings/intel-oneapi-archive-keyring.gpg] https://apt.repos.intel.com/oneapi all main " > /etc/apt/sources.list.d/oneAPI.list
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        curl gpg-agent software-properties-common ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client wget net-tools git file cmake && \
+    rm -rf /var/lib/apt/lists/*
 
-RUN mkdir -p /opt/workdir
+# repository to install Intel® oneAPI Libraries
+RUN curl -fsSL https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB | gpg --dearmor | tee /usr/share/keyrings/intel-oneapi-archive-keyring.gpg && \
+    echo "deb [signed-by=/usr/share/keyrings/intel-oneapi-archive-keyring.gpg] https://apt.repos.intel.com/oneapi all main " > /etc/apt/sources.list.d/oneAPI.list
+# Repository to install Intel® GPU drivers
+RUN curl -fsSL https://repositories.intel.com/gpu/intel-graphics.key | gpg --dearmor | tee /usr/share/keyrings/intel-graphics-archive-keyring.gpg && \
+    echo "deb [signed-by=/usr/share/keyrings/intel-graphics-archive-keyring.gpg arch=amd64] https://repositories.intel.com/gpu/ubuntu jammy unified" > /etc/apt/sources.list.d/intel-graphics.list
+
 RUN apt-get update && apt-get upgrade -y && \
-  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client wget net-tools file git intel-oneapi-vtune  && \
-  rm -rf /var/lib/apt/lists/*
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        intel-oneapi-vtune=${ONEAPI_VTUNE_VERSION} intel-opencl-icd libze-intel-gpu1 libze1 libze-dev && \
+    rm -rf /var/lib/apt/lists/*
 
-
-
-
-ENV LANG=C.UTF-8
+ENV LANG="C.UTF-8"
 
 ENV ONEAPI_ROOT='/opt/intel/oneapi'
 ENV PATH='/opt/intel/oneapi/vtune/2025.10/bin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'

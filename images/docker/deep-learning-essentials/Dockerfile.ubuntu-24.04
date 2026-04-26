@@ -2,32 +2,28 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 FROM ubuntu:24.04
-RUN apt-get update && apt-get upgrade -y && \
-  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    curl ca-certificates gpg-agent software-properties-common && \
-  rm -rf /var/lib/apt/lists/*
-# repository to install Intel(R) oneAPI Libraries
-RUN curl -fsSL https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB | gpg --dearmor | tee /usr/share/keyrings/intel-oneapi-archive-keyring.gpg
-RUN echo "deb [signed-by=/usr/share/keyrings/intel-oneapi-archive-keyring.gpg] https://apt.repos.intel.com/oneapi all main " > /etc/apt/sources.list.d/oneAPI.list
 
-# Repository to install Intel® Graphics Driver
-ARG REPOSITORY="ppa:kobuk-team/intel-graphics"
-RUN add-apt-repository -y ${REPOSITORY} && \
-    apt-get update && \
-    apt-get install -y --no-install-recommends \
-        libze-dev libze-intel-gpu1 libze-intel-gpu-raytracing libze1 \
-        intel-metrics-discovery intel-opencl-icd clinfo intel-gsc intel-ocloc && \
+ARG DEEP_LEARNING_ESSENTIALS_VERSION="2025.3.3-12"
+
+RUN apt-get update && apt-get upgrade -y && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        curl gpg-agent software-properties-common ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client wget net-tools git file cmake && \
     rm -rf /var/lib/apt/lists/*
 
+# repository to install Intel® oneAPI Libraries
+RUN curl -fsSL https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB | gpg --dearmor | tee /usr/share/keyrings/intel-oneapi-archive-keyring.gpg && \
+    echo "deb [signed-by=/usr/share/keyrings/intel-oneapi-archive-keyring.gpg] https://apt.repos.intel.com/oneapi all main " > /etc/apt/sources.list.d/oneAPI.list
+# Repository to install Intel® Graphics Driver
+ARG REPOSITORY="ppa:kobuk-team/intel-graphics"
+RUN add-apt-repository -y ${REPOSITORY}
+
 RUN apt-get update && apt-get upgrade -y && \
-  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    ca-certificates build-essential pkg-config gnupg libarchive13 openssh-server openssh-client wget net-tools git file cmake intel-deep-learning-essentials  && \
-  rm -rf /var/lib/apt/lists/*
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        intel-deep-learning-essentials=${DEEP_LEARNING_ESSENTIALS_VERSION} intel-opencl-icd libze-intel-gpu1 libze1 libze-dev && \
+    rm -rf /var/lib/apt/lists/*
 
+ENV LANG="C.UTF-8"
 
-
-
-ENV LANG=C.UTF-8
 ENV CCL_CONFIGURATION='cpu_gpu_dpcpp'
 ENV CCL_CONFIGURATION_PATH=''
 ENV CCL_ROOT='/opt/intel/oneapi/ccl/2021.17'
