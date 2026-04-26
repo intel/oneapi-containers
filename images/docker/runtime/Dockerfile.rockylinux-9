@@ -25,7 +25,10 @@ gpgkey=https://repositories.intel.com/gpu/intel-graphics.key' \
 > /etc/yum.repos.d/intel-graphics.repo
 
 
-RUN yum update -y && yum install -y cmake procps make gcc gcc-c++ kernel-devel pkgconfig which bzip2 openssh-server openssh-clients wget net-tools git diffutils cmake intel-oneapi-runtime-libs intel-opencl intel-level-zero-gpu level-zero level-zero-devel 
+RUN yum update -y \
+    && yum install -y cmake procps make gcc gcc-c++ kernel-devel pkgconfig which bzip2 openssh-server openssh-clients wget net-tools git diffutils cmake intel-oneapi-runtime-libs intel-opencl intel-level-zero-gpu level-zero level-zero-devel \
+    && yum clean all \
+    && rm -rf /var/cache/yum/*
 
 
 

@@ -1,0 +1,40 @@
+# Copyright (c) 2020-2026 Intel Corporation.
+# SPDX-License-Identifier: BSD-3-Clause
+
+FROM rockylinux/rockylinux:10
+
+ARG ONEAPI_RUNTIME_LIBS_VERSION="2025.3.0-177.x86_64"
+
+# Install dependencies for Intel® oneAPI Libraries
+RUN dnf update -y && \
+    dnf install -y --allowerasing \
+        cmake procps make gcc gcc-c++ kernel-devel pkgconfig which bzip2 openssh-server openssh-clients wget net-tools git diffutils && \
+    dnf clean all && \
+    rm -rf /var/cache/dnf
+
+# repository to install Intel® oneAPI Libraries
+RUN echo $'\
+[oneAPI]\n\
+name=Intel(R) oneAPI repository\n\
+baseurl=https://yum.repos.intel.com/oneapi\n\
+enabled=1\n\
+gpgcheck=1\n\
+repo_gpgcheck=1\n\
+gpgkey=https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB' \
+> /etc/yum.repos.d/oneAPI.repo
+
+# repository to install Intel® GPU drivers
+RUN dnf install -y 'dnf-command(config-manager)' && \
+    dnf config-manager --set-enabled crb && \
+    dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm && \
+    dnf clean all && \
+    rm -rf /var/cache/yum && \
+    /usr/bin/crb enable
+
+RUN dnf update -y && dnf install -y \
+        intel-oneapi-runtime-libs-${ONEAPI_RUNTIME_LIBS_VERSION} intel-compute-runtime intel-level-zero-devel && \
+    dnf clean all && \
+    rm -rf /var/cache/yum/*
+
+ENV LANG="C.UTF-8"
+

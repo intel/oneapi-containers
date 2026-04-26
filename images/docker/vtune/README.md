@@ -1,4 +1,4 @@
-# Intel<sup><font size=2>®</font></sup> VTune™ Profiler
+# Intel<sup><font size=2>®</font></sup> VTune<sup><font size=2>™</font></sup> Profiler
 
 **Find and Fix Performance Bottlenecks Quickly and Realize All the Value of Your Hardware**
 
@@ -124,3 +124,7 @@ docker run -it --rm -v /base/path:/base/path intel/oneapi-vtune \
 # License Agreement
 
 By downloading and using this container and the included software, you agree to the terms and conditions of the [software license agreements](https://github.com/intel/oneapi-containers/tree/master/licensing).
+
+---
+Intel and the Intel logo are trademarks of Intel Corporation or its subsidiaries.<br>
+*Other names and brands may be claimed as the property of others.
