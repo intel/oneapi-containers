@@ -3,7 +3,7 @@
 
 FROM ubuntu:24.04
 
-ARG ONEAPI_RUNTIME_LIBS_VERSION="2025.3.0-177"
+ARG ONEAPI_RUNTIME_LIBS_VERSION="2026.0.0-275"
 
 RUN apt-get update && apt-get upgrade -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \

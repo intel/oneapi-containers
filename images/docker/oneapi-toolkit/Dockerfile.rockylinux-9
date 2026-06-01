@@ -19,7 +19,7 @@ name=Intel(R) oneAPI repository\n\
 baseurl=https://yum.repos.intel.com/oneapi\n\
 enabled=1\n\
 gpgcheck=1\n\
-repo_gpgcheck=0\n\
+repo_gpgcheck=1\n\
 gpgkey=https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB' \
 > /etc/yum.repos.d/oneAPI.repo
 
@@ -27,8 +27,8 @@ gpgkey=https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.
 RUN dnf install -y 'dnf-command(config-manager)' && \
     dnf config-manager --add-repo \
     https://repositories.intel.com/gpu/rhel/9.7/lts/2523/unified/intel-gpu-9.7.repo && \
-     dnf clean all && \
-     rm -rf /var/cache/dnf
+    dnf clean all && \
+    rm -rf /var/cache/dnf
 
 RUN dnf update -y && dnf install -y \
         intel-oneapi-toolkit-${ONEAPI_TOOLKIT_VERSION} intel-opencl intel-level-zero-gpu level-zero level-zero-devel && \

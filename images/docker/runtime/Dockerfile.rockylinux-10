@@ -3,7 +3,7 @@
 
 FROM rockylinux/rockylinux:10
 
-ARG ONEAPI_RUNTIME_LIBS_VERSION="2025.3.0-177.x86_64"
+ARG ONEAPI_RUNTIME_LIBS_VERSION="2026.0.0-275.x86_64"
 
 # Install dependencies for Intel® oneAPI Libraries
 RUN dnf update -y && \
