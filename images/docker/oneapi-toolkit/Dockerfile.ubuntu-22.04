@@ -3,7 +3,7 @@
 
 FROM ubuntu:22.04
 
-ARG ONEAPI_TOOLKIT_VERSION="2026.0.0-183"
+ARG ONEAPI_TOOLKIT_VERSION="2026.0.1-22"
 
 RUN apt-get update && apt-get upgrade -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
@@ -53,12 +53,12 @@ ENV MKLROOT='/opt/intel/oneapi/mkl/2026.0'
 ENV NLSPATH='/opt/intel/oneapi/compiler/2026.0/lib/compiler/locale/%l_%t/%N'
 ENV OCL_ICD_FILENAMES='/opt/intel/oneapi/compiler/2026.0/lib/libintelocl.so'
 ENV ONEAPI_ROOT='/opt/intel/oneapi'
-ENV PATH='/opt/intel/oneapi/vtune/2026.0/bin64:/opt/intel/oneapi/mpi/2021.18/bin:/opt/intel/oneapi/mkl/2026.0/bin:/opt/intel/oneapi/dev-utilities/2026.0/bin:/opt/intel/oneapi/debugger/2026.0/opt/debugger/bin:/opt/intel/oneapi/compiler/2026.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-ENV PKG_CONFIG_PATH='/opt/intel/oneapi/vtune/2026.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2023.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.18/lib/pkgconfig:/opt/intel/oneapi/mkl/2026.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2026.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.12/lib/pkgconfig:/opt/intel/oneapi/dnnl/2026.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2026.0/lib/pkgconfig:/opt/intel/oneapi/ccl/2022.0/lib/pkgconfig/'
+ENV PATH='/opt/intel/oneapi/vtune/2026.2/bin64:/opt/intel/oneapi/mpi/2021.18/bin:/opt/intel/oneapi/mkl/2026.0/bin:/opt/intel/oneapi/dev-utilities/2026.0/bin:/opt/intel/oneapi/debugger/2026.0/opt/debugger/bin:/opt/intel/oneapi/compiler/2026.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+ENV PKG_CONFIG_PATH='/opt/intel/oneapi/vtune/2026.2/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2023.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.18/lib/pkgconfig:/opt/intel/oneapi/mkl/2026.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2026.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.12/lib/pkgconfig:/opt/intel/oneapi/dnnl/2026.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2026.0/lib/pkgconfig:/opt/intel/oneapi/ccl/2022.0/lib/pkgconfig/'
 ENV SETVARS_COMPLETED='1'
 ENV TBBROOT='/opt/intel/oneapi/tbb/2023.0/env/..'
 ENV TCMROOT='/opt/intel/oneapi/tcm/1.5/env/..'
 ENV TCM_ROOT='/opt/intel/oneapi/tcm/1.5'
 ENV UMF_ROOT='/opt/intel/oneapi/umf/1.1'
-ENV VTUNE_PROFILER_2026_DIR='/opt/intel/oneapi/vtune/2026.0'
-ENV VTUNE_PROFILER_DIR='/opt/intel/oneapi/vtune/2026.0'
+ENV VTUNE_PROFILER_2026_DIR='/opt/intel/oneapi/vtune/2026.2'
+ENV VTUNE_PROFILER_DIR='/opt/intel/oneapi/vtune/2026.2'
