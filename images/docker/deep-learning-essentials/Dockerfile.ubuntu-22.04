@@ -3,7 +3,7 @@
 
 FROM ubuntu:22.04
 
-ARG DEEP_LEARNING_ESSENTIALS_VERSION="2026.1.2-18"
+ARG DEEP_LEARNING_ESSENTIALS_VERSION="2026.1.3-10"
 
 RUN apt-get update && apt-get upgrade -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
@@ -28,11 +28,11 @@ ENV CCL_CONFIGURATION='cpu_gpu_dpcpp'
 ENV CCL_CONFIGURATION_PATH=''
 ENV CCL_ROOT='/opt/intel/oneapi/ccl/2022.1'
 ENV CLASSPATH='/opt/intel/oneapi/mpi/2021.18/share/java/mpi.jar'
-ENV CMAKE_PREFIX_PATH='/opt/intel/oneapi/tbb/2023.1/env/..:/opt/intel/oneapi/pti/1.0/lib/cmake/pti:/opt/intel/oneapi/mkl/2026.1/lib/cmake:/opt/intel/oneapi/dpl/2022.13/lib/cmake/oneDPL:/opt/intel/oneapi/compiler/2026.1:/opt/intel/oneapi/ccl/2022.1/lib/cmake/oneCCL'
+ENV CMAKE_PREFIX_PATH='/opt/intel/oneapi/tbb/2023.1/env/..:/opt/intel/oneapi/pti/1.1/lib/cmake/pti:/opt/intel/oneapi/mkl/2026.1/lib/cmake:/opt/intel/oneapi/dpl/2022.13/lib/cmake/oneDPL:/opt/intel/oneapi/compiler/2026.1:/opt/intel/oneapi/ccl/2022.1/lib/cmake/oneCCL'
 ENV CMPLR_ROOT='/opt/intel/oneapi/compiler/2026.1'
 ENV CPATH='/opt/intel/oneapi/umf/1.1/include:/opt/intel/oneapi/dev-utilities/2026.0/include:/opt/intel/oneapi/ccl/2022.1/include'
-ENV CPLUS_INCLUDE_PATH='/opt/intel/oneapi/umf/1.1/include:/opt/intel/oneapi/tbb/2023.1/env/../include:/opt/intel/oneapi/pti/1.0/include:/opt/intel/oneapi/mpi/2021.18/include:/opt/intel/oneapi/mkl/2026.1/include:/opt/intel/oneapi/dpl/2022.13/include'
-ENV C_INCLUDE_PATH='/opt/intel/oneapi/umf/1.1/include:/opt/intel/oneapi/tbb/2023.1/env/../include:/opt/intel/oneapi/pti/1.0/include:/opt/intel/oneapi/mpi/2021.18/include:/opt/intel/oneapi/mkl/2026.1/include'
+ENV CPLUS_INCLUDE_PATH='/opt/intel/oneapi/umf/1.1/include:/opt/intel/oneapi/tbb/2023.1/env/../include:/opt/intel/oneapi/pti/1.1/include:/opt/intel/oneapi/mpi/2021.18/include:/opt/intel/oneapi/mkl/2026.1/include:/opt/intel/oneapi/dpl/2022.13/include'
+ENV C_INCLUDE_PATH='/opt/intel/oneapi/umf/1.1/include:/opt/intel/oneapi/tbb/2023.1/env/../include:/opt/intel/oneapi/pti/1.1/include:/opt/intel/oneapi/mpi/2021.18/include:/opt/intel/oneapi/mkl/2026.1/include'
 ENV DIAGUTIL_PATH='/opt/intel/oneapi/compiler/2026.1/etc/compiler/sys_check/sys_check.sh'
 ENV DPLROOT='/opt/intel/oneapi/dpl/2022.13'
 ENV DPL_ROOT='/opt/intel/oneapi/dpl/2022.13'
@@ -41,8 +41,8 @@ ENV GDB_INFO='/opt/intel/oneapi/debugger/2026.1/share/info/'
 ENV INFOPATH='/opt/intel/oneapi/debugger/2026.1/share/info'
 ENV INTEL_PYTHONHOME='/opt/intel/oneapi/debugger/2026.1/opt/debugger'
 ENV I_MPI_ROOT='/opt/intel/oneapi/mpi/2021.18'
-ENV LD_LIBRARY_PATH='/opt/intel/oneapi/tcm/1.5/lib:/opt/intel/oneapi/umf/1.1/lib:/opt/intel/oneapi/tcm/1.5/env/../lib:/opt/intel/oneapi/tbb/2023.1/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/pti/1.0/lib:/opt/intel/oneapi/mpi/2021.18/opt/mpi/libfabric/lib:/opt/intel/oneapi/mpi/2021.18/lib:/opt/intel/oneapi/mkl/2026.1/lib:/opt/intel/oneapi/debugger/2026.1/opt/debugger/lib:/opt/intel/oneapi/compiler/2026.1/opt/compiler/lib:/opt/intel/oneapi/compiler/2026.1/lib:/opt/intel/oneapi/ccl/2022.1/lib/'
-ENV LIBRARY_PATH='/opt/intel/oneapi/tcm/1.5/lib:/opt/intel/oneapi/umf/1.1/lib:/opt/intel/oneapi/tbb/2023.1/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/pti/1.0/lib:/opt/intel/oneapi/mpi/2021.18/lib:/opt/intel/oneapi/mkl/2026.1/lib:/opt/intel/oneapi/compiler/2026.1/lib:/opt/intel/oneapi/ccl/2022.1/lib/'
+ENV LD_LIBRARY_PATH='/opt/intel/oneapi/tcm/1.5/lib:/opt/intel/oneapi/umf/1.1/lib:/opt/intel/oneapi/tcm/1.5/env/../lib:/opt/intel/oneapi/tbb/2023.1/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/pti/1.1/lib:/opt/intel/oneapi/mpi/2021.18/opt/mpi/libfabric/lib:/opt/intel/oneapi/mpi/2021.18/lib:/opt/intel/oneapi/mkl/2026.1/lib:/opt/intel/oneapi/debugger/2026.1/opt/debugger/lib:/opt/intel/oneapi/compiler/2026.1/opt/compiler/lib:/opt/intel/oneapi/compiler/2026.1/lib:/opt/intel/oneapi/ccl/2022.1/lib/'
+ENV LIBRARY_PATH='/opt/intel/oneapi/tcm/1.5/lib:/opt/intel/oneapi/umf/1.1/lib:/opt/intel/oneapi/tbb/2023.1/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/pti/1.1/lib:/opt/intel/oneapi/mpi/2021.18/lib:/opt/intel/oneapi/mkl/2026.1/lib:/opt/intel/oneapi/compiler/2026.1/lib:/opt/intel/oneapi/ccl/2022.1/lib/'
 ENV MANPATH='/opt/intel/oneapi/mpi/2021.18/share/man:/opt/intel/oneapi/debugger/2026.1/share/man:/opt/intel/oneapi/compiler/2026.1/share/man:'
 ENV MKLROOT='/opt/intel/oneapi/mkl/2026.1'
 ENV NLSPATH='/opt/intel/oneapi/compiler/2026.1/lib/compiler/locale/%l_%t/%N'
@@ -50,7 +50,7 @@ ENV OCL_ICD_FILENAMES='/opt/intel/oneapi/compiler/2026.1/lib/libintelocl.so'
 ENV ONEAPI_ROOT='/opt/intel/oneapi'
 ENV PATH='/opt/intel/oneapi/mpi/2021.18/bin:/opt/intel/oneapi/mkl/2026.1/bin:/opt/intel/oneapi/dev-utilities/2026.0/bin:/opt/intel/oneapi/debugger/2026.1/opt/debugger/bin:/opt/intel/oneapi/compiler/2026.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
 ENV PKG_CONFIG_PATH='/opt/intel/oneapi/tbb/2023.1/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.18/lib/pkgconfig:/opt/intel/oneapi/mkl/2026.1/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.13/lib/pkgconfig:/opt/intel/oneapi/compiler/2026.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2022.1/lib/pkgconfig/'
-ENV Pti_DIR='/opt/intel/oneapi/pti/1.0/lib/cmake/pti'
+ENV Pti_DIR='/opt/intel/oneapi/pti/1.1/lib/cmake/pti'
 ENV SETVARS_COMPLETED='1'
 ENV TBBROOT='/opt/intel/oneapi/tbb/2023.1/env/..'
 ENV TCMROOT='/opt/intel/oneapi/tcm/1.5/env/..'
