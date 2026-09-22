@@ -3,7 +3,7 @@
 
 FROM rockylinux/rockylinux:10
 
-ARG DEEP_LEARNING_ESSENTIALS_VERSION="2026.1.3-10.x86_64"
+ARG DEEP_LEARNING_ESSENTIALS_VERSION="2026.1.4-15.x86_64"
 
 # Install dependencies for Intel® oneAPI Libraries
 RUN dnf update -y && \
