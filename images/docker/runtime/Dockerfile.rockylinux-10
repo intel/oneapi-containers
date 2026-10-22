@@ -3,7 +3,7 @@
 
 FROM rockylinux/rockylinux:10
 
-ARG ONEAPI_RUNTIME_LIBS_VERSION="2026.0.0-275.x86_64"
+ARG ONEAPI_RUNTIME_LIBS_VERSION="2026.2.0-178.x86_64"
 
 # Install dependencies for Intel® oneAPI Libraries
 RUN dnf update -y && \
@@ -32,7 +32,7 @@ RUN dnf install -y 'dnf-command(config-manager)' && \
     /usr/bin/crb enable
 
 RUN dnf update -y && dnf install -y \
-        intel-oneapi-runtime-libs-${ONEAPI_RUNTIME_LIBS_VERSION} intel-compute-runtime intel-level-zero-devel && \
+        intel-oneapi-runtime-libs-${ONEAPI_RUNTIME_LIBS_VERSION} intel-compute-runtime intel-level-zero-devel oneapi-level-zero && \
     dnf clean all && \
     rm -rf /var/cache/yum/*
 
