@@ -3,7 +3,7 @@
 
 FROM ubuntu:24.04
 
-ARG ONEAPI_TOOLKIT_VERSION="2026.1.1-31"
+ARG ONEAPI_TOOLKIT_VERSION="2026.2.0-654"
 
 RUN apt-get update && apt-get upgrade -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
@@ -19,46 +19,56 @@ RUN add-apt-repository -y ${REPOSITORY}
 
 RUN apt-get update && apt-get upgrade -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-        intel-oneapi-toolkit=${ONEAPI_TOOLKIT_VERSION} intel-opencl-icd libze-intel-gpu1 libze1 libze-dev && \
+        intel-oneapi-toolkit=${ONEAPI_TOOLKIT_VERSION} intel-opencl-icd libze-intel-gpu1 libze1 libze-dev libblas-dev liblapack-dev && \
     rm -rf /var/lib/apt/lists/*
+
+# Make Intel(R) MKL the system default BLAS/LAPACK implementation
+RUN MKL_RT="$(ls -d /opt/intel/oneapi/mkl/[0-9]*/lib/libmkl_rt.so.3 | sort -V | tail -n1)" && \
+    test -n "${MKL_RT}" && \
+    MULTIARCH="$(uname -m)-linux-gnu" && \
+    update-alternatives --install "/usr/lib/${MULTIARCH}/libblas.so.3" "libblas.so.3-${MULTIARCH}" "${MKL_RT}" 150 && \
+    update-alternatives --install "/usr/lib/${MULTIARCH}/liblapack.so.3" "liblapack.so.3-${MULTIARCH}" "${MKL_RT}" 150 && \
+    update-alternatives --set "libblas.so.3-${MULTIARCH}" "${MKL_RT}" && \
+    update-alternatives --set "liblapack.so.3-${MULTIARCH}" "${MKL_RT}"
 
 ENV LANG="C.UTF-8"
 
 ENV CCL_CONFIGURATION='cpu_gpu_dpcpp'
 ENV CCL_CONFIGURATION_PATH=''
-ENV CCL_ROOT='/opt/intel/oneapi/ccl/2022.1'
-ENV CLASSPATH='/opt/intel/oneapi/mpi/2021.18/share/java/mpi.jar'
-ENV CMAKE_PREFIX_PATH='/opt/intel/oneapi/tbb/2023.1/env/..:/opt/intel/oneapi/mkl/2026.1/lib/cmake:/opt/intel/oneapi/ipp/2026.0/lib/cmake/ipp:/opt/intel/oneapi/dpl/2022.13/lib/cmake/oneDPL:/opt/intel/oneapi/dnnl/2026.0/lib/cmake:/opt/intel/oneapi/compiler/2026.1:/opt/intel/oneapi/ccl/2022.1/lib/cmake/oneCCL'
-ENV CMPLR_ROOT='/opt/intel/oneapi/compiler/2026.1'
-ENV CPATH='/opt/intel/oneapi/umf/1.1/include:/opt/intel/oneapi/dev-utilities/2026.0/include:/opt/intel/oneapi/ccl/2022.1/include'
-ENV CPLUS_INCLUDE_PATH='/opt/intel/oneapi/umf/1.1/include:/opt/intel/oneapi/tbb/2023.1/env/../include:/opt/intel/oneapi/mpi/2021.18/include:/opt/intel/oneapi/mkl/2026.1/include:/opt/intel/oneapi/ippcp/2026.0/include:/opt/intel/oneapi/ipp/2026.0/include:/opt/intel/oneapi/dpl/2022.13/include:/opt/intel/oneapi/dnnl/2026.0/include'
-ENV C_INCLUDE_PATH='/opt/intel/oneapi/umf/1.1/include:/opt/intel/oneapi/tbb/2023.1/env/../include:/opt/intel/oneapi/mpi/2021.18/include:/opt/intel/oneapi/mkl/2026.1/include:/opt/intel/oneapi/ippcp/2026.0/include:/opt/intel/oneapi/ipp/2026.0/include:/opt/intel/oneapi/dnnl/2026.0/include'
-ENV DIAGUTIL_PATH='/opt/intel/oneapi/compiler/2026.1/etc/compiler/sys_check/sys_check.sh'
-ENV DNNLROOT='/opt/intel/oneapi/dnnl/2026.0'
-ENV DPLROOT='/opt/intel/oneapi/dpl/2022.13'
-ENV DPL_ROOT='/opt/intel/oneapi/dpl/2022.13'
-ENV FI_PROVIDER_PATH='/opt/intel/oneapi/mpi/2021.18/opt/mpi/libfabric/lib/prov:/usr/lib/x86_64-linux-gnu/libfabric'
-ENV GDB_INFO='/opt/intel/oneapi/debugger/2026.1/share/info/'
-ENV INFOPATH='/opt/intel/oneapi/debugger/2026.1/share/info'
-ENV INTEL_PYTHONHOME='/opt/intel/oneapi/debugger/2026.1/opt/debugger'
+ENV CCL_ROOT='/opt/intel/oneapi/ccl/2022.2'
+ENV CLASSPATH='/opt/intel/oneapi/mpi/2021.19/share/java/mpi.jar'
+ENV CMAKE_PREFIX_PATH='/opt/intel/oneapi/tbb/2023.2/env/..:/opt/intel/oneapi/mkl/2026.2/lib/cmake:/opt/intel/oneapi/ipp/2026.1/lib/cmake/ipp:/opt/intel/oneapi/dpl/2022.14/lib/cmake/oneDPL:/opt/intel/oneapi/dnnl/2026.1/lib/cmake:/opt/intel/oneapi/compiler/2026.2:/opt/intel/oneapi/ccl/2022.2/lib/cmake/oneCCL'
+ENV CMPLR_ROOT='/opt/intel/oneapi/compiler/2026.2'
+ENV CPATH='/opt/intel/oneapi/umf/1.2/include:/opt/intel/oneapi/libfabric/2.6/include:/opt/intel/oneapi/dev-utilities/2026.2/include:/opt/intel/oneapi/ccl/2022.2/include'
+ENV CPLUS_INCLUDE_PATH='/opt/intel/oneapi/umf/1.2/include:/opt/intel/oneapi/tcm/1.6/env/../include:/opt/intel/oneapi/tbb/2023.2/env/../include:/opt/intel/oneapi/mpi/2021.19/include:/opt/intel/oneapi/mkl/2026.2/include:/opt/intel/oneapi/ippcp/2026.2/include:/opt/intel/oneapi/ipp/2026.1/include:/opt/intel/oneapi/dpl/2022.14/include:/opt/intel/oneapi/dnnl/2026.1/include'
+ENV C_INCLUDE_PATH='/opt/intel/oneapi/umf/1.2/include:/opt/intel/oneapi/tcm/1.6/env/../include:/opt/intel/oneapi/tbb/2023.2/env/../include:/opt/intel/oneapi/mpi/2021.19/include:/opt/intel/oneapi/mkl/2026.2/include:/opt/intel/oneapi/ippcp/2026.2/include:/opt/intel/oneapi/ipp/2026.1/include:/opt/intel/oneapi/dnnl/2026.1/include'
+ENV DIAGUTIL_PATH='/opt/intel/oneapi/compiler/2026.2/etc/compiler/sys_check/sys_check.sh'
+ENV DNNLROOT='/opt/intel/oneapi/dnnl/2026.1'
+ENV DPLROOT='/opt/intel/oneapi/dpl/2022.14'
+ENV DPL_ROOT='/opt/intel/oneapi/dpl/2022.14'
+ENV FI_PROVIDER_PATH='/opt/intel/oneapi/libfabric/2.6/lib/libfabric:/usr/lib/x86_64-linux-gnu/libfabric'
+ENV GDB_INFO='/opt/intel/oneapi/debugger/2026.2/share/info/'
+ENV INFOPATH='/opt/intel/oneapi/debugger/2026.2/share/info'
+ENV INTEL_PYTHONHOME='/opt/intel/oneapi/debugger/2026.2/opt/debugger'
 ENV IPPCP_TARGET_ARCH='intel64'
-ENV IPPCRYPTOROOT='/opt/intel/oneapi/ippcp/2026.0'
-ENV IPPROOT='/opt/intel/oneapi/ipp/2026.0'
+ENV IPPCRYPTOROOT='/opt/intel/oneapi/ippcp/2026.2'
+ENV IPPROOT='/opt/intel/oneapi/ipp/2026.1'
 ENV IPP_TARGET_ARCH='intel64'
-ENV I_MPI_ROOT='/opt/intel/oneapi/mpi/2021.18'
-ENV LD_LIBRARY_PATH='/opt/intel/oneapi/tcm/1.5/lib:/opt/intel/oneapi/umf/1.1/lib:/opt/intel/oneapi/tcm/1.5/env/../lib:/opt/intel/oneapi/tbb/2023.1/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.18/opt/mpi/libfabric/lib:/opt/intel/oneapi/mpi/2021.18/lib:/opt/intel/oneapi/mkl/2026.1/lib:/opt/intel/oneapi/ippcp/2026.0/lib/:/opt/intel/oneapi/ipp/2026.0/lib:/opt/intel/oneapi/dnnl/2026.0/lib:/opt/intel/oneapi/debugger/2026.1/opt/debugger/lib:/opt/intel/oneapi/compiler/2026.1/opt/compiler/lib:/opt/intel/oneapi/compiler/2026.1/lib:/opt/intel/oneapi/ccl/2022.1/lib/'
-ENV LIBRARY_PATH='/opt/intel/oneapi/tcm/1.5/lib:/opt/intel/oneapi/umf/1.1/lib:/opt/intel/oneapi/tbb/2023.1/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.18/lib:/opt/intel/oneapi/mkl/2026.1/lib:/opt/intel/oneapi/ippcp/2026.0/lib/:/opt/intel/oneapi/ipp/2026.0/lib:/opt/intel/oneapi/dnnl/2026.0/lib:/opt/intel/oneapi/compiler/2026.1/lib:/opt/intel/oneapi/ccl/2022.1/lib/'
-ENV MANPATH='/opt/intel/oneapi/mpi/2021.18/share/man:/opt/intel/oneapi/debugger/2026.1/share/man:/opt/intel/oneapi/compiler/2026.1/share/man:'
-ENV MKLROOT='/opt/intel/oneapi/mkl/2026.1'
-ENV NLSPATH='/opt/intel/oneapi/compiler/2026.1/lib/compiler/locale/%l_%t/%N'
-ENV OCL_ICD_FILENAMES='/opt/intel/oneapi/compiler/2026.1/lib/libintelocl.so'
+ENV I_MPI_ROOT='/opt/intel/oneapi/mpi/2021.19'
+ENV LD_LIBRARY_PATH='/opt/intel/oneapi/tcm/1.6/lib:/opt/intel/oneapi/umf/1.2/lib:/opt/intel/oneapi/tcm/1.6/env/../lib:/opt/intel/oneapi/tbb/2023.2/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.19/lib:/opt/intel/oneapi/mkl/2026.2/lib:/opt/intel/oneapi/libfabric/2.6/lib:/opt/intel/oneapi/ippcp/2026.2/lib/:/opt/intel/oneapi/ipp/2026.1/lib:/opt/intel/oneapi/dnnl/2026.1/lib:/opt/intel/oneapi/debugger/2026.2/opt/debugger/lib:/opt/intel/oneapi/compiler/2026.2/opt/compiler/lib:/opt/intel/oneapi/compiler/2026.2/lib:/opt/intel/oneapi/ccl/2022.2/lib/'
+ENV LIBFABRIC_ROOT='/opt/intel/oneapi/libfabric/2.6'
+ENV LIBRARY_PATH='/opt/intel/oneapi/tcm/1.6/lib:/opt/intel/oneapi/umf/1.2/lib:/opt/intel/oneapi/tcm/1.6/env/../lib:/opt/intel/oneapi/tbb/2023.2/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.19/lib:/opt/intel/oneapi/mkl/2026.2/lib:/opt/intel/oneapi/ippcp/2026.2/lib/:/opt/intel/oneapi/ipp/2026.1/lib:/opt/intel/oneapi/dnnl/2026.1/lib:/opt/intel/oneapi/compiler/2026.2/lib:/opt/intel/oneapi/ccl/2022.2/lib/'
+ENV MANPATH='/opt/intel/oneapi/mpi/2021.19/share/man:/opt/intel/oneapi/libfabric/2.6/share/man:/opt/intel/oneapi/debugger/2026.2/share/man:/opt/intel/oneapi/compiler/2026.2/share/man:'
+ENV MKLROOT='/opt/intel/oneapi/mkl/2026.2'
+ENV NLSPATH='/opt/intel/oneapi/compiler/2026.2/lib/compiler/locale/%l_%t/%N'
+ENV OCL_ICD_FILENAMES='/opt/intel/oneapi/compiler/2026.2/lib/libintelocl.so'
 ENV ONEAPI_ROOT='/opt/intel/oneapi'
-ENV PATH='/opt/intel/oneapi/vtune/2026.4/bin64:/opt/intel/oneapi/mpi/2021.18/bin:/opt/intel/oneapi/mkl/2026.1/bin:/opt/intel/oneapi/dev-utilities/2026.0/bin:/opt/intel/oneapi/debugger/2026.1/opt/debugger/bin:/opt/intel/oneapi/compiler/2026.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-ENV PKG_CONFIG_PATH='/opt/intel/oneapi/vtune/2026.4/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2023.1/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.18/lib/pkgconfig:/opt/intel/oneapi/mkl/2026.1/lib/pkgconfig:/opt/intel/oneapi/ippcp/2026.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.13/lib/pkgconfig:/opt/intel/oneapi/dnnl/2026.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2026.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2022.1/lib/pkgconfig/'
+ENV PATH='/opt/intel/oneapi/vtune/2026.6/bin64:/opt/intel/oneapi/mpi/2021.19/bin:/opt/intel/oneapi/mkl/2026.2/bin:/opt/intel/oneapi/libfabric/2.6/bin:/opt/intel/oneapi/dev-utilities/2026.2/bin:/opt/intel/oneapi/debugger/2026.2/opt/debugger/bin:/opt/intel/oneapi/compiler/2026.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+ENV PKG_CONFIG_PATH='/opt/intel/oneapi/vtune/2026.6/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2023.2/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.19/lib/pkgconfig:/opt/intel/oneapi/mkl/2026.2/lib/pkgconfig:/opt/intel/oneapi/libfabric/2.6/lib/pkgconfig:/opt/intel/oneapi/ippcp/2026.2/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.14/lib/pkgconfig:/opt/intel/oneapi/dnnl/2026.1/lib/pkgconfig:/opt/intel/oneapi/compiler/2026.2/lib/pkgconfig:/opt/intel/oneapi/ccl/2022.2/lib/pkgconfig/'
 ENV SETVARS_COMPLETED='1'
-ENV TBBROOT='/opt/intel/oneapi/tbb/2023.1/env/..'
-ENV TCMROOT='/opt/intel/oneapi/tcm/1.5/env/..'
-ENV TCM_ROOT='/opt/intel/oneapi/tcm/1.5'
-ENV UMF_ROOT='/opt/intel/oneapi/umf/1.1'
-ENV VTUNE_PROFILER_2026_DIR='/opt/intel/oneapi/vtune/2026.4'
-ENV VTUNE_PROFILER_DIR='/opt/intel/oneapi/vtune/2026.4'
+ENV TBBROOT='/opt/intel/oneapi/tbb/2023.2/env/..'
+ENV TCMROOT='/opt/intel/oneapi/tcm/1.6/env/..'
+ENV TCM_ROOT='/opt/intel/oneapi/tcm/1.6'
+ENV UMF_ROOT='/opt/intel/oneapi/umf/1.2'
+ENV VTUNE_PROFILER_2026_DIR='/opt/intel/oneapi/vtune/2026.6'
+ENV VTUNE_PROFILER_DIR='/opt/intel/oneapi/vtune/2026.6'
